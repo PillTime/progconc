@@ -49,10 +49,8 @@ public class MBQueue<E> implements BQueue<E> {
         } 
       }
       array[(head + size) % array.length] = elem;
-      notify(); // BUG: it should be notifyAll()
-    }
-    synchronized(this) { // BUG: only one synchronized block should be used
-      size++; 
+      notifyAll();
+      size++;
     }
   }
 
@@ -69,15 +67,11 @@ public class MBQueue<E> implements BQueue<E> {
           throw new UnexpectedException(e);
         } 
       }
-
       elem = array[head];
       array[head] = null;
       head = (head + 1) % array.length;
-      
-    }
-    synchronized(this) {  // BUG: only one synchronized block should be used
-      notify(); // BUG: it should be notifyAll
-      size--; 
+      notifyAll();
+      size--;
     }
     return elem;
   }

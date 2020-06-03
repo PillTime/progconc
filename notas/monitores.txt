@@ -1,0 +1,30 @@
+Correndo MBQueue$Test, falham alguns testes (quase todos, mas varia por causa da aleatoriedade)
+
+Maior parte dos testes falham por haver os dois blocos synchronized:
+Imagine-se uma MBQueue com 1 elemento (a capacidade nao importa).
+Começam duas threads, ambas tentam remover um elemento cada.
+A thread t1 entra no primeiro bloco synchronized de remove() e remove o elemento.
+Ao sair desse bloco, liberta o lock, e a thread t2 apanha o lock.
+Como o size ainda nao foi atualizado (esta no segundo bloco synchronized), a thread t2 pensa
+  que ainda existem elementos na MBQueue, e ao tentar remover um, leva a uma NullPointerException.
+
+================================================================================
+
+Depois de juntar os blocos synchronized num so, ainda falham alguns testes,
+mas menos (praticamente todos os testes de 1 de capacidade):
+
+Imagine-se uma MBQueue vazia com 1 de capacidade.
+Quatro threads sao iniciadas (duas a fazerem remove() e duas a fazerem add()).
+A thread t1 tenta fazer remove(), e como a MBQueue esta vazia, invoca wait().
+A thread t2 entra na mesma situaçao que a thread t1, e invoca wait().
+A thread t3 adiciona um elemento a MBQueue e aumenta o size para 1, enchendo a MBQueue.
+A thread t4 tenta adicionar outro elemento, e como a MBQueue esta cheia, invoca wait().
+Uma das threads (t1 ou t2, nao importa, mas para o exemplo usamos a t1),
+  remove o elemento que esta na MBQueue e ao chegar ao fim da funçao, invoca notify().
+O problema esta aqui. Por se usar notify(), apenas uma das threads t2 ou t4 e notificada.
+Se a notificaçao for para a thread t2, o programa entra em deadlock, porque essa thread
+  fica presa num loop de wait(), enquanto que a t4 fica a espera de um notify() que nunca vai chegar.
+
+================================================================================
+
+Depois de passar todos os notify() para notifyAll() (ignorando o teste 9 por agora), passam todos.
