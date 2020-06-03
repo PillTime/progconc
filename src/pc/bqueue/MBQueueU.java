@@ -23,10 +23,19 @@ public class MBQueueU<E> extends MBQueue<E> {
   }
   
   @Override
-  public synchronized void add(E elem) {   
-    // TODO
+  public synchronized void add(E elem) {
+    if (size == array.length) {
+      E[] new_array = (E[]) new Object[size * 2];
+      for (int i = head; i < size; i++) {
+        new_array[i] = array[i];
+      }
+      array = new_array;
+    }
+    array[(head + size) % array.length] = elem;
+    notifyAll();
+    size++;
   }
-  
+
   /**
    * Test instantiation.
    */
