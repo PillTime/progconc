@@ -28,7 +28,6 @@ public class LFBQueue<E> implements BQueue<E> {
 
   private E[] array;
   private final AtomicInteger head, tail;
-  // TODO make use of Rooms!
   private final Rooms rooms;
   // TODO prepare code for back-off
   private final boolean useBackoff;
@@ -105,7 +104,7 @@ public class LFBQueue<E> implements BQueue<E> {
   public static final class Test extends BQueueTest {
     @Override
     <T> BQueue<T> createBQueue(int capacity) {
-      return new LFBQueue<>(capacity, true);
+      return new LFBQueue<>(capacity, false);
     }
   }
 }
