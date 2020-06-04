@@ -2,7 +2,6 @@ package pc.bqueue;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-
 /**
  * Lock-free implementation of queue. 
  * 
@@ -10,6 +9,22 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @param <E> Type of elements.
  */
 public class LFBQueue<E> implements BQueue<E> {
+  private enum RoomType {
+    Size, Add, Remove;
+
+    private final int getRoomTypeId() {
+      switch (this) {
+        case Size:
+          return 0;
+        case Add:
+          return 1;
+        case Remove:
+          return 2;
+        default:
+          return -1;
+      }
+    }
+  };
 
   private E[] array;
   private final AtomicInteger head, tail;
@@ -40,13 +55,16 @@ public class LFBQueue<E> implements BQueue<E> {
 
   @Override
   public int size() {
-    return tail.get() - head.get();
+    rooms.enter(RoomType.Size.getRoomTypeId());
+    int size = tail.get() - head.get();
+    rooms.leave(RoomType.Size.getRoomTypeId());
+    return size;
   }
 
-
   @Override
-  public void add(E elem) {   
+  public void add(E elem) {
     while(true) {
+      rooms.enter(RoomType.Add.getRoomTypeId());
       int p = tail.getAndIncrement();
       if (p - head.get() < array.length) {
         array[p % array.length] = elem;
@@ -54,14 +72,17 @@ public class LFBQueue<E> implements BQueue<E> {
       } else {
         // "undo"
         tail.getAndDecrement();
+        rooms.leave(RoomType.Add.getRoomTypeId());
       }
     }
+    rooms.leave(RoomType.Add.getRoomTypeId());
   }
 
   @Override
-  public E remove() {   
+  public E remove() {
     E elem = null;
     while(true) {
+      rooms.enter(RoomType.Remove.getRoomTypeId());
       int p = head.getAndIncrement();
       if (p < tail.get()) {
         int pos = p % array.length;
@@ -71,8 +92,10 @@ public class LFBQueue<E> implements BQueue<E> {
       } else {
         // "undo"
         head.getAndDecrement();
+        rooms.leave(RoomType.Remove.getRoomTypeId());
       }
     }
+    rooms.leave(RoomType.Remove.getRoomTypeId());
     return elem;
   }
 
@@ -82,7 +105,7 @@ public class LFBQueue<E> implements BQueue<E> {
   public static final class Test extends BQueueTest {
     @Override
     <T> BQueue<T> createBQueue(int capacity) {
-      return new LFBQueue<>(capacity, false);
+      return new LFBQueue<>(capacity, true);
     }
   }
 }

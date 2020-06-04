@@ -35,7 +35,6 @@ public class MBQueue<E> implements BQueue<E> {
     return size;
   }
 
-
   @Override
   public  void add(E elem) {   
     synchronized(this) {
