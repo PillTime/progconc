@@ -68,18 +68,26 @@ public class LFBQueueU<E>  implements BQueue<E> {
 
   @Override
   public void add(E elem) {
-    rooms.enter(RoomType.Add.getId());
-    int p = tail.getAndIncrement();
-    while (resizing.get() == true);
-    while (p - head.get() >= array.length && resizing.compareAndSet(false, true)) {
-      E[] new_array = (E[]) new Object[tail.get() - head.get()];
-      for (int i = head.get(); i < tail.get(); i++) {
-        new_array[i] = array[i];
+    while(true) {
+      rooms.enter(RoomType.Add.getId());
+      int p = tail.getAndIncrement();
+      if (p - head.get() < array.length && !resizing.get()) {
+        array[p % array.length] = elem;
+        break;
+      } else {
+        // "resize"
+        if (resizing.compareAndSet(false, true)) {
+          E[] new_array = (E[]) new Object[array.length * 2];
+          for (int i = head.get(); i < p; i++) {
+            new_array[i % new_array.length] = array[i & array.length];
+          }
+          array = new_array;
+          tail.getAndDecrement();
+          resizing.set(false);
+        }
+        rooms.leave(RoomType.Add.getId());
       }
-      array = new_array;
-      resizing.set(false);
     }
-    array[p % array.length] = elem;
     rooms.leave(RoomType.Add.getId());
   }
   
