@@ -82,9 +82,9 @@ public class LFBQueueU<E>  implements BQueue<E> {
             new_array[i % new_array.length] = array[i & array.length];
           }
           array = new_array;
-          tail.getAndDecrement();
           resizing.set(false);
         }
+        tail.getAndDecrement();
         rooms.leave(RoomType.Add.getId());
       }
     }
