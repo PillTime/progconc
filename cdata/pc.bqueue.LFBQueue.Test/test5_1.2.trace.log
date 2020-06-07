@@ -1,0 +1,108 @@
+# THREADS
+TID	NAME	CLASS
+0	test5_1	org.cooperari.junit.CJUnitRunner$MethodRunner
+1	<1>	pc.bqueue.BQueueTest$$Lambda$23/615412942
+2	<2>	pc.bqueue.BQueueTest$$Lambda$24/711560747
+3	<3>	pc.bqueue.BQueueTest$$Lambda$25/777396158
+4	<4>	pc.bqueue.BQueueTest$$Lambda$26/1800700944
+# EXECUTION TRACE
+#	TID	STEP	EVENT	SOURCE FILE	LINE	YIELD POINT	STAGE
+0	0	0	-	<system>	0	<started>	0
+1	0	1	-	LFBQueue.java	29	field-set(pc.bqueue.LFBQueue.head)	0
+2	0	2	-	LFBQueue.java	30	field-set(pc.bqueue.LFBQueue.tail)	0
+3	0	3	-	LFBQueue.java	31	field-set(pc.bqueue.LFBQueue.array)	0
+4	0	4	-	LFBQueue.java	32	field-set(pc.bqueue.LFBQueue.useBackoff)	0
+5	0	5	-	Rooms.java	24	field-get(pc.bqueue.Rooms.State.FREE)	0
+6	0	6	-	Rooms.java	24	field-set(pc.bqueue.Rooms.currentState)	0
+7	0	7	-	Rooms.java	38	field-set(pc.bqueue.Rooms.numberOfRooms)	0
+8	0	8	-	Rooms.java	39	field-set(pc.bqueue.Rooms.useBackoff)	0
+9	0	9	-	LFBQueue.java	33	field-set(pc.bqueue.LFBQueue.rooms)	0
+10	0	10	-	BQueueTest.java	157	org.cooperari.CSystem.forkAndJoin(Runnable[])	0
+11	0	11	-	BQueueTest.java	157	org.cooperari.CSystem.forkAndJoin(Runnable[])	1
+12	1	0	-	<system>	0	<started>	0
+13	2	0	-	<system>	0	<started>	0
+14	3	0	-	<system>	0	<started>	0
+15	4	0	-	<system>	0	<started>	0
+16	4	1	-	LFBQueue.java	65	field-get(pc.bqueue.LFBQueue.head)	0
+17	3	1	-	LFBQueue.java	65	field-get(pc.bqueue.LFBQueue.head)	0
+18	3	2	-	LFBQueue.java	65	java.util.concurrent.atomic.AtomicInteger.getAndIncrement()	0
+19	1	1	-	LFBQueue.java	50	field-get(pc.bqueue.LFBQueue.tail)	0
+20	1	2	-	LFBQueue.java	50	java.util.concurrent.atomic.AtomicInteger.getAndIncrement()	0
+21	4	2	-	LFBQueue.java	65	java.util.concurrent.atomic.AtomicInteger.getAndIncrement()	0
+22	2	1	-	LFBQueue.java	65	field-get(pc.bqueue.LFBQueue.head)	0
+23	4	3	-	LFBQueue.java	66	field-get(pc.bqueue.LFBQueue.tail)	0
+24	4	4	-	LFBQueue.java	66	java.util.concurrent.atomic.AtomicInteger.get()	0
+25	1	3	-	LFBQueue.java	51	field-get(pc.bqueue.LFBQueue.head)	0
+26	3	3	-	LFBQueue.java	66	field-get(pc.bqueue.LFBQueue.tail)	0
+27	2	2	-	LFBQueue.java	65	java.util.concurrent.atomic.AtomicInteger.getAndIncrement()	0
+28	3	4	-	LFBQueue.java	66	java.util.concurrent.atomic.AtomicInteger.get()	0
+29	4	5	-	LFBQueue.java	67	field-get(pc.bqueue.LFBQueue.array)	0
+30	1	4	-	LFBQueue.java	51	java.util.concurrent.atomic.AtomicInteger.get()	0
+31	4	6	-	LFBQueue.java	68	field-get(pc.bqueue.LFBQueue.array)	0
+32	4	7	-	LFBQueue.java	69	field-get(pc.bqueue.LFBQueue.array)	0
+33	4	8	-	<system>	0	<terminated>	0
+34	2	3	-	LFBQueue.java	66	field-get(pc.bqueue.LFBQueue.tail)	0
+35	1	5	-	LFBQueue.java	51	field-get(pc.bqueue.LFBQueue.array)	0
+36	2	4	-	LFBQueue.java	66	java.util.concurrent.atomic.AtomicInteger.get()	0
+37	1	6	-	LFBQueue.java	52	field-get(pc.bqueue.LFBQueue.array)	0
+38	1	7	-	LFBQueue.java	52	field-get(pc.bqueue.LFBQueue.array)	0
+39	2	5	-	LFBQueue.java	73	field-get(pc.bqueue.LFBQueue.head)	0
+40	3	5	-	LFBQueue.java	73	field-get(pc.bqueue.LFBQueue.head)	0
+41	3	6	-	LFBQueue.java	73	java.util.concurrent.atomic.AtomicInteger.getAndDecrement()	0
+42	2	6	-	LFBQueue.java	73	java.util.concurrent.atomic.AtomicInteger.getAndDecrement()	0
+43	2	7	-	LFBQueue.java	65	field-get(pc.bqueue.LFBQueue.head)	0
+44	3	7	-	LFBQueue.java	65	field-get(pc.bqueue.LFBQueue.head)	0
+45	2	8	-	LFBQueue.java	65	java.util.concurrent.atomic.AtomicInteger.getAndIncrement()	0
+46	3	8	-	LFBQueue.java	65	java.util.concurrent.atomic.AtomicInteger.getAndIncrement()	0
+47	2	9	-	LFBQueue.java	66	field-get(pc.bqueue.LFBQueue.tail)	0
+48	1	8	-	LFBQueue.java	50	field-get(pc.bqueue.LFBQueue.tail)	0
+49	1	9	-	LFBQueue.java	50	java.util.concurrent.atomic.AtomicInteger.getAndIncrement()	0
+50	3	9	-	LFBQueue.java	66	field-get(pc.bqueue.LFBQueue.tail)	0
+51	1	10	-	LFBQueue.java	51	field-get(pc.bqueue.LFBQueue.head)	0
+52	3	10	-	LFBQueue.java	66	java.util.concurrent.atomic.AtomicInteger.get()	0
+53	2	10	-	LFBQueue.java	66	java.util.concurrent.atomic.AtomicInteger.get()	0
+54	2	11	-	LFBQueue.java	67	field-get(pc.bqueue.LFBQueue.array)	0
+55	3	11	-	LFBQueue.java	73	field-get(pc.bqueue.LFBQueue.head)	0
+56	3	12	-	LFBQueue.java	73	java.util.concurrent.atomic.AtomicInteger.getAndDecrement()	0
+57	2	12	-	LFBQueue.java	68	field-get(pc.bqueue.LFBQueue.array)	0
+58	1	11	-	LFBQueue.java	51	java.util.concurrent.atomic.AtomicInteger.get()	0
+59	2	13	-	LFBQueue.java	69	field-get(pc.bqueue.LFBQueue.array)	0
+60	3	13	-	LFBQueue.java	65	field-get(pc.bqueue.LFBQueue.head)	0
+61	3	14	-	LFBQueue.java	65	java.util.concurrent.atomic.AtomicInteger.getAndIncrement()	0
+62	3	15	-	LFBQueue.java	66	field-get(pc.bqueue.LFBQueue.tail)	0
+63	3	16	-	LFBQueue.java	66	java.util.concurrent.atomic.AtomicInteger.get()	0
+64	2	14	-	BQueueTest.java	159	java.util.concurrent.atomic.AtomicInteger.set(int)	0
+65	1	12	-	LFBQueue.java	51	field-get(pc.bqueue.LFBQueue.array)	0
+66	3	17	-	LFBQueue.java	73	field-get(pc.bqueue.LFBQueue.head)	0
+67	3	18	-	LFBQueue.java	73	java.util.concurrent.atomic.AtomicInteger.getAndDecrement()	0
+68	3	19	-	LFBQueue.java	65	field-get(pc.bqueue.LFBQueue.head)	0
+69	2	15	-	<system>	0	<terminated>	0
+70	1	13	-	LFBQueue.java	52	field-get(pc.bqueue.LFBQueue.array)	0
+71	3	20	-	LFBQueue.java	65	java.util.concurrent.atomic.AtomicInteger.getAndIncrement()	0
+72	1	14	-	LFBQueue.java	52	field-get(pc.bqueue.LFBQueue.array)	0
+73	3	21	-	LFBQueue.java	66	field-get(pc.bqueue.LFBQueue.tail)	0
+74	3	22	-	LFBQueue.java	66	java.util.concurrent.atomic.AtomicInteger.get()	0
+75	1	15	-	LFBQueue.java	50	field-get(pc.bqueue.LFBQueue.tail)	0
+76	3	23	-	LFBQueue.java	73	field-get(pc.bqueue.LFBQueue.head)	0
+77	1	16	-	LFBQueue.java	50	java.util.concurrent.atomic.AtomicInteger.getAndIncrement()	0
+78	1	17	-	LFBQueue.java	51	field-get(pc.bqueue.LFBQueue.head)	0
+79	1	18	-	LFBQueue.java	51	java.util.concurrent.atomic.AtomicInteger.get()	0
+80	3	24	-	LFBQueue.java	73	java.util.concurrent.atomic.AtomicInteger.getAndDecrement()	0
+81	3	25	-	LFBQueue.java	65	field-get(pc.bqueue.LFBQueue.head)	0
+82	3	26	-	LFBQueue.java	65	java.util.concurrent.atomic.AtomicInteger.getAndIncrement()	0
+83	1	19	-	LFBQueue.java	51	field-get(pc.bqueue.LFBQueue.array)	0
+84	1	20	-	LFBQueue.java	52	field-get(pc.bqueue.LFBQueue.array)	0
+85	3	27	-	LFBQueue.java	66	field-get(pc.bqueue.LFBQueue.tail)	0
+86	1	21	-	LFBQueue.java	52	field-get(pc.bqueue.LFBQueue.array)	0
+87	3	28	-	LFBQueue.java	66	java.util.concurrent.atomic.AtomicInteger.get()	0
+88	1	22	-	<system>	0	<terminated>	0
+89	3	29	-	LFBQueue.java	67	field-get(pc.bqueue.LFBQueue.array)	0
+90	3	30	-	LFBQueue.java	68	field-get(pc.bqueue.LFBQueue.array)	0
+91	3	31	-	LFBQueue.java	69	field-get(pc.bqueue.LFBQueue.array)	0
+92	3	32	-	BQueueTest.java	160	java.util.concurrent.atomic.AtomicInteger.set(int)	0
+93	3	33	-	<system>	0	<terminated>	0
+94	0	12	-	<system>	0	<terminated>	0
+# STACK TRACE FOR FAILURE
+java.lang.NullPointerException
+	at pc.bqueue.BQueueTest.lambda$test5$25(BQueueTest.java:161)
+	at org.cooperari.core.CThread.run(CThread.java:188)
