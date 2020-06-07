@@ -8,3 +8,5 @@ Incluindo os rooms nas funçoes resolve esse problema.
 As funçoes add() e remove() sao um pouco especiais porque precisam de dois .leave().
 Um fora do while para o caso da funçao poder ser executada sem problema, e outro dentro do while caso a
   funçao nao possa continuar (por exemplo, um remove() numa LFBQueue vazia).
+
+
