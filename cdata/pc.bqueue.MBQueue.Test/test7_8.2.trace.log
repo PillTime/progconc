@@ -1,0 +1,113 @@
+# THREADS
+TID	NAME	CLASS
+0	test7_8	org.cooperari.junit.CJUnitRunner$MethodRunner
+1	<1>	pc.bqueue.BQueueTest$$Lambda$31/784211152
+2	<2>	pc.bqueue.BQueueTest$$Lambda$32/544860023
+# EXECUTION TRACE
+#	TID	STEP	EVENT	SOURCE FILE	LINE	YIELD POINT	STAGE
+0	0	0	-	<system>	0	<started>	0
+1	0	1	-	MBQueue.java	23	field-set(pc.bqueue.MBQueue.head)	0
+2	0	2	-	MBQueue.java	24	field-set(pc.bqueue.MBQueue.size)	0
+3	0	3	-	MBQueue.java	25	field-set(pc.bqueue.MBQueue.array)	0
+4	0	4	-	BQueueTest.java	219	org.cooperari.CSystem.forkAndJoin(Runnable[])	0
+5	0	5	-	BQueueTest.java	219	org.cooperari.CSystem.forkAndJoin(Runnable[])	1
+6	1	0	-	<system>	0	<started>	0
+7	2	0	-	<system>	0	<started>	0
+8	2	1	-	MBQueue.java	62	<monitorenter>	0
+9	1	1	-	MBQueue.java	41	<monitorenter>	0
+10	2	2	-	MBQueue.java	63	field-get(pc.bqueue.MBQueue.size)	0
+11	2	3	-	MBQueue.java	66	Object.wait()	0
+12	2	4	-	MBQueue.java	66	Object.wait()	1
+13	1	2	-	MBQueue.java	42	field-get(pc.bqueue.MBQueue.size)	0
+14	1	3	-	MBQueue.java	42	field-get(pc.bqueue.MBQueue.array)	0
+15	1	4	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.array)	0
+16	1	5	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.head)	0
+17	1	6	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.size)	0
+18	1	7	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.array)	0
+19	1	8	-	MBQueue.java	52	Object.notify()	0
+20	1	9	-	MBQueue.java	53	<monitorexit>	0
+21	1	10	-	MBQueue.java	54	<monitorenter>	0
+22	1	11	-	MBQueue.java	55	field-get(pc.bqueue.MBQueue.size)	0
+23	2	5	-	MBQueue.java	66	Object.wait()	2
+24	1	12	-	MBQueue.java	55	field-set(pc.bqueue.MBQueue.size)	0
+25	1	13	-	MBQueue.java	56	<monitorexit>	0
+26	1	14	-	MBQueue.java	41	<monitorenter>	0
+27	2	6	-	MBQueue.java	63	field-get(pc.bqueue.MBQueue.size)	0
+28	2	7	-	MBQueue.java	73	field-get(pc.bqueue.MBQueue.array)	0
+29	2	8	-	MBQueue.java	73	field-get(pc.bqueue.MBQueue.head)	0
+30	2	9	-	MBQueue.java	74	field-get(pc.bqueue.MBQueue.array)	0
+31	2	10	-	MBQueue.java	74	field-get(pc.bqueue.MBQueue.head)	0
+32	2	11	-	MBQueue.java	75	field-get(pc.bqueue.MBQueue.head)	0
+33	2	12	-	MBQueue.java	75	field-get(pc.bqueue.MBQueue.array)	0
+34	2	13	-	MBQueue.java	75	field-set(pc.bqueue.MBQueue.head)	0
+35	2	14	-	MBQueue.java	77	<monitorexit>	0
+36	2	15	-	MBQueue.java	78	<monitorenter>	0
+37	1	15	-	MBQueue.java	42	field-get(pc.bqueue.MBQueue.size)	0
+38	1	16	-	MBQueue.java	42	field-get(pc.bqueue.MBQueue.array)	0
+39	1	17	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.array)	0
+40	1	18	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.head)	0
+41	1	19	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.size)	0
+42	1	20	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.array)	0
+43	1	21	-	MBQueue.java	52	Object.notify()	0
+44	1	22	-	MBQueue.java	53	<monitorexit>	0
+45	1	23	-	MBQueue.java	54	<monitorenter>	0
+46	2	16	-	MBQueue.java	79	Object.notify()	0
+47	2	17	-	MBQueue.java	80	field-get(pc.bqueue.MBQueue.size)	0
+48	2	18	-	MBQueue.java	80	field-set(pc.bqueue.MBQueue.size)	0
+49	2	19	-	MBQueue.java	81	<monitorexit>	0
+50	2	20	-	BQueueTest.java	221	java.util.concurrent.atomic.AtomicInteger.set(int)	0
+51	1	24	-	MBQueue.java	55	field-get(pc.bqueue.MBQueue.size)	0
+52	2	21	-	MBQueue.java	62	<monitorenter>	0
+53	1	25	-	MBQueue.java	55	field-set(pc.bqueue.MBQueue.size)	0
+54	1	26	-	MBQueue.java	56	<monitorexit>	0
+55	1	27	-	MBQueue.java	41	<monitorenter>	0
+56	2	22	-	MBQueue.java	63	field-get(pc.bqueue.MBQueue.size)	0
+57	2	23	-	MBQueue.java	73	field-get(pc.bqueue.MBQueue.array)	0
+58	2	24	-	MBQueue.java	73	field-get(pc.bqueue.MBQueue.head)	0
+59	2	25	-	MBQueue.java	74	field-get(pc.bqueue.MBQueue.array)	0
+60	2	26	-	MBQueue.java	74	field-get(pc.bqueue.MBQueue.head)	0
+61	2	27	-	MBQueue.java	75	field-get(pc.bqueue.MBQueue.head)	0
+62	2	28	-	MBQueue.java	75	field-get(pc.bqueue.MBQueue.array)	0
+63	2	29	-	MBQueue.java	75	field-set(pc.bqueue.MBQueue.head)	0
+64	2	30	-	MBQueue.java	77	<monitorexit>	0
+65	2	31	-	MBQueue.java	78	<monitorenter>	0
+66	2	32	-	MBQueue.java	79	Object.notify()	0
+67	2	33	-	MBQueue.java	80	field-get(pc.bqueue.MBQueue.size)	0
+68	2	34	-	MBQueue.java	80	field-set(pc.bqueue.MBQueue.size)	0
+69	2	35	-	MBQueue.java	81	<monitorexit>	0
+70	2	36	-	<system>	0	<terminated>	0
+71	1	28	-	MBQueue.java	42	field-get(pc.bqueue.MBQueue.size)	0
+72	1	29	-	MBQueue.java	42	field-get(pc.bqueue.MBQueue.array)	0
+73	1	30	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.array)	0
+74	1	31	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.head)	0
+75	1	32	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.size)	0
+76	1	33	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.array)	0
+77	1	34	-	MBQueue.java	52	Object.notify()	0
+78	1	35	-	MBQueue.java	53	<monitorexit>	0
+79	1	36	-	MBQueue.java	54	<monitorenter>	0
+80	1	37	-	MBQueue.java	55	field-get(pc.bqueue.MBQueue.size)	0
+81	1	38	-	MBQueue.java	55	field-set(pc.bqueue.MBQueue.size)	0
+82	1	39	-	MBQueue.java	56	<monitorexit>	0
+83	1	40	-	MBQueue.java	41	<monitorenter>	0
+84	1	41	-	MBQueue.java	42	field-get(pc.bqueue.MBQueue.size)	0
+85	1	42	-	MBQueue.java	42	field-get(pc.bqueue.MBQueue.array)	0
+86	1	43	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.array)	0
+87	1	44	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.head)	0
+88	1	45	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.size)	0
+89	1	46	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.array)	0
+90	1	47	-	MBQueue.java	52	Object.notify()	0
+91	1	48	-	MBQueue.java	53	<monitorexit>	0
+92	1	49	-	MBQueue.java	54	<monitorenter>	0
+93	1	50	-	MBQueue.java	55	field-get(pc.bqueue.MBQueue.size)	0
+94	1	51	-	MBQueue.java	55	field-set(pc.bqueue.MBQueue.size)	0
+95	1	52	-	MBQueue.java	56	<monitorexit>	0
+96	1	53	-	MBQueue.java	0	<monitorenter>	0
+97	1	54	-	MBQueue.java	35	field-get(pc.bqueue.MBQueue.size)	0
+98	1	55	-	MBQueue.java	35	<monitorexit>	0
+99	1	56	-	BQueueTest.java	220	java.util.concurrent.atomic.AtomicInteger.set(int)	0
+100	1	57	-	<system>	0	<terminated>	0
+101	0	6	-	<system>	0	<terminated>	0
+# STACK TRACE FOR FAILURE
+java.lang.NullPointerException
+	at pc.bqueue.BQueueTest.lambda$test7$31(BQueueTest.java:221)
+	at org.cooperari.core.CThread.run(CThread.java:188)

@@ -1,0 +1,55 @@
+2020-06-07 15:15:59 | Trace for trial 1 of test1 written to '/Users/anamoreira/Documents/College/ProgCon/Trabalho-2/pc_projecto/./cdata/pc.bqueue.MBQueue.Test/test1.1.trace.log'.
+2020-06-07 15:15:59 | test1: executed 1 trials in 192 ms [failed : java.lang.NullPointerException]
+2020-06-07 15:15:59 | Trace for trial 2 of test2_1 written to '/Users/anamoreira/Documents/College/ProgCon/Trabalho-2/pc_projecto/./cdata/pc.bqueue.MBQueue.Test/test2_1.2.trace.log'.
+2020-06-07 15:15:59 | test2_1: executed 2 trials in 66 ms [failed : org.cooperari.errors.CWaitDeadlockError]
+2020-06-07 15:15:59 | Trace for trial 2 of test2_2 written to '/Users/anamoreira/Documents/College/ProgCon/Trabalho-2/pc_projecto/./cdata/pc.bqueue.MBQueue.Test/test2_2.2.trace.log'.
+2020-06-07 15:15:59 | test2_2: executed 2 trials in 97 ms [failed : java.lang.NullPointerException]
+2020-06-07 15:15:59 | Trace for trial 1 of test3_1 written to '/Users/anamoreira/Documents/College/ProgCon/Trabalho-2/pc_projecto/./cdata/pc.bqueue.MBQueue.Test/test3_1.1.trace.log'.
+2020-06-07 15:15:59 | test3_1: executed 1 trials in 41 ms [failed : org.cooperari.errors.CWaitDeadlockError]
+2020-06-07 15:15:59 | Trace for trial 1 of test3_2 written to '/Users/anamoreira/Documents/College/ProgCon/Trabalho-2/pc_projecto/./cdata/pc.bqueue.MBQueue.Test/test3_2.1.trace.log'.
+2020-06-07 15:15:59 | test3_2: executed 1 trials in 53 ms [failed : org.cooperari.errors.CWaitDeadlockError]
+2020-06-07 15:15:59 | Trace for trial 1 of test3_3 written to '/Users/anamoreira/Documents/College/ProgCon/Trabalho-2/pc_projecto/./cdata/pc.bqueue.MBQueue.Test/test3_3.1.trace.log'.
+2020-06-07 15:15:59 | test3_3: executed 1 trials in 62 ms [failed : org.cooperari.errors.CWaitDeadlockError]
+2020-06-07 15:15:59 | Trace for trial 2 of test4_1 written to '/Users/anamoreira/Documents/College/ProgCon/Trabalho-2/pc_projecto/./cdata/pc.bqueue.MBQueue.Test/test4_1.2.trace.log'.
+2020-06-07 15:15:59 | test4_1: executed 2 trials in 79 ms [failed : java.lang.AssertionError]
+2020-06-07 15:15:59 | Trace for trial 2 of test4_2 written to '/Users/anamoreira/Documents/College/ProgCon/Trabalho-2/pc_projecto/./cdata/pc.bqueue.MBQueue.Test/test4_2.2.trace.log'.
+2020-06-07 15:15:59 | test4_2: executed 2 trials in 97 ms [failed : java.lang.AssertionError]
+2020-06-07 15:15:59 | Trace for trial 1 of test5_1 written to '/Users/anamoreira/Documents/College/ProgCon/Trabalho-2/pc_projecto/./cdata/pc.bqueue.MBQueue.Test/test5_1.1.trace.log'.
+2020-06-07 15:15:59 | test5_1: executed 1 trials in 73 ms [failed : org.cooperari.errors.CWaitDeadlockError]
+2020-06-07 15:16:00 | Trace for trial 2 of test5_2 written to '/Users/anamoreira/Documents/College/ProgCon/Trabalho-2/pc_projecto/./cdata/pc.bqueue.MBQueue.Test/test5_2.2.trace.log'.
+2020-06-07 15:16:00 | test5_2: executed 2 trials in 181 ms [failed : org.cooperari.errors.CWaitDeadlockError]
+2020-06-07 15:16:00 | Trace for trial 3 of test5_3 written to '/Users/anamoreira/Documents/College/ProgCon/Trabalho-2/pc_projecto/./cdata/pc.bqueue.MBQueue.Test/test5_3.3.trace.log'.
+2020-06-07 15:16:00 | test5_3: executed 3 trials in 345 ms [failed : java.lang.NullPointerException]
+2020-06-07 15:16:00 | Trace for trial 1 of test6_1 written to '/Users/anamoreira/Documents/College/ProgCon/Trabalho-2/pc_projecto/./cdata/pc.bqueue.MBQueue.Test/test6_1.1.trace.log'.
+2020-06-07 15:16:00 | test6_1: executed 1 trials in 80 ms [failed : java.lang.NullPointerException]
+2020-06-07 15:16:00 | Trace for trial 1 of test6_2 written to '/Users/anamoreira/Documents/College/ProgCon/Trabalho-2/pc_projecto/./cdata/pc.bqueue.MBQueue.Test/test6_2.1.trace.log'.
+2020-06-07 15:16:00 | test6_2: executed 1 trials in 30 ms [failed : org.cooperari.errors.CWaitDeadlockError]
+2020-06-07 15:16:00 | Trace for trial 1 of test6_3 written to '/Users/anamoreira/Documents/College/ProgCon/Trabalho-2/pc_projecto/./cdata/pc.bqueue.MBQueue.Test/test6_3.1.trace.log'.
+2020-06-07 15:16:00 | test6_3: executed 1 trials in 86 ms [failed : java.lang.NullPointerException]
+2020-06-07 15:16:00 | Trace for trial 2 of test7_4 written to '/Users/anamoreira/Documents/College/ProgCon/Trabalho-2/pc_projecto/./cdata/pc.bqueue.MBQueue.Test/test7_4.2.trace.log'.
+2020-06-07 15:16:00 | test7_4: executed 2 trials in 204 ms [failed : java.lang.NullPointerException]
+2020-06-07 15:16:01 | Trace for trial 2 of test7_8 written to '/Users/anamoreira/Documents/College/ProgCon/Trabalho-2/pc_projecto/./cdata/pc.bqueue.MBQueue.Test/test7_8.2.trace.log'.
+2020-06-07 15:16:01 | test7_8: executed 2 trials in 268 ms [failed : java.lang.NullPointerException]
+2020-06-07 15:16:01 | Trace for trial 1 of test8 written to '/Users/anamoreira/Documents/College/ProgCon/Trabalho-2/pc_projecto/./cdata/pc.bqueue.MBQueue.Test/test8.1.trace.log'.
+2020-06-07 15:16:01 | test8: executed 1 trials in 124 ms [failed : org.cooperari.errors.CMultipleExceptionsError]
+2020-06-07 15:16:03 | test1: executed 25 trials in 2254 ms [passed]
+2020-06-07 15:16:03 | Trace for trial 1 of test2_1 written to '/Users/anamoreira/Documents/College/ProgCon/Trabalho-2/pc_projecto/./cdata/pc.bqueue.LFBQueue.Test/test2_1.1.trace.log'.
+2020-06-07 15:16:03 | test2_1: executed 1 trials in 38 ms [failed : java.lang.NullPointerException]
+2020-06-07 15:16:03 | Trace for trial 1 of test2_2 written to '/Users/anamoreira/Documents/College/ProgCon/Trabalho-2/pc_projecto/./cdata/pc.bqueue.LFBQueue.Test/test2_2.1.trace.log'.
+2020-06-07 15:16:03 | test2_2: executed 1 trials in 32 ms [failed : java.lang.NullPointerException]
+2020-06-07 15:16:03 | Trace for trial 1 of test3_1 written to '/Users/anamoreira/Documents/College/ProgCon/Trabalho-2/pc_projecto/./cdata/pc.bqueue.LFBQueue.Test/test3_1.1.trace.log'.
+2020-06-07 15:16:03 | test3_1: executed 1 trials in 61 ms [failed : org.cooperari.errors.CMultipleExceptionsError]
+2020-06-07 15:16:03 | Trace for trial 1 of test3_2 written to '/Users/anamoreira/Documents/College/ProgCon/Trabalho-2/pc_projecto/./cdata/pc.bqueue.LFBQueue.Test/test3_2.1.trace.log'.
+2020-06-07 15:16:03 | test3_2: executed 1 trials in 61 ms [failed : java.lang.NullPointerException]
+2020-06-07 15:16:03 | Trace for trial 1 of test3_3 written to '/Users/anamoreira/Documents/College/ProgCon/Trabalho-2/pc_projecto/./cdata/pc.bqueue.LFBQueue.Test/test3_3.1.trace.log'.
+2020-06-07 15:16:03 | test3_3: executed 1 trials in 77 ms [failed : java.lang.NullPointerException]
+2020-06-07 15:16:03 | Trace for trial 1 of test4_1 written to '/Users/anamoreira/Documents/College/ProgCon/Trabalho-2/pc_projecto/./cdata/pc.bqueue.LFBQueue.Test/test4_1.1.trace.log'.
+2020-06-07 15:16:03 | test4_1: executed 1 trials in 46 ms [failed : java.lang.NullPointerException]
+2020-06-07 15:16:03 | Trace for trial 1 of test4_2 written to '/Users/anamoreira/Documents/College/ProgCon/Trabalho-2/pc_projecto/./cdata/pc.bqueue.LFBQueue.Test/test4_2.1.trace.log'.
+2020-06-07 15:16:03 | test4_2: executed 1 trials in 32 ms [failed : java.lang.NullPointerException]
+2020-06-07 15:16:03 | Trace for trial 2 of test5_1 written to '/Users/anamoreira/Documents/College/ProgCon/Trabalho-2/pc_projecto/./cdata/pc.bqueue.LFBQueue.Test/test5_1.2.trace.log'.
+2020-06-07 15:16:03 | test5_1: executed 2 trials in 114 ms [failed : java.lang.NullPointerException]
+2020-06-07 15:16:04 | Trace for trial 2 of test5_2 written to '/Users/anamoreira/Documents/College/ProgCon/Trabalho-2/pc_projecto/./cdata/pc.bqueue.LFBQueue.Test/test5_2.2.trace.log'.
+2020-06-07 15:16:04 | test5_2: executed 2 trials in 124 ms [failed : org.cooperari.errors.CMultipleExceptionsError]
+2020-06-07 15:16:04 | Trace for trial 2 of test5_3 written to '/Users/anamoreira/Documents/College/ProgCon/Trabalho-2/pc_projecto/./cdata/pc.bqueue.LFBQueue.Test/test5_3.2.trace.log'.
+2020-06-07 15:16:04 | test5_3: executed 2 trials in 106 ms [failed : org.cooperari.errors.CMultipleExceptionsError]

@@ -1,0 +1,64 @@
+# THREADS
+TID	NAME	CLASS
+0	test4_2	org.cooperari.junit.CJUnitRunner$MethodRunner
+1	<1>	pc.bqueue.BQueueTest$$Lambda$20/1389559439
+2	<2>	pc.bqueue.BQueueTest$$Lambda$21/1544882853
+3	<3>	pc.bqueue.BQueueTest$$Lambda$22/489160862
+# EXECUTION TRACE
+#	TID	STEP	EVENT	SOURCE FILE	LINE	YIELD POINT	STAGE
+0	0	0	-	<system>	0	<started>	0
+1	0	1	-	MBQueue.java	23	field-set(pc.bqueue.MBQueue.head)	0
+2	0	2	-	MBQueue.java	24	field-set(pc.bqueue.MBQueue.size)	0
+3	0	3	-	MBQueue.java	25	field-set(pc.bqueue.MBQueue.array)	0
+4	0	4	-	BQueueTest.java	120	org.cooperari.CSystem.forkAndJoin(Runnable[])	0
+5	0	5	-	BQueueTest.java	120	org.cooperari.CSystem.forkAndJoin(Runnable[])	1
+6	1	0	-	<system>	0	<started>	0
+7	2	0	-	<system>	0	<started>	0
+8	3	0	-	<system>	0	<started>	0
+9	1	1	-	MBQueue.java	41	<monitorenter>	0
+10	3	1	-	MBQueue.java	0	<monitorenter>	0
+11	1	2	-	MBQueue.java	42	field-get(pc.bqueue.MBQueue.size)	0
+12	2	1	-	MBQueue.java	41	<monitorenter>	0
+13	1	3	-	MBQueue.java	42	field-get(pc.bqueue.MBQueue.array)	0
+14	1	4	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.array)	0
+15	1	5	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.head)	0
+16	1	6	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.size)	0
+17	1	7	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.array)	0
+18	1	8	-	MBQueue.java	52	Object.notify()	0
+19	1	9	-	MBQueue.java	53	<monitorexit>	0
+20	1	10	-	MBQueue.java	54	<monitorenter>	0
+21	2	2	-	MBQueue.java	42	field-get(pc.bqueue.MBQueue.size)	0
+22	2	3	-	MBQueue.java	42	field-get(pc.bqueue.MBQueue.array)	0
+23	2	4	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.array)	0
+24	2	5	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.head)	0
+25	2	6	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.size)	0
+26	2	7	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.array)	0
+27	2	8	-	MBQueue.java	52	Object.notify()	0
+28	2	9	-	MBQueue.java	53	<monitorexit>	0
+29	2	10	-	MBQueue.java	54	<monitorenter>	0
+30	3	2	-	MBQueue.java	35	field-get(pc.bqueue.MBQueue.size)	0
+31	3	3	-	MBQueue.java	35	<monitorexit>	0
+32	3	4	-	MBQueue.java	0	<monitorenter>	0
+33	1	11	-	MBQueue.java	55	field-get(pc.bqueue.MBQueue.size)	0
+34	1	12	-	MBQueue.java	55	field-set(pc.bqueue.MBQueue.size)	0
+35	1	13	-	MBQueue.java	56	<monitorexit>	0
+36	1	14	-	<system>	0	<terminated>	0
+37	2	11	-	MBQueue.java	55	field-get(pc.bqueue.MBQueue.size)	0
+38	2	12	-	MBQueue.java	55	field-set(pc.bqueue.MBQueue.size)	0
+39	2	13	-	MBQueue.java	56	<monitorexit>	0
+40	2	14	-	<system>	0	<terminated>	0
+41	3	5	-	MBQueue.java	35	field-get(pc.bqueue.MBQueue.size)	0
+42	3	6	-	MBQueue.java	35	<monitorexit>	0
+43	3	7	-	MBQueue.java	0	<monitorenter>	0
+44	3	8	-	MBQueue.java	30	field-get(pc.bqueue.MBQueue.array)	0
+45	3	9	-	MBQueue.java	30	<monitorexit>	0
+46	3	10	-	<system>	0	<terminated>	0
+47	0	6	-	<system>	0	<terminated>	0
+# STACK TRACE FOR FAILURE
+java.lang.AssertionError: expected:<1> but was:<2>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at pc.bqueue.BQueueTest.lambda$test4$21(BQueueTest.java:132)
+	at org.cooperari.core.CThread.run(CThread.java:188)

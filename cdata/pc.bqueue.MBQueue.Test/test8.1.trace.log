@@ -1,0 +1,191 @@
+# THREADS
+TID	NAME	CLASS
+0	test8	org.cooperari.junit.CJUnitRunner$MethodRunner
+1	<1>	pc.bqueue.BQueueTest$$Lambda$37/1912955513
+2	<2>	pc.bqueue.BQueueTest$$Lambda$38/2093126217
+3	<3>	pc.bqueue.BQueueTest$$Lambda$39/2029848841
+4	<4>	pc.bqueue.BQueueTest$$Lambda$40/1040160882
+5	<5>	pc.bqueue.BQueueTest$$Lambda$41/1689269022
+6	<6>	pc.bqueue.BQueueTest$$Lambda$42/201893147
+7	<7>	pc.bqueue.BQueueTest$$Lambda$43/481120466
+8	<8>	pc.bqueue.BQueueTest$$Lambda$44/1573939005
+# EXECUTION TRACE
+#	TID	STEP	EVENT	SOURCE FILE	LINE	YIELD POINT	STAGE
+0	0	0	-	<system>	0	<started>	0
+1	0	1	-	MBQueue.java	23	field-set(pc.bqueue.MBQueue.head)	0
+2	0	2	-	MBQueue.java	24	field-set(pc.bqueue.MBQueue.size)	0
+3	0	3	-	MBQueue.java	25	field-set(pc.bqueue.MBQueue.array)	0
+4	0	4	-	BQueueTest.java	266	org.cooperari.CSystem.forkAndJoin(Runnable[])	0
+5	0	5	-	BQueueTest.java	266	org.cooperari.CSystem.forkAndJoin(Runnable[])	1
+6	1	0	-	<system>	0	<started>	0
+7	2	0	-	<system>	0	<started>	0
+8	3	0	-	<system>	0	<started>	0
+9	4	0	-	<system>	0	<started>	0
+10	5	0	-	<system>	0	<started>	0
+11	6	0	-	<system>	0	<started>	0
+12	7	0	-	<system>	0	<started>	0
+13	8	0	-	<system>	0	<started>	0
+14	3	1	-	MBQueue.java	41	<monitorenter>	0
+15	5	1	-	MBQueue.java	62	<monitorenter>	0
+16	1	1	-	MBQueue.java	41	<monitorenter>	0
+17	5	2	-	MBQueue.java	63	field-get(pc.bqueue.MBQueue.size)	0
+18	5	3	-	MBQueue.java	66	Object.wait()	0
+19	8	1	-	MBQueue.java	62	<monitorenter>	0
+20	5	4	-	MBQueue.java	66	Object.wait()	1
+21	1	2	-	MBQueue.java	42	field-get(pc.bqueue.MBQueue.size)	0
+22	4	1	-	MBQueue.java	41	<monitorenter>	0
+23	7	1	-	MBQueue.java	62	<monitorenter>	0
+24	6	1	-	MBQueue.java	62	<monitorenter>	0
+25	2	1	-	MBQueue.java	41	<monitorenter>	0
+26	1	3	-	MBQueue.java	42	field-get(pc.bqueue.MBQueue.array)	0
+27	1	4	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.array)	0
+28	1	5	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.head)	0
+29	1	6	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.size)	0
+30	1	7	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.array)	0
+31	1	8	-	MBQueue.java	52	Object.notify()	0
+32	1	9	-	MBQueue.java	53	<monitorexit>	0
+33	1	10	-	MBQueue.java	54	<monitorenter>	0
+34	6	2	-	MBQueue.java	63	field-get(pc.bqueue.MBQueue.size)	0
+35	5	5	-	MBQueue.java	66	Object.wait()	2
+36	6	3	-	MBQueue.java	66	Object.wait()	0
+37	6	4	-	MBQueue.java	66	Object.wait()	1
+38	8	2	-	MBQueue.java	63	field-get(pc.bqueue.MBQueue.size)	0
+39	8	3	-	MBQueue.java	66	Object.wait()	0
+40	8	4	-	MBQueue.java	66	Object.wait()	1
+41	7	2	-	MBQueue.java	63	field-get(pc.bqueue.MBQueue.size)	0
+42	7	3	-	MBQueue.java	66	Object.wait()	0
+43	7	4	-	MBQueue.java	66	Object.wait()	1
+44	3	2	-	MBQueue.java	42	field-get(pc.bqueue.MBQueue.size)	0
+45	3	3	-	MBQueue.java	42	field-get(pc.bqueue.MBQueue.array)	0
+46	3	4	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.array)	0
+47	3	5	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.head)	0
+48	3	6	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.size)	0
+49	3	7	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.array)	0
+50	3	8	-	MBQueue.java	52	Object.notify()	0
+51	3	9	-	MBQueue.java	53	<monitorexit>	0
+52	8	5	-	MBQueue.java	66	Object.wait()	2
+53	3	10	-	MBQueue.java	54	<monitorenter>	0
+54	4	2	-	MBQueue.java	42	field-get(pc.bqueue.MBQueue.size)	0
+55	4	3	-	MBQueue.java	42	field-get(pc.bqueue.MBQueue.array)	0
+56	4	4	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.array)	0
+57	4	5	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.head)	0
+58	4	6	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.size)	0
+59	4	7	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.array)	0
+60	4	8	-	MBQueue.java	52	Object.notify()	0
+61	4	9	-	MBQueue.java	53	<monitorexit>	0
+62	4	10	-	MBQueue.java	54	<monitorenter>	0
+63	8	6	-	MBQueue.java	63	field-get(pc.bqueue.MBQueue.size)	0
+64	7	5	-	MBQueue.java	66	Object.wait()	2
+65	8	7	-	MBQueue.java	66	Object.wait()	0
+66	8	8	-	MBQueue.java	66	Object.wait()	1
+67	4	11	-	MBQueue.java	55	field-get(pc.bqueue.MBQueue.size)	0
+68	4	12	-	MBQueue.java	55	field-set(pc.bqueue.MBQueue.size)	0
+69	4	13	-	MBQueue.java	56	<monitorexit>	0
+70	4	14	-	<system>	0	<terminated>	0
+71	1	11	-	MBQueue.java	55	field-get(pc.bqueue.MBQueue.size)	0
+72	1	12	-	MBQueue.java	55	field-set(pc.bqueue.MBQueue.size)	0
+73	1	13	-	MBQueue.java	56	<monitorexit>	0
+74	1	14	-	<system>	0	<terminated>	0
+75	2	2	-	MBQueue.java	42	field-get(pc.bqueue.MBQueue.size)	0
+76	2	3	-	MBQueue.java	42	field-get(pc.bqueue.MBQueue.array)	0
+77	2	4	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.array)	0
+78	2	5	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.head)	0
+79	2	6	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.size)	0
+80	2	7	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.array)	0
+81	2	8	-	MBQueue.java	52	Object.notify()	0
+82	2	9	-	MBQueue.java	53	<monitorexit>	0
+83	8	9	-	MBQueue.java	66	Object.wait()	2
+84	2	10	-	MBQueue.java	54	<monitorenter>	0
+85	5	6	-	MBQueue.java	63	field-get(pc.bqueue.MBQueue.size)	0
+86	5	7	-	MBQueue.java	73	field-get(pc.bqueue.MBQueue.array)	0
+87	5	8	-	MBQueue.java	73	field-get(pc.bqueue.MBQueue.head)	0
+88	5	9	-	MBQueue.java	74	field-get(pc.bqueue.MBQueue.array)	0
+89	5	10	-	MBQueue.java	74	field-get(pc.bqueue.MBQueue.head)	0
+90	5	11	-	MBQueue.java	75	field-get(pc.bqueue.MBQueue.head)	0
+91	5	12	-	MBQueue.java	75	field-get(pc.bqueue.MBQueue.array)	0
+92	5	13	-	MBQueue.java	75	field-set(pc.bqueue.MBQueue.head)	0
+93	5	14	-	MBQueue.java	77	<monitorexit>	0
+94	5	15	-	MBQueue.java	78	<monitorenter>	0
+95	8	10	-	MBQueue.java	63	field-get(pc.bqueue.MBQueue.size)	0
+96	8	11	-	MBQueue.java	73	field-get(pc.bqueue.MBQueue.array)	0
+97	8	12	-	MBQueue.java	73	field-get(pc.bqueue.MBQueue.head)	0
+98	8	13	-	MBQueue.java	74	field-get(pc.bqueue.MBQueue.array)	0
+99	8	14	-	MBQueue.java	74	field-get(pc.bqueue.MBQueue.head)	0
+100	8	15	-	MBQueue.java	75	field-get(pc.bqueue.MBQueue.head)	0
+101	8	16	-	MBQueue.java	75	field-get(pc.bqueue.MBQueue.array)	0
+102	8	17	-	MBQueue.java	75	field-set(pc.bqueue.MBQueue.head)	0
+103	8	18	-	MBQueue.java	77	<monitorexit>	0
+104	8	19	-	MBQueue.java	78	<monitorenter>	0
+105	5	16	-	MBQueue.java	79	Object.notify()	0
+106	5	17	-	MBQueue.java	80	field-get(pc.bqueue.MBQueue.size)	0
+107	6	5	-	MBQueue.java	66	Object.wait()	2
+108	5	18	-	MBQueue.java	80	field-set(pc.bqueue.MBQueue.size)	0
+109	5	19	-	MBQueue.java	81	<monitorexit>	0
+110	5	20	-	BQueueTest.java	271	java.util.concurrent.atomic.AtomicInteger.set(int)	0
+111	8	20	-	MBQueue.java	79	Object.notify()	0
+112	5	21	-	<system>	0	<terminated>	0
+113	8	21	-	MBQueue.java	80	field-get(pc.bqueue.MBQueue.size)	0
+114	8	22	-	MBQueue.java	80	field-set(pc.bqueue.MBQueue.size)	0
+115	8	23	-	MBQueue.java	81	<monitorexit>	0
+116	8	24	-	<system>	0	<terminated>	0
+117	3	11	-	MBQueue.java	55	field-get(pc.bqueue.MBQueue.size)	0
+118	3	12	-	MBQueue.java	55	field-set(pc.bqueue.MBQueue.size)	0
+119	3	13	-	MBQueue.java	56	<monitorexit>	0
+120	3	14	-	<system>	0	<terminated>	0
+121	6	6	-	MBQueue.java	63	field-get(pc.bqueue.MBQueue.size)	0
+122	6	7	-	MBQueue.java	73	field-get(pc.bqueue.MBQueue.array)	0
+123	6	8	-	MBQueue.java	73	field-get(pc.bqueue.MBQueue.head)	0
+124	6	9	-	MBQueue.java	74	field-get(pc.bqueue.MBQueue.array)	0
+125	6	10	-	MBQueue.java	74	field-get(pc.bqueue.MBQueue.head)	0
+126	6	11	-	MBQueue.java	75	field-get(pc.bqueue.MBQueue.head)	0
+127	6	12	-	MBQueue.java	75	field-get(pc.bqueue.MBQueue.array)	0
+128	6	13	-	MBQueue.java	75	field-set(pc.bqueue.MBQueue.head)	0
+129	6	14	-	MBQueue.java	77	<monitorexit>	0
+130	6	15	-	MBQueue.java	78	<monitorenter>	0
+131	7	6	-	MBQueue.java	63	field-get(pc.bqueue.MBQueue.size)	0
+132	7	7	-	MBQueue.java	73	field-get(pc.bqueue.MBQueue.array)	0
+133	7	8	-	MBQueue.java	73	field-get(pc.bqueue.MBQueue.head)	0
+134	7	9	-	MBQueue.java	74	field-get(pc.bqueue.MBQueue.array)	0
+135	7	10	-	MBQueue.java	74	field-get(pc.bqueue.MBQueue.head)	0
+136	7	11	-	MBQueue.java	75	field-get(pc.bqueue.MBQueue.head)	0
+137	7	12	-	MBQueue.java	75	field-get(pc.bqueue.MBQueue.array)	0
+138	7	13	-	MBQueue.java	75	field-set(pc.bqueue.MBQueue.head)	0
+139	7	14	-	MBQueue.java	77	<monitorexit>	0
+140	7	15	-	MBQueue.java	78	<monitorenter>	0
+141	2	11	-	MBQueue.java	55	field-get(pc.bqueue.MBQueue.size)	0
+142	2	12	-	MBQueue.java	55	field-set(pc.bqueue.MBQueue.size)	0
+143	2	13	-	MBQueue.java	56	<monitorexit>	0
+144	2	14	-	<system>	0	<terminated>	0
+145	7	16	-	MBQueue.java	79	Object.notify()	0
+146	7	17	-	MBQueue.java	80	field-get(pc.bqueue.MBQueue.size)	0
+147	7	18	-	MBQueue.java	80	field-set(pc.bqueue.MBQueue.size)	0
+148	7	19	-	MBQueue.java	81	<monitorexit>	0
+149	7	20	-	<system>	0	<terminated>	0
+150	6	16	-	MBQueue.java	79	Object.notify()	0
+151	6	17	-	MBQueue.java	80	field-get(pc.bqueue.MBQueue.size)	0
+152	6	18	-	MBQueue.java	80	field-set(pc.bqueue.MBQueue.size)	0
+153	6	19	-	MBQueue.java	81	<monitorexit>	0
+154	6	20	-	BQueueTest.java	272	java.util.concurrent.atomic.AtomicInteger.set(int)	0
+155	6	21	-	<system>	0	<terminated>	0
+156	0	6	-	<system>	0	<terminated>	0
+# STACK TRACE FOR FAILURE
+org.cooperari.errors.CMultipleExceptionsError: 2 exceptions:
+ java.lang.NullPointerException
+ java.lang.NullPointerException
+
+	at org.cooperari.core.CUncaughtExceptionHandler.rethrowExceptionsIfAny(CUncaughtExceptionHandler.java:118)
+	at org.cooperari.feature.threadrunner.ThreadRunnerOperation.execute(ThreadRunnerOperation.java:117)
+	at org.cooperari.core.CThread.cYield(CThread.java:409)
+	at org.cooperari.feature.threadrunner.ThreadRunnerOperation.execute(ThreadRunnerOperation.java:61)
+	at org.cooperari.feature.threadrunner.YieldPoints.aroundCall(YieldPoints.java:43)
+	at pc.bqueue.BQueueTest.test8(BQueueTest.java:266)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.cooperari.junit.CJUnitRunner$MethodRunner.run(CJUnitRunner.java:226)
+	at org.cooperari.core.CThread.run(CThread.java:188)

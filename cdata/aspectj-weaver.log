@@ -1,0 +1,650 @@
+2020-06-07 15:15:58 | debug weaving 'pc.bqueue.RunTests'
+2020-06-07 15:15:58 | debug not weaving 'org.cooperari.CSystem'
+2020-06-07 15:15:58 | debug not weaving 'org.cooperari.errors.CNonCooperativeModeError'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runner.JUnitCore'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.TextListener'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runner.Runner'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runner.Describable'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.runners.JUnit38ClassRunner'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runner.manipulation.Filterable'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runner.manipulation.Sortable'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.JUnitSystem'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runner.notification.RunNotifier'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runner.notification.StoppedByUserException'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runner.notification.SynchronizedRunListener'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runner.notification.RunListener$ThreadSafe'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runner.Computer'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runners.model.RunnerBuilder'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runner.Computer$1'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runners.Suite'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runners.ParentRunner'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runner.Request'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.requests.FilterRequest'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.requests.SortingRequest'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.runners.ErrorReportingRunner'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.requests.ClassRequest'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runner.Request$1'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runners.model.InitializationError'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.builders.AllDefaultPossibilitiesBuilder'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.builders.SuiteMethodBuilder'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.builders.NullBuilder'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.AssumptionViolatedException'
+2020-06-07 15:15:58 | debug not weaving 'org.hamcrest.SelfDescribing'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runners.model.Statement'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runners.ParentRunner$2'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.rules.RunRules'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.runners.statements.RunAfters'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.runners.statements.RunBefores'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runner.manipulation.NoTestsRemainException'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runners.model.RunnerScheduler'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.validator.TestClassValidator'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.validator.AnnotationsValidator'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.validator.AnnotationsValidator$AnnotatableValidator'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.validator.AnnotationsValidator$ClassValidator'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.validator.AnnotationValidatorFactory'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.validator.AnnotationsValidator$MethodValidator'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.validator.AnnotationsValidator$FieldValidator'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.validator.PublicClassValidator'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.builders.IgnoredBuilder'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.builders.IgnoredClassRunner'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.builders.AnnotatedBuilder'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.runners.SuiteMethod'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.builders.JUnit3Builder'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.builders.JUnit4Builder'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runners.BlockJUnit4ClassRunner'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.Ignore'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runner.RunWith'
+2020-06-07 15:15:58 | debug not weaving 'com.sun.proxy.$Proxy2'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runners.Suite$SuiteClasses'
+2020-06-07 15:15:58 | debug weaving 'pc.bqueue.MBQueue$Test'
+2020-06-07 15:15:58 | debug weaving 'pc.bqueue.BQueueTest'
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void org.cooperari.CSystem.forkAndJoin(java.lang.Runnable[]))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:37) advised by around advice from 'org.cooperari.feature.threadrunner.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void org.cooperari.CSystem.forkAndJoin(java.lang.Runnable[]))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:43) advised by around advice from 'org.cooperari.feature.threadrunner.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:48) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:49) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:50) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void org.cooperari.CSystem.forkAndJoin(java.lang.Runnable[]))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:51) advised by around advice from 'org.cooperari.feature.threadrunner.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:57) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:57) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:57) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void org.cooperari.CSystem.forkAndJoin(java.lang.Runnable[]))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:64) advised by around advice from 'org.cooperari.feature.threadrunner.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:71) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:71) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void org.cooperari.CSystem.forkAndJoin(java.lang.Runnable[]))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:88) advised by around advice from 'org.cooperari.feature.threadrunner.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:97) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:97) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:97) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void org.cooperari.CSystem.forkAndJoin(java.lang.Runnable[]))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:120) advised by around advice from 'org.cooperari.feature.threadrunner.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:139) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:139) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void org.cooperari.CSystem.forkAndJoin(java.lang.Runnable[]))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:157) advised by around advice from 'org.cooperari.feature.threadrunner.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:164) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:164) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:164) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void org.cooperari.CSystem.forkAndJoin(java.lang.Runnable[]))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:188) advised by around advice from 'org.cooperari.feature.threadrunner.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:195) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:195) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:195) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void org.cooperari.CSystem.forkAndJoin(java.lang.Runnable[]))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:219) advised by around advice from 'org.cooperari.feature.threadrunner.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:224) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:224) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:225) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:226) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:227) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:227) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void org.cooperari.CSystem.forkAndJoin(java.lang.Runnable[]))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:228) advised by around advice from 'org.cooperari.feature.threadrunner.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:233) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:233) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:234) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:235) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:236) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:236) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void org.cooperari.CSystem.forkAndJoin(java.lang.Runnable[]))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:237) advised by around advice from 'org.cooperari.feature.threadrunner.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:242) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:242) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:243) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:244) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:245) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void org.cooperari.CSystem.forkAndJoin(java.lang.Runnable[]))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:266) advised by around advice from 'org.cooperari.feature.threadrunner.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:277) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:277) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:277) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:277) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void org.cooperari.CSystem.forkAndJoin(java.lang.Runnable[]))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:287) advised by around advice from 'org.cooperari.feature.threadrunner.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void org.cooperari.CSystem.forkAndJoin(java.lang.Runnable[]))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:310) advised by around advice from 'org.cooperari.feature.threadrunner.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:313) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:312) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:311) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:289) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:288) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:274) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:273) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:272) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:271) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:239) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:239) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:239) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:238) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:230) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:230) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:230) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:229) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:221) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:221) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:221) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:220) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:189) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:189) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:189) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:161) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:160) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:159) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:134) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:135) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:94) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:93) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:92) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:68) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:67) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:54) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:53) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:52) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:46) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:45) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.util.concurrent.atomic.AtomicInteger.set(int))' in Type 'pc.bqueue.BQueueTest' (BQueueTest.java:44) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | debug generating class 'pc.bqueue.BQueueTest$AjcClosure1'
+2020-06-07 15:15:58 | debug generating class 'pc.bqueue.BQueueTest$AjcClosure3'
+2020-06-07 15:15:58 | debug generating class 'pc.bqueue.BQueueTest$AjcClosure5'
+2020-06-07 15:15:58 | debug generating class 'pc.bqueue.BQueueTest$AjcClosure7'
+2020-06-07 15:15:58 | debug generating class 'pc.bqueue.BQueueTest$AjcClosure9'
+2020-06-07 15:15:58 | debug generating class 'pc.bqueue.BQueueTest$AjcClosure11'
+2020-06-07 15:15:58 | debug generating class 'pc.bqueue.BQueueTest$AjcClosure13'
+2020-06-07 15:15:58 | debug generating class 'pc.bqueue.BQueueTest$AjcClosure15'
+2020-06-07 15:15:58 | debug generating class 'pc.bqueue.BQueueTest$AjcClosure17'
+2020-06-07 15:15:58 | debug generating class 'pc.bqueue.BQueueTest$AjcClosure19'
+2020-06-07 15:15:58 | debug generating class 'pc.bqueue.BQueueTest$AjcClosure21'
+2020-06-07 15:15:58 | debug generating class 'pc.bqueue.BQueueTest$AjcClosure23'
+2020-06-07 15:15:58 | debug generating class 'pc.bqueue.BQueueTest$AjcClosure25'
+2020-06-07 15:15:58 | debug generating class 'pc.bqueue.BQueueTest$AjcClosure27'
+2020-06-07 15:15:58 | debug weaving 'pc.bqueue.LFBQueue$Test'
+2020-06-07 15:15:58 | debug not weaving 'com.sun.proxy.$Proxy3'
+2020-06-07 15:15:58 | debug not weaving 'org.cooperari.junit.CJUnitRunner'
+2020-06-07 15:15:58 | debug not weaving 'org.cooperari.config.CMaxTrials'
+2020-06-07 15:15:58 | debug not weaving 'com.sun.proxy.$Proxy4'
+2020-06-07 15:15:58 | debug not weaving 'org.cooperari.config.CRaceDetection'
+2020-06-07 15:15:58 | debug not weaving 'com.sun.proxy.$Proxy5'
+2020-06-07 15:15:58 | debug not weaving 'org.cooperari.config.CScheduling'
+2020-06-07 15:15:58 | debug not weaving 'org.cooperari.core.scheduling.CSchedulerFactory'
+2020-06-07 15:15:58 | debug not weaving 'org.cooperari.core.scheduling.CProgramStateFactory'
+2020-06-07 15:15:58 | debug not weaving 'org.cooperari.core.scheduling.CSchedulerFactory$1'
+2020-06-07 15:15:58 | debug not weaving 'org.cooperari.core.scheduling.CSchedulerFactory$2'
+2020-06-07 15:15:58 | debug not weaving 'org.cooperari.core.scheduling.CScheduler'
+2020-06-07 15:15:58 | debug not weaving 'org.cooperari.core.scheduling.Oblitus'
+2020-06-07 15:15:58 | debug not weaving 'org.cooperari.core.scheduling.Memini'
+2020-06-07 15:15:58 | debug not weaving 'org.cooperari.core.scheduling.CProgramStateFactory$1'
+2020-06-07 15:15:58 | debug not weaving 'org.cooperari.core.scheduling.CProgramStateFactory$2'
+2020-06-07 15:15:58 | debug not weaving 'org.cooperari.core.scheduling.CProgramState'
+2020-06-07 15:15:58 | debug not weaving 'com.sun.proxy.$Proxy6'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.FixMethodOrder'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runners.MethodSorters'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.MethodSorter'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.MethodSorter$1'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.MethodSorter$2'
+2020-06-07 15:15:58 | debug not weaving 'com.sun.proxy.$Proxy7'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.runners.statements.FailOnTimeout'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.runners.statements.ExpectException'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.runners.statements.InvokeMethod'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.runners.statements.Fail'
+2020-06-07 15:15:58 | debug not weaving 'org.cooperari.CTest'
+2020-06-07 15:15:58 | debug not weaving 'org.cooperari.junit.CJUnitRunner$1'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runners.ParentRunner$1'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runners.model.TestClass'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runners.model.Annotatable'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runners.model.FrameworkMember'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runners.model.FrameworkMethod'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runners.model.FrameworkField'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runners.model.TestClass$FieldComparator'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runners.model.TestClass$MethodComparator'
+2020-06-07 15:15:58 | debug cannot weave 'org.aspectj.lang.Signature'
+2020-06-07 15:15:58 | debug weaving 'pc.bqueue.BQueue'
+2020-06-07 15:15:58 | debug cannot weave 'org.aspectj.lang.JoinPoint'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.Test'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.Test$None'
+2020-06-07 15:15:58 | debug not weaving 'com.sun.proxy.$Proxy8'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.Before'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.BeforeClass'
+2020-06-07 15:15:58 | debug not weaving 'com.sun.proxy.$Proxy9'
+2020-06-07 15:15:58 | debug cannot weave 'org.aspectj.lang.JoinPoint$StaticPart'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.AfterClass'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator$RuleValidator'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator$Builder'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.ClassRule'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator$DeclaringClassMustBePublic'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator$MemberMustBeStatic'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator$MemberMustBePublic'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator$FieldMustBeATestRule'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.Rule'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator$MemberMustBeNonStaticOrAlsoClassRule'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator$FieldMustBeARule'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator$MethodMustBeATestRule'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.runners.rules.RuleMemberValidator$MethodMustBeARule'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.validator.ValidateWith'
+2020-06-07 15:15:58 | debug weaving 'pc.bqueue.MBQueue'
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicLong' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicLong) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:45::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicInteger) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:45::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicBoolean' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicBoolean) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:45::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicReferenceArray' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicReferenceArray) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:45::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicMarkableReference' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicMarkableReference) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:45::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.sun_misc_Unsafe' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(sun.misc.Unsafe) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:45::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicIntegerArray' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicIntegerArray) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:45::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicIntegerFieldUpdater' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicIntegerFieldUpdater) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:45::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicReference' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicReference) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:45::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicLongArray' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicLongArray) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:45::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicStampedReference' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicStampedReference) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:45::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicReferenceFieldUpdater' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicReferenceFieldUpdater) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:45::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicLongFieldUpdater' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicLongFieldUpdater) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:45::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicLong' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicLong) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:52::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicInteger) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:52::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicBoolean' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicBoolean) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:52::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicReferenceArray' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicReferenceArray) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:52::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicMarkableReference' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicMarkableReference) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:52::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.sun_misc_Unsafe' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(sun.misc.Unsafe) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:52::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicIntegerArray' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicIntegerArray) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:52::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicIntegerFieldUpdater' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicIntegerFieldUpdater) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:52::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicReference' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicReference) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:52::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicLongArray' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicLongArray) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:52::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicStampedReference' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicStampedReference) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:52::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicReferenceFieldUpdater' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicReferenceFieldUpdater) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:52::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicLongFieldUpdater' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicLongFieldUpdater) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:52::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicLong' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicLong) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:66::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicInteger) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:66::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicBoolean' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicBoolean) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:66::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicReferenceArray' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicReferenceArray) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:66::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicMarkableReference' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicMarkableReference) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:66::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.sun_misc_Unsafe' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(sun.misc.Unsafe) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:66::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicIntegerArray' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicIntegerArray) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:66::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicIntegerFieldUpdater' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicIntegerFieldUpdater) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:66::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicReference' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicReference) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:66::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicLongArray' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicLongArray) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:66::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicStampedReference' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicStampedReference) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:66::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicReferenceFieldUpdater' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicReferenceFieldUpdater) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:66::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicLongFieldUpdater' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicLongFieldUpdater) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:66::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicLong' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicLong) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:79::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicInteger) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:79::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicBoolean' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicBoolean) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:79::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicReferenceArray' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicReferenceArray) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:79::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicMarkableReference' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicMarkableReference) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:79::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.sun_misc_Unsafe' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(sun.misc.Unsafe) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:79::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicIntegerArray' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicIntegerArray) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:79::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicIntegerFieldUpdater' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicIntegerFieldUpdater) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:79::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicReference' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicReference) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:79::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicLongArray' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicLongArray) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:79::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicStampedReference' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicStampedReference) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:79::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicReferenceFieldUpdater' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicReferenceFieldUpdater) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:79::0
+2020-06-07 15:15:58 | warning at Type 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicLongFieldUpdater' (no debug info available)::0 does not match because declaring type is java.lang.Object, if match desired use target(java.util.concurrent.atomic.AtomicLongFieldUpdater) [Xlint:unmatchedSuperTypeInCall]
+	see also: pc/bqueue/MBQueue.java:79::0
+2020-06-07 15:15:58 | weaveinfo Join point 'field-set(int pc.bqueue.MBQueue.head)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:23) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-set(int pc.bqueue.MBQueue.head)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:23) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-set(int pc.bqueue.MBQueue.size)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:24) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-set(int pc.bqueue.MBQueue.size)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:24) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-set(java.lang.Object[] pc.bqueue.MBQueue.array)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:25) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-set(java.lang.Object[] pc.bqueue.MBQueue.array)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:25) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'lock(void java.lang.Object.<lock>(java.lang.Object))' in Type 'pc.bqueue.MBQueue' (MBQueue.java) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.lang.Object[] pc.bqueue.MBQueue.array)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:30) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.lang.Object[] pc.bqueue.MBQueue.array)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:30) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'unlock(void java.lang.Object.<unlock>(java.lang.Object))' in Type 'pc.bqueue.MBQueue' (MBQueue.java:30) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'lock(void java.lang.Object.<lock>(java.lang.Object))' in Type 'pc.bqueue.MBQueue' (MBQueue.java) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(int pc.bqueue.MBQueue.size)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:35) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(int pc.bqueue.MBQueue.size)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:35) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'unlock(void java.lang.Object.<unlock>(java.lang.Object))' in Type 'pc.bqueue.MBQueue' (MBQueue.java:35) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'lock(void java.lang.Object.<lock>(java.lang.Object))' in Type 'pc.bqueue.MBQueue' (MBQueue.java:41) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(int pc.bqueue.MBQueue.size)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:42) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(int pc.bqueue.MBQueue.size)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:42) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.lang.Object[] pc.bqueue.MBQueue.array)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:42) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.lang.Object[] pc.bqueue.MBQueue.array)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:42) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.lang.Object.wait())' in Type 'pc.bqueue.MBQueue' (MBQueue.java:45) advised by around advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.lang.Object[] pc.bqueue.MBQueue.array)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:51) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.lang.Object[] pc.bqueue.MBQueue.array)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:51) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(int pc.bqueue.MBQueue.head)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:51) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(int pc.bqueue.MBQueue.head)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:51) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(int pc.bqueue.MBQueue.size)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:51) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(int pc.bqueue.MBQueue.size)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:51) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.lang.Object[] pc.bqueue.MBQueue.array)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:51) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.lang.Object[] pc.bqueue.MBQueue.array)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:51) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.lang.Object.notify())' in Type 'pc.bqueue.MBQueue' (MBQueue.java:52) advised by around advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'unlock(void java.lang.Object.<unlock>(java.lang.Object))' in Type 'pc.bqueue.MBQueue' (MBQueue.java:53) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'lock(void java.lang.Object.<lock>(java.lang.Object))' in Type 'pc.bqueue.MBQueue' (MBQueue.java:54) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(int pc.bqueue.MBQueue.size)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:55) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(int pc.bqueue.MBQueue.size)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:55) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-set(int pc.bqueue.MBQueue.size)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:55) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-set(int pc.bqueue.MBQueue.size)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:55) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'unlock(void java.lang.Object.<unlock>(java.lang.Object))' in Type 'pc.bqueue.MBQueue' (MBQueue.java:56) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'lock(void java.lang.Object.<lock>(java.lang.Object))' in Type 'pc.bqueue.MBQueue' (MBQueue.java:62) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(int pc.bqueue.MBQueue.size)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:63) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(int pc.bqueue.MBQueue.size)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:63) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.lang.Object.wait())' in Type 'pc.bqueue.MBQueue' (MBQueue.java:66) advised by around advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.lang.Object[] pc.bqueue.MBQueue.array)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:73) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.lang.Object[] pc.bqueue.MBQueue.array)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:73) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(int pc.bqueue.MBQueue.head)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:73) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(int pc.bqueue.MBQueue.head)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:73) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.lang.Object[] pc.bqueue.MBQueue.array)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:74) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.lang.Object[] pc.bqueue.MBQueue.array)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:74) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(int pc.bqueue.MBQueue.head)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:74) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(int pc.bqueue.MBQueue.head)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:74) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(int pc.bqueue.MBQueue.head)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:75) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(int pc.bqueue.MBQueue.head)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:75) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.lang.Object[] pc.bqueue.MBQueue.array)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:75) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.lang.Object[] pc.bqueue.MBQueue.array)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:75) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-set(int pc.bqueue.MBQueue.head)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:75) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-set(int pc.bqueue.MBQueue.head)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:75) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'unlock(void java.lang.Object.<unlock>(java.lang.Object))' in Type 'pc.bqueue.MBQueue' (MBQueue.java:77) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'lock(void java.lang.Object.<lock>(java.lang.Object))' in Type 'pc.bqueue.MBQueue' (MBQueue.java:78) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(void java.lang.Object.notify())' in Type 'pc.bqueue.MBQueue' (MBQueue.java:79) advised by around advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(int pc.bqueue.MBQueue.size)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:80) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(int pc.bqueue.MBQueue.size)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:80) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-set(int pc.bqueue.MBQueue.size)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:80) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-set(int pc.bqueue.MBQueue.size)' in Type 'pc.bqueue.MBQueue' (MBQueue.java:80) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'unlock(void java.lang.Object.<unlock>(java.lang.Object))' in Type 'pc.bqueue.MBQueue' (MBQueue.java:81) advised by before advice from 'org.cooperari.feature.monitor.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | debug generating class 'pc.bqueue.MBQueue$AjcClosure1'
+2020-06-07 15:15:58 | debug generating class 'pc.bqueue.MBQueue$AjcClosure3'
+2020-06-07 15:15:58 | debug generating class 'pc.bqueue.MBQueue$AjcClosure5'
+2020-06-07 15:15:58 | debug generating class 'pc.bqueue.MBQueue$AjcClosure7'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.Assert'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.ComparisonFailure'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.After'
+2020-06-07 15:15:58 | debug weaving 'pc.bqueue.LFBQueue'
+2020-06-07 15:15:58 | weaveinfo Join point 'field-set(java.util.concurrent.atomic.AtomicInteger pc.bqueue.LFBQueue.head)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:29) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-set(java.util.concurrent.atomic.AtomicInteger pc.bqueue.LFBQueue.head)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:29) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-set(java.util.concurrent.atomic.AtomicInteger pc.bqueue.LFBQueue.tail)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:30) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-set(java.util.concurrent.atomic.AtomicInteger pc.bqueue.LFBQueue.tail)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:30) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-set(java.lang.Object[] pc.bqueue.LFBQueue.array)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:31) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-set(java.lang.Object[] pc.bqueue.LFBQueue.array)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:31) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-set(boolean pc.bqueue.LFBQueue.useBackoff)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:32) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-set(boolean pc.bqueue.LFBQueue.useBackoff)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:32) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-set(pc.bqueue.Rooms pc.bqueue.LFBQueue.rooms)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:33) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-set(pc.bqueue.Rooms pc.bqueue.LFBQueue.rooms)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:33) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.lang.Object[] pc.bqueue.LFBQueue.array)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:38) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.lang.Object[] pc.bqueue.LFBQueue.array)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:38) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.util.concurrent.atomic.AtomicInteger pc.bqueue.LFBQueue.tail)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:43) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.util.concurrent.atomic.AtomicInteger pc.bqueue.LFBQueue.tail)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:43) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:43) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.util.concurrent.atomic.AtomicInteger pc.bqueue.LFBQueue.head)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:43) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.util.concurrent.atomic.AtomicInteger pc.bqueue.LFBQueue.head)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:43) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:43) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.util.concurrent.atomic.AtomicInteger pc.bqueue.LFBQueue.tail)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:50) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.util.concurrent.atomic.AtomicInteger pc.bqueue.LFBQueue.tail)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:50) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.getAndIncrement())' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:50) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.util.concurrent.atomic.AtomicInteger pc.bqueue.LFBQueue.head)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:51) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.util.concurrent.atomic.AtomicInteger pc.bqueue.LFBQueue.head)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:51) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:51) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.lang.Object[] pc.bqueue.LFBQueue.array)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:51) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.lang.Object[] pc.bqueue.LFBQueue.array)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:51) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.lang.Object[] pc.bqueue.LFBQueue.array)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:52) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.lang.Object[] pc.bqueue.LFBQueue.array)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:52) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.lang.Object[] pc.bqueue.LFBQueue.array)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:52) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.lang.Object[] pc.bqueue.LFBQueue.array)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:52) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.util.concurrent.atomic.AtomicInteger pc.bqueue.LFBQueue.tail)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:56) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.util.concurrent.atomic.AtomicInteger pc.bqueue.LFBQueue.tail)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:56) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.getAndDecrement())' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:56) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.util.concurrent.atomic.AtomicInteger pc.bqueue.LFBQueue.head)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:65) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.util.concurrent.atomic.AtomicInteger pc.bqueue.LFBQueue.head)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:65) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.getAndIncrement())' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:65) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.util.concurrent.atomic.AtomicInteger pc.bqueue.LFBQueue.tail)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:66) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.util.concurrent.atomic.AtomicInteger pc.bqueue.LFBQueue.tail)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:66) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.get())' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:66) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.lang.Object[] pc.bqueue.LFBQueue.array)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:67) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.lang.Object[] pc.bqueue.LFBQueue.array)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:67) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.lang.Object[] pc.bqueue.LFBQueue.array)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:68) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.lang.Object[] pc.bqueue.LFBQueue.array)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:68) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.lang.Object[] pc.bqueue.LFBQueue.array)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:69) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.lang.Object[] pc.bqueue.LFBQueue.array)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:69) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.util.concurrent.atomic.AtomicInteger pc.bqueue.LFBQueue.head)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:73) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'field-get(java.util.concurrent.atomic.AtomicInteger pc.bqueue.LFBQueue.head)' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:73) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:15:58 | weaveinfo Join point 'method-call(int java.util.concurrent.atomic.AtomicInteger.getAndDecrement())' in Type 'pc.bqueue.LFBQueue' (LFBQueue.java:73) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicInteger' (ACustomYieldPoint.java)
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runner.Result'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runner.Result$Listener'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runner.Result$SerializedForm'
+2020-06-07 15:15:58 | debug not weaving 'com.sun.proxy.$Proxy11'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runner.Description'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runner.notification.RunNotifier$1'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runner.notification.RunNotifier$SafeNotifier'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.internal.runners.model.EachTestNotifier'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.rules.TestRule'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runners.ParentRunner$3'
+2020-06-07 15:15:58 | debug not weaving 'org.cooperari.junit.CPreemptiveOnly'
+2020-06-07 15:15:58 | debug not weaving 'org.junit.runner.notification.RunNotifier$3'
+2020-06-07 15:15:58 | debug not weaving 'org.cooperari.junit.CJUnitRunner$MethodRunner'
+2020-06-07 15:15:58 | debug not weaving 'org.cooperari.errors.CCheckedExceptionError'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.runtime.reflect.Factory'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.lang.JoinPoint$EnclosingStaticPart'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.lang.reflect.SourceLocation'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.runtime.reflect.MethodSignatureImpl'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.lang.reflect.MethodSignature'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.lang.reflect.CodeSignature'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.lang.reflect.MemberSignature'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.runtime.reflect.CodeSignatureImpl'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.runtime.reflect.MemberSignatureImpl'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.runtime.reflect.SignatureImpl'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.runtime.reflect.ConstructorSignatureImpl'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.lang.reflect.ConstructorSignature'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.runtime.reflect.UnlockSignatureImpl'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.lang.reflect.UnlockSignature'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.runtime.reflect.LockSignatureImpl'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.lang.reflect.LockSignature'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.runtime.reflect.AdviceSignatureImpl'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.lang.reflect.AdviceSignature'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.runtime.reflect.InitializerSignatureImpl'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.lang.reflect.InitializerSignature'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.runtime.reflect.CatchClauseSignatureImpl'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.lang.reflect.CatchClauseSignature'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.runtime.reflect.FieldSignatureImpl'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.lang.reflect.FieldSignature'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.runtime.reflect.SignatureImpl$Cache'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.runtime.reflect.JoinPointImpl$StaticPartImpl'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.runtime.reflect.SourceLocationImpl'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.CSession'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.CTestResult'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.errors.CHotspotError'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.CRuntime'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.CConfiguration'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.config.CBaseConfiguration'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.feature.CAllFeatures'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.feature.CFeature'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.feature.atomic.CAtomicObjectsFeature'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.feature.data.CDataAccessFeature'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.feature.monitor.CMonitorFeature'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.feature.hotspots.CHotspotFeature'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.feature.thread.CThreadFeature'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.feature.threadrunner.CThreadRunnerFeature'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.feature.unsafe.CSunMiscUnsafeFeature'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.feature.monitor.MonitorPool'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.config.CDetectResourceDeadlocks'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.config.CInstrument'
+2020-06-07 15:15:59 | debug not weaving 'com.sun.proxy.$Proxy12'
+2020-06-07 15:15:59 | debug not weaving 'com.sun.proxy.$Proxy13'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.config.CTimeLimit'
+2020-06-07 15:15:59 | debug not weaving 'com.sun.proxy.$Proxy14'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.config.CGenerateCoverageReports'
+2020-06-07 15:15:59 | debug not weaving 'com.sun.proxy.$Proxy15'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.config.CAlways'
+2020-06-07 15:15:59 | debug not weaving 'com.sun.proxy.$Proxy16'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.config.CNever'
+2020-06-07 15:15:59 | debug not weaving 'com.sun.proxy.$Proxy17'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.config.CSometimes'
+2020-06-07 15:15:59 | debug not weaving 'com.sun.proxy.$Proxy18'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.config.CTraceOptions'
+2020-06-07 15:15:59 | debug not weaving 'com.sun.proxy.$Proxy19'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.feature.monitor.DeadlockDetector'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.feature.monitor.CResourceDeadlockError'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.errors.CDeadlockError'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.util.ResourceGraph'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.feature.hotspots.HotspotHandler'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.CTrace'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.CEngine'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.errors.CWaitDeadlockError'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.CUncaughtExceptionHandler'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.errors.CMultipleExceptionsError'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.CThreadMappings'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.CThread'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.scheduling.CThreadHandle'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.scheduling.CProgramState$CElement'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.COperation'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.CThread$1'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.CThread$2'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.CThread$3'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.CThread$4'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.CThread$5'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.CThread$Die'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.COperation$1'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.scheduling.CThreadLocation'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.CTrace$ThreadInfo'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.CTrace$TraceItem'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.CThreadState'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.CEngine$1'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.scheduling.CRawProgramState'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.util.CRawTuple'
+2020-06-07 15:15:59 | debug not weaving 'org.junit.runners.model.FrameworkMethod$1'
+2020-06-07 15:15:59 | debug not weaving 'org.junit.internal.runners.model.ReflectiveCallable'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.CThread$6'
+2020-06-07 15:15:59 | debug not weaving 'pc.util.UnexpectedException'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.runtime.internal.Conversions'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.runtime.reflect.JoinPointImpl'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.lang.ProceedingJoinPoint'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.feature.data.YieldPoints'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.lang.NoAspectBoundException'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.runtime.reflect.StringMaker'
+2020-06-07 15:15:59 | debug cannot weave 'org.aspectj.runtime.reflect.SignatureImpl$CacheImpl'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.feature.data.Write'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.feature.data.DataOperation'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.feature.data.RaceDetector'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.feature.threadrunner.YieldPoints'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.feature.threadrunner.ThreadRunnerOperation'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.feature.monitor.YieldPoints'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.feature.monitor.Enter'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.feature.monitor.MonitorOperation'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.feature.monitor.Monitor'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.feature.data.Read'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.feature.monitor.Notify'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.feature.monitor.Exit'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.CustomYieldPointOperation'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.util.CReport'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.CSession$CTestResultImpl'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.junit.CTestResultPool'
+2020-06-07 15:15:59 | debug not weaving 'org.junit.runner.notification.Failure'
+2020-06-07 15:15:59 | debug not weaving 'org.junit.runner.notification.RunNotifier$4'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.feature.monitor.Wait'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.feature.monitor.Wait$ReleaseOwnership'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.feature.monitor.Wait$AwaitNotification'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.feature.monitor.Wait$RegainOwnership'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.util.UnsafeVMOperations'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.CBlockingOperationEvent'
+2020-06-07 15:15:59 | debug not weaving 'org.cooperari.core.CTrace$EventType'
+2020-06-07 15:16:01 | debug not weaving 'org.junit.runner.notification.RunNotifier$6'
+2020-06-07 15:16:01 | debug weaving 'pc.bqueue.Rooms'
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(pc.bqueue.Rooms$State pc.bqueue.Rooms$State.FREE)' in Type 'pc.bqueue.Rooms' (Rooms.java:24) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(pc.bqueue.Rooms$State pc.bqueue.Rooms$State.FREE)' in Type 'pc.bqueue.Rooms' (Rooms.java:24) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-set(java.util.concurrent.atomic.AtomicReference pc.bqueue.Rooms.currentState)' in Type 'pc.bqueue.Rooms' (Rooms.java:24) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-set(java.util.concurrent.atomic.AtomicReference pc.bqueue.Rooms.currentState)' in Type 'pc.bqueue.Rooms' (Rooms.java:24) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-set(int pc.bqueue.Rooms.numberOfRooms)' in Type 'pc.bqueue.Rooms' (Rooms.java:38) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-set(int pc.bqueue.Rooms.numberOfRooms)' in Type 'pc.bqueue.Rooms' (Rooms.java:38) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-set(boolean pc.bqueue.Rooms.useBackoff)' in Type 'pc.bqueue.Rooms' (Rooms.java:39) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-set(boolean pc.bqueue.Rooms.useBackoff)' in Type 'pc.bqueue.Rooms' (Rooms.java:39) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(int pc.bqueue.Rooms.numberOfRooms)' in Type 'pc.bqueue.Rooms' (Rooms.java:47) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(int pc.bqueue.Rooms.numberOfRooms)' in Type 'pc.bqueue.Rooms' (Rooms.java:47) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(int pc.bqueue.Rooms.numberOfRooms)' in Type 'pc.bqueue.Rooms' (Rooms.java:55) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(int pc.bqueue.Rooms.numberOfRooms)' in Type 'pc.bqueue.Rooms' (Rooms.java:55) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(java.util.concurrent.atomic.AtomicReference pc.bqueue.Rooms.currentState)' in Type 'pc.bqueue.Rooms' (Rooms.java:61) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(java.util.concurrent.atomic.AtomicReference pc.bqueue.Rooms.currentState)' in Type 'pc.bqueue.Rooms' (Rooms.java:61) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'method-call(java.lang.Object java.util.concurrent.atomic.AtomicReference.get())' in Type 'pc.bqueue.Rooms' (Rooms.java:61) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicReference' (ACustomYieldPoint.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(int pc.bqueue.Rooms$State.room)' in Type 'pc.bqueue.Rooms' (Rooms.java:61) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(int pc.bqueue.Rooms$State.room)' in Type 'pc.bqueue.Rooms' (Rooms.java:61) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(int pc.bqueue.Rooms.numberOfRooms)' in Type 'pc.bqueue.Rooms' (Rooms.java:71) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(int pc.bqueue.Rooms.numberOfRooms)' in Type 'pc.bqueue.Rooms' (Rooms.java:71) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(java.util.concurrent.atomic.AtomicReference pc.bqueue.Rooms.currentState)' in Type 'pc.bqueue.Rooms' (Rooms.java:85) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(java.util.concurrent.atomic.AtomicReference pc.bqueue.Rooms.currentState)' in Type 'pc.bqueue.Rooms' (Rooms.java:85) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'method-call(java.lang.Object java.util.concurrent.atomic.AtomicReference.get())' in Type 'pc.bqueue.Rooms' (Rooms.java:85) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicReference' (ACustomYieldPoint.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(java.util.concurrent.atomic.AtomicReference pc.bqueue.Rooms.currentState)' in Type 'pc.bqueue.Rooms' (Rooms.java:87) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(java.util.concurrent.atomic.AtomicReference pc.bqueue.Rooms.currentState)' in Type 'pc.bqueue.Rooms' (Rooms.java:87) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'method-call(boolean java.util.concurrent.atomic.AtomicReference.compareAndSet(java.lang.Object, java.lang.Object))' in Type 'pc.bqueue.Rooms' (Rooms.java:87) advised by before advice from 'org.cooperari.inline_aspects.java_util_concurrent_atomic_AtomicReference' (ACustomYieldPoint.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(boolean pc.bqueue.Rooms.useBackoff)' in Type 'pc.bqueue.Rooms' (Rooms.java:90) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(boolean pc.bqueue.Rooms.useBackoff)' in Type 'pc.bqueue.Rooms' (Rooms.java:90) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(boolean pc.bqueue.Rooms.useBackoff)' in Type 'pc.bqueue.Rooms' (Rooms.java:94) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(boolean pc.bqueue.Rooms.useBackoff)' in Type 'pc.bqueue.Rooms' (Rooms.java:94) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | debug weaving 'pc.bqueue.Rooms$State'
+2020-06-07 15:16:01 | weaveinfo Join point 'field-set(int pc.bqueue.Rooms$State.room)' in Type 'pc.bqueue.Rooms$State' (Rooms.java:107) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-set(int pc.bqueue.Rooms$State.room)' in Type 'pc.bqueue.Rooms$State' (Rooms.java:107) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-set(int pc.bqueue.Rooms$State.count)' in Type 'pc.bqueue.Rooms$State' (Rooms.java:108) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-set(int pc.bqueue.Rooms$State.count)' in Type 'pc.bqueue.Rooms$State' (Rooms.java:108) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(pc.bqueue.Rooms$State pc.bqueue.Rooms$State.FREE)' in Type 'pc.bqueue.Rooms$State' (Rooms.java:113) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(pc.bqueue.Rooms$State pc.bqueue.Rooms$State.FREE)' in Type 'pc.bqueue.Rooms$State' (Rooms.java:113) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(int pc.bqueue.Rooms$State.room)' in Type 'pc.bqueue.Rooms$State' (Rooms.java:115) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(int pc.bqueue.Rooms$State.room)' in Type 'pc.bqueue.Rooms$State' (Rooms.java:115) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(int pc.bqueue.Rooms$State.count)' in Type 'pc.bqueue.Rooms$State' (Rooms.java:116) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(int pc.bqueue.Rooms$State.count)' in Type 'pc.bqueue.Rooms$State' (Rooms.java:116) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(int pc.bqueue.Rooms$State.room)' in Type 'pc.bqueue.Rooms$State' (Rooms.java:125) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(int pc.bqueue.Rooms$State.room)' in Type 'pc.bqueue.Rooms$State' (Rooms.java:125) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(int pc.bqueue.Rooms$State.count)' in Type 'pc.bqueue.Rooms$State' (Rooms.java:128) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(int pc.bqueue.Rooms$State.count)' in Type 'pc.bqueue.Rooms$State' (Rooms.java:128) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(pc.bqueue.Rooms$State pc.bqueue.Rooms$State.FREE)' in Type 'pc.bqueue.Rooms$State' (Rooms.java:128) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(pc.bqueue.Rooms$State pc.bqueue.Rooms$State.FREE)' in Type 'pc.bqueue.Rooms$State' (Rooms.java:128) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(int pc.bqueue.Rooms$State.count)' in Type 'pc.bqueue.Rooms$State' (Rooms.java:128) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(int pc.bqueue.Rooms$State.count)' in Type 'pc.bqueue.Rooms$State' (Rooms.java:128) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(int pc.bqueue.Rooms$State.room)' in Type 'pc.bqueue.Rooms$State' (Rooms.java:133) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(int pc.bqueue.Rooms$State.room)' in Type 'pc.bqueue.Rooms$State' (Rooms.java:133) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(int pc.bqueue.Rooms$State.count)' in Type 'pc.bqueue.Rooms$State' (Rooms.java:133) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-get(int pc.bqueue.Rooms$State.count)' in Type 'pc.bqueue.Rooms$State' (Rooms.java:133) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-set(pc.bqueue.Rooms$State pc.bqueue.Rooms$State.FREE)' in Type 'pc.bqueue.Rooms$State' (Rooms.java:102) advised by before advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:01 | weaveinfo Join point 'field-set(pc.bqueue.Rooms$State pc.bqueue.Rooms$State.FREE)' in Type 'pc.bqueue.Rooms$State' (Rooms.java:102) advised by after advice from 'org.cooperari.feature.data.YieldPoints' (YieldPoints.java)
+2020-06-07 15:16:03 | debug not weaving 'org.junit.runner.notification.RunNotifier$7'
