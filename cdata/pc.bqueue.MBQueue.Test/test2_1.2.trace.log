@@ -1,0 +1,74 @@
+# THREADS
+TID	NAME	CLASS
+0	test2_1	org.cooperari.junit.CJUnitRunner$MethodRunner
+1	<1>	pc.bqueue.BQueueTest$$Lambda$10/1977536937
+2	<2>	pc.bqueue.BQueueTest$$Lambda$11/2065244514
+3	<3>	pc.bqueue.BQueueTest$$Lambda$12/2133244633
+4	<4>	pc.bqueue.BQueueTest$$Lambda$13/975448921
+# EXECUTION TRACE
+#	TID	STEP	EVENT	SOURCE FILE	LINE	YIELD POINT	STAGE
+0	0	0	-	<system>	0	<started>	0
+1	0	1	-	MBQueue.java	23	field-set(pc.bqueue.MBQueue.head)	0
+2	0	2	-	MBQueue.java	24	field-set(pc.bqueue.MBQueue.size)	0
+3	0	3	-	MBQueue.java	25	field-set(pc.bqueue.MBQueue.array)	0
+4	0	4	-	BQueueTest.java	64	org.cooperari.CSystem.forkAndJoin(Runnable[])	0
+5	0	5	-	BQueueTest.java	64	org.cooperari.CSystem.forkAndJoin(Runnable[])	1
+6	1	0	-	<system>	0	<started>	0
+7	2	0	-	<system>	0	<started>	0
+8	3	0	-	<system>	0	<started>	0
+9	4	0	-	<system>	0	<started>	0
+10	1	1	-	MBQueue.java	41	<monitorenter>	0
+11	1	2	-	MBQueue.java	42	field-get(pc.bqueue.MBQueue.size)	0
+12	2	1	-	MBQueue.java	41	<monitorenter>	0
+13	4	1	-	MBQueue.java	62	<monitorenter>	0
+14	1	3	-	MBQueue.java	42	field-get(pc.bqueue.MBQueue.array)	0
+15	3	1	-	MBQueue.java	62	<monitorenter>	0
+16	1	4	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.array)	0
+17	1	5	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.head)	0
+18	1	6	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.size)	0
+19	1	7	-	MBQueue.java	51	field-get(pc.bqueue.MBQueue.array)	0
+20	1	8	-	MBQueue.java	52	Object.notify()	0
+21	1	9	-	MBQueue.java	53	<monitorexit>	0
+22	1	10	-	MBQueue.java	54	<monitorenter>	0
+23	4	2	-	MBQueue.java	63	field-get(pc.bqueue.MBQueue.size)	0
+24	4	3	-	MBQueue.java	66	Object.wait()	0
+25	4	4	-	MBQueue.java	66	Object.wait()	1
+26	1	11	-	MBQueue.java	55	field-get(pc.bqueue.MBQueue.size)	0
+27	1	12	-	MBQueue.java	55	field-set(pc.bqueue.MBQueue.size)	0
+28	1	13	-	MBQueue.java	56	<monitorexit>	0
+29	1	14	-	<system>	0	<terminated>	0
+30	2	2	-	MBQueue.java	42	field-get(pc.bqueue.MBQueue.size)	0
+31	2	3	-	MBQueue.java	42	field-get(pc.bqueue.MBQueue.array)	0
+32	2	4	-	MBQueue.java	45	Object.wait()	0
+33	2	5	-	MBQueue.java	45	Object.wait()	1
+34	3	2	-	MBQueue.java	63	field-get(pc.bqueue.MBQueue.size)	0
+35	3	3	-	MBQueue.java	73	field-get(pc.bqueue.MBQueue.array)	0
+36	3	4	-	MBQueue.java	73	field-get(pc.bqueue.MBQueue.head)	0
+37	3	5	-	MBQueue.java	74	field-get(pc.bqueue.MBQueue.array)	0
+38	3	6	-	MBQueue.java	74	field-get(pc.bqueue.MBQueue.head)	0
+39	3	7	-	MBQueue.java	75	field-get(pc.bqueue.MBQueue.head)	0
+40	3	8	-	MBQueue.java	75	field-get(pc.bqueue.MBQueue.array)	0
+41	3	9	-	MBQueue.java	75	field-set(pc.bqueue.MBQueue.head)	0
+42	3	10	-	MBQueue.java	77	<monitorexit>	0
+43	3	11	-	MBQueue.java	78	<monitorenter>	0
+44	3	12	-	MBQueue.java	79	Object.notify()	0
+45	3	13	-	MBQueue.java	80	field-get(pc.bqueue.MBQueue.size)	0
+46	4	5	-	MBQueue.java	66	Object.wait()	2
+47	3	14	-	MBQueue.java	80	field-set(pc.bqueue.MBQueue.size)	0
+48	3	15	-	MBQueue.java	81	<monitorexit>	0
+49	3	16	-	BQueueTest.java	67	java.util.concurrent.atomic.AtomicInteger.set(int)	0
+50	3	17	-	<system>	0	<terminated>	0
+51	4	6	-	MBQueue.java	63	field-get(pc.bqueue.MBQueue.size)	0
+52	4	7	-	MBQueue.java	66	Object.wait()	0
+53	4	8	-	MBQueue.java	66	Object.wait()	1
+54	0	5	D	BQueueTest.java	64	org.cooperari.CSystem.forkAndJoin(Runnable[])	1
+55	2	5	D	MBQueue.java	45	Object.wait()	1
+56	4	8	D	MBQueue.java	66	Object.wait()	1
+57	2	6	-	MBQueue.java	53	<monitorexit>	0
+58	2	7	-	<system>	0	<terminated>	0
+59	4	9	-	MBQueue.java	77	<monitorexit>	0
+60	4	10	-	<system>	0	<terminated>	0
+61	0	6	-	<system>	0	<terminated>	0
+# STACK TRACE FOR FAILURE
+org.cooperari.errors.CWaitDeadlockError: Alive threads waiting indefinitely : { test2_1/BQueueTest.java:64  <2>/MBQueue.java:45  <4>/MBQueue.java:66 }
+	at org.cooperari.core.CEngine.run(CEngine.java:248)
