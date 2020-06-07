@@ -72,9 +72,13 @@ public class LFBQueue<E> implements BQueue<E> {
         // "undo"
         tail.getAndDecrement();
         rooms.leave(RoomType.Add.getId());
+        if (useBackoff)
+          Backoff.delay();
       }
     }
     rooms.leave(RoomType.Add.getId());
+    if (useBackoff)
+      Backoff.reset();
   }
 
   @Override
@@ -92,9 +96,13 @@ public class LFBQueue<E> implements BQueue<E> {
         // "undo"
         head.getAndDecrement();
         rooms.leave(RoomType.Remove.getId());
+        if (useBackoff)
+          Backoff.delay();
       }
     }
     rooms.leave(RoomType.Remove.getId());
+    if (useBackoff)
+      Backoff.reset();
     return elem;
   }
 
@@ -104,7 +112,7 @@ public class LFBQueue<E> implements BQueue<E> {
   public static final class Test extends BQueueTest {
     @Override
     <T> BQueue<T> createBQueue(int capacity) {
-      return new LFBQueue<>(capacity, false);
+      return new LFBQueue<>(capacity, true);
     }
   }
 }

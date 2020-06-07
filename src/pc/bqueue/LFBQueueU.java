@@ -76,7 +76,13 @@ public class LFBQueueU<E>  implements BQueue<E> {
         break;
       } else {
         // "resize"
-        while (resizing.getAndSet(true));
+        tail.getAndDecrement();
+        while (resizing.getAndSet(true)) {
+          if (useBackoff)
+            Backoff.delay();
+        }
+        if (useBackoff)
+          Backoff.reset();
         if (p - head.get() >= array.length) {
           E[] new_array = (E[]) new Object[array.length * 2];
           for (int i = head.get(); i < tail.get(); i++) {
@@ -84,7 +90,6 @@ public class LFBQueueU<E>  implements BQueue<E> {
           }
           array = new_array;
         }
-        tail.getAndDecrement();
         resizing.set(false);
         rooms.leave(RoomType.Add.getId());
       }
@@ -107,9 +112,13 @@ public class LFBQueueU<E>  implements BQueue<E> {
         // "undo"
         head.getAndDecrement();
         rooms.leave(RoomType.Remove.getId());
+        if (useBackoff)
+          Backoff.delay();
       }
     }
     rooms.leave(RoomType.Remove.getId());
+    if (useBackoff)
+      Backoff.reset();
     return elem;
   }
 
@@ -119,7 +128,7 @@ public class LFBQueueU<E>  implements BQueue<E> {
   public static final class Test extends BQueueTest {
     @Override
     <T> BQueue<T> createBQueue(int capacity) {
-      return new LFBQueueU<>(capacity, false);
+      return new LFBQueueU<>(capacity, true);
     }
   }
 }
