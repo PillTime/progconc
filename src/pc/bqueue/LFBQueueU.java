@@ -71,12 +71,21 @@ public class LFBQueueU<E>  implements BQueue<E> {
     while(true) {
       rooms.enter(RoomType.Add.getId());
       int p = tail.getAndIncrement();
-      if (p - head.get() < array.length) {
+      if (p - head.get() < array.length && !resizing.get()) {
         array[p % array.length] = elem;
         break;
       } else {
         // "resize"
+        while (resizing.getAndSet(true));
+        if (p - head.get() >= array.length) {
+          E[] new_array = (E[]) new Object[array.length * 2];
+          for (int i = head.get(); i < tail.get(); i++) {
+            new_array[i % new_array.length] = array[i % array.length];
+          }
+          array = new_array;
+        }
         tail.getAndDecrement();
+        resizing.set(false);
         rooms.leave(RoomType.Add.getId());
       }
     }
