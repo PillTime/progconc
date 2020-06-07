@@ -9,4 +9,10 @@ As funçoes add() e remove() sao um pouco especiais porque precisam de dois .lea
 Um fora do while para o caso da funçao poder ser executada sem problema, e outro dentro do while caso a
   funçao nao possa continuar (por exemplo, um remove() numa LFBQueue vazia).
 
+Implementar LFBQueueU nao devia porque e simples, mas deu trabalho.
 
+100 testes:
+LFBQueue normal: quase 10 segundos
+LFBQueue com Backoff: quase 11 segundos
+LFBQueueU normal: quase 10 segundos
+LFBQueueU com Backoff: quase 10 segundos
