@@ -21,8 +21,7 @@ public final class Rooms {
   /**
    * Current state.
    */
-  private final AtomicReference<State> currentState 
-  = new AtomicReference<>(State.FREE);
+  private final AtomicReference<State> currentState = new AtomicReference<>(State.FREE);
 
   /**
    * Constructor.
@@ -55,9 +54,7 @@ public final class Rooms {
     if (r < 0 || r >= numberOfRooms) {
       throw new IllegalArgumentException();
     }
-    
     changeState(s -> s.onEnter(r));
-
     if (currentState.get().room != r) {
       throw new IllegalStateException();
     }
@@ -70,7 +67,6 @@ public final class Rooms {
   public void leave(int r) {
     if (r < 0 || r >= numberOfRooms)
       throw new IllegalArgumentException();
-
     changeState(s -> s.onLeave(r));
   }
 
@@ -120,7 +116,6 @@ public final class Rooms {
       return result;
     }
 
-  
     State onLeave(int r) {
       if (room != r) {
         throw new IllegalStateException();
@@ -133,5 +128,4 @@ public final class Rooms {
       return room + "/" + count;
     }
   }
-
 }

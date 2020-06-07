@@ -2,7 +2,6 @@ package pc.bqueue;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-
 /**
  * Lock-free implementation of queue. 
  * 
@@ -10,10 +9,25 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @param <E> Type of elements.
  */
 public class LFBQueue<E> implements BQueue<E> {
+  private enum RoomType {
+    Size, Add, Remove;
+
+    private final int getId() {
+      switch (this) {
+        case Size:
+          return 0;
+        case Add:
+          return 1;
+        case Remove:
+          return 2;
+        default:
+          return -1;
+      }
+    }
+  };
 
   private E[] array;
   private final AtomicInteger head, tail;
-  // TODO make use of Rooms!
   private final Rooms rooms;
   // TODO prepare code for back-off
   private final boolean useBackoff;
@@ -40,13 +54,16 @@ public class LFBQueue<E> implements BQueue<E> {
 
   @Override
   public int size() {
-    return tail.get() - head.get();
+    rooms.enter(RoomType.Size.getId());
+    int size = tail.get() - head.get();
+    rooms.leave(RoomType.Size.getId());
+    return size;
   }
 
-
   @Override
-  public void add(E elem) {   
+  public void add(E elem) {
     while(true) {
+      rooms.enter(RoomType.Add.getId());
       int p = tail.getAndIncrement();
       if (p - head.get() < array.length) {
         array[p % array.length] = elem;
@@ -54,14 +71,17 @@ public class LFBQueue<E> implements BQueue<E> {
       } else {
         // "undo"
         tail.getAndDecrement();
+        rooms.leave(RoomType.Add.getId());
       }
     }
+    rooms.leave(RoomType.Add.getId());
   }
 
   @Override
-  public E remove() {   
+  public E remove() {
     E elem = null;
     while(true) {
+      rooms.enter(RoomType.Remove.getId());
       int p = head.getAndIncrement();
       if (p < tail.get()) {
         int pos = p % array.length;
@@ -71,8 +91,10 @@ public class LFBQueue<E> implements BQueue<E> {
       } else {
         // "undo"
         head.getAndDecrement();
+        rooms.leave(RoomType.Remove.getId());
       }
     }
+    rooms.leave(RoomType.Remove.getId());
     return elem;
   }
 

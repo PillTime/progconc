@@ -11,14 +11,30 @@ import java.util.concurrent.atomic.AtomicMarkableReference;
  * @param <E> Type of elements.
  */
 public class LFBQueueU<E>  implements BQueue<E> {
+  private enum RoomType {
+    Size, Add, Remove;
+
+    private final int getId() {
+      switch (this) {
+        case Size:
+          return 0;
+        case Add:
+          return 1;
+        case Remove:
+          return 2;
+        default:
+          return -1;
+      }
+    }
+  };
 
   private E[] array;
   private final AtomicInteger head;
   private final AtomicInteger tail;
+  private final AtomicBoolean resizing;
   private final AtomicBoolean addElementFlag;
   private final Rooms rooms;
   private final boolean useBackoff;
-
 
   /**
    * Constructor.
@@ -30,6 +46,7 @@ public class LFBQueueU<E>  implements BQueue<E> {
   public LFBQueueU(int initialCapacity, boolean backoff) {
     head = new AtomicInteger(0);
     tail = new AtomicInteger(0);new AtomicMarkableReference<>(0, false);
+    resizing = new AtomicBoolean(false);
     addElementFlag = new AtomicBoolean();
     array = (E[]) new Object[initialCapacity];
     useBackoff = backoff;
@@ -43,18 +60,48 @@ public class LFBQueueU<E>  implements BQueue<E> {
   
   @Override
   public int size() {
-    return tail.get() - head.get();
+    rooms.enter(RoomType.Size.getId());
+    int size = tail.get() - head.get();
+    rooms.leave(RoomType.Size.getId());
+    return size;
   }
 
   @Override
-  public void add(E elem) {   
-    // TODO
+  public void add(E elem) {
+    while(true) {
+      rooms.enter(RoomType.Add.getId());
+      int p = tail.getAndIncrement();
+      if (p - head.get() < array.length) {
+        array[p % array.length] = elem;
+        break;
+      } else {
+        // "resize"
+        tail.getAndDecrement();
+        rooms.leave(RoomType.Add.getId());
+      }
+    }
+    rooms.leave(RoomType.Add.getId());
   }
   
   @Override
-  public E remove() {   
-    // TODO: should be the same as LFQueue
-    return null;
+  public E remove() {
+    E elem = null;
+    while(true) {
+      rooms.enter(RoomType.Remove.getId());
+      int p = head.getAndIncrement();
+      if (p < tail.get()) {
+        int pos = p % array.length;
+        elem = array[pos];
+        array[pos] = null;
+        break;
+      } else {
+        // "undo"
+        head.getAndDecrement();
+        rooms.leave(RoomType.Remove.getId());
+      }
+    }
+    rooms.leave(RoomType.Remove.getId());
+    return elem;
   }
 
   /**

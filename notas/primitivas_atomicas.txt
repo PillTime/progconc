@@ -1,0 +1,12 @@
+(Ignorando o teste 9 por agora)
+
+Sem mexer no codigo, apenas o teste 1 passa, e todos os outros falham com NullPointerException.
+Isto acontece porque a comparaçao do tamanho da LFBQueue e a açao de remover sao duas operaçoes distintas,
+  nao uma operaçao atomica.
+
+Incluindo os rooms nas funçoes resolve esse problema.
+As funçoes add() e remove() sao um pouco especiais porque precisam de dois .leave().
+Um fora do while para o caso da funçao poder ser executada sem problema, e outro dentro do while caso a
+  funçao nao possa continuar (por exemplo, um remove() numa LFBQueue vazia).
+
+

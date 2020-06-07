@@ -27,7 +27,7 @@ public class MBQueueU<E> extends MBQueue<E> {
     if (size == array.length) {
       E[] new_array = (E[]) new Object[size * 2];
       for (int i = head; i < size; i++) {
-        new_array[i] = array[i];
+        new_array[i % new_array.length] = array[i % array.length];
       }
       array = new_array;
     }
