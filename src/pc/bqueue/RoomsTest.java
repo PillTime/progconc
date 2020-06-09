@@ -18,7 +18,7 @@ import org.junit.runners.MethodSorters;
 
 @SuppressWarnings("javadoc")
 @RunWith(CJUnitRunner.class)
-@CMaxTrials(100)
+@CMaxTrials(30)
 @CRaceDetection(false)
 @CScheduling(schedulerFactory=CSchedulerFactory.MEMINI, stateFactory=CProgramStateFactory.GROUP)
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)

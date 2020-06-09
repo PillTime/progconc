@@ -9,14 +9,14 @@ import org.junit.runners.Suite.SuiteClasses;
 @SuppressWarnings("javadoc")
 @RunWith(Suite.class)
 @SuiteClasses({ 
-      MBQueue.Test.class,
-      MBQueueU.Test.class,
-      LFBQueue.Test.class,
-      LFBQueueU.Test.class,
+  MBQueue.Test.class,
+  MBQueueU.Test.class,
+  LFBQueue.Test.class,
+  LFBQueueU.Test.class,
   // Run STM-based tests only in preemptive mode using cjunitp.sh.
   // Cooperari cannot handle STM-based code with cooperative semantics.
-  //   STMBQueue.Test.class,
-  //   STMBQueueU.Test.class,
+  //STMBQueue.Test.class,
+  //STMBQueueU.Test.class,
 })
 public class RunTests {
 

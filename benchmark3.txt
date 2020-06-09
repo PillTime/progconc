@@ -1,0 +1,20 @@
+ 2,       Monitor-based,   MBQueueU ->    3159.91 thousand ops/s per thread
+ 2, Lock-free backoff=y,  LFBQueueU ->    6585.75 thousand ops/s per thread
+ 2, Lock-free backoff=n,  LFBQueueU ->    1852.24 thousand ops/s per thread
+ 2,                 STM, STMBQueueU ->     964.44 thousand ops/s per thread
+ 4,       Monitor-based,   MBQueueU ->    1127.83 thousand ops/s per thread
+ 4, Lock-free backoff=y,  LFBQueueU ->    1532.75 thousand ops/s per thread
+ 4, Lock-free backoff=n,  LFBQueueU ->     772.50 thousand ops/s per thread
+ 4,                 STM, STMBQueueU ->     593.56 thousand ops/s per thread
+ 8,       Monitor-based,   MBQueueU ->     642.86 thousand ops/s per thread
+ 8, Lock-free backoff=y,  LFBQueueU ->     703.05 thousand ops/s per thread
+ 8, Lock-free backoff=n,  LFBQueueU ->     311.93 thousand ops/s per thread
+ 8,                 STM, STMBQueueU ->      96.03 thousand ops/s per thread
+16,       Monitor-based,   MBQueueU ->     312.60 thousand ops/s per thread
+16, Lock-free backoff=y,  LFBQueueU ->     337.70 thousand ops/s per thread
+16, Lock-free backoff=n,  LFBQueueU ->     127.22 thousand ops/s per thread
+16,                 STM, STMBQueueU ->      46.75 thousand ops/s per thread
+32,       Monitor-based,   MBQueueU ->     154.52 thousand ops/s per thread
+32, Lock-free backoff=y,  LFBQueueU ->     192.70 thousand ops/s per thread
+32, Lock-free backoff=n,  LFBQueueU ->      68.77 thousand ops/s per thread
+32,                 STM, STMBQueueU ->      20.57 thousand ops/s per thread

@@ -11,23 +11,6 @@ import java.util.concurrent.atomic.AtomicMarkableReference;
  * @param <E> Type of elements.
  */
 public class LFBQueueU<E>  implements BQueue<E> {
-  private enum RoomType {
-    Size, Add, Remove;
-
-    private final int getId() {
-      switch (this) {
-        case Size:
-          return 0;
-        case Add:
-          return 1;
-        case Remove:
-          return 2;
-        default:
-          return -1;
-      }
-    }
-  };
-
   private E[] array;
   private final AtomicInteger head;
   private final AtomicInteger tail;
@@ -60,16 +43,16 @@ public class LFBQueueU<E>  implements BQueue<E> {
   
   @Override
   public int size() {
-    rooms.enter(RoomType.Size.getId());
+    rooms.enter(0);
     int size = tail.get() - head.get();
-    rooms.leave(RoomType.Size.getId());
+    rooms.leave(0);
     return size;
   }
 
   @Override
   public void add(E elem) {
     while(true) {
-      rooms.enter(RoomType.Add.getId());
+      rooms.enter(1);
       int p = tail.getAndIncrement();
       if (p - head.get() < array.length && !resizing.get()) {
         array[p % array.length] = elem;
@@ -91,17 +74,17 @@ public class LFBQueueU<E>  implements BQueue<E> {
           array = new_array;
         }
         resizing.set(false);
-        rooms.leave(RoomType.Add.getId());
+        rooms.leave(1);
       }
     }
-    rooms.leave(RoomType.Add.getId());
+    rooms.leave(1);
   }
   
   @Override
   public E remove() {
     E elem = null;
     while(true) {
-      rooms.enter(RoomType.Remove.getId());
+      rooms.enter(2);
       int p = head.getAndIncrement();
       if (p < tail.get()) {
         int pos = p % array.length;
@@ -111,12 +94,12 @@ public class LFBQueueU<E>  implements BQueue<E> {
       } else {
         // "undo"
         head.getAndDecrement();
-        rooms.leave(RoomType.Remove.getId());
+        rooms.leave(2);
         if (useBackoff)
           Backoff.delay();
       }
     }
-    rooms.leave(RoomType.Remove.getId());
+    rooms.leave(2);
     if (useBackoff)
       Backoff.reset();
     return elem;

@@ -20,7 +20,7 @@ import org.junit.runners.MethodSorters;
 
 @SuppressWarnings("javadoc")
 @RunWith(CJUnitRunner.class)
-@CMaxTrials(100)
+@CMaxTrials(30)
 @CRaceDetection(false)
 @CScheduling(schedulerFactory=CSchedulerFactory.MEMINI, stateFactory=CProgramStateFactory.RAW)
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
@@ -28,7 +28,7 @@ public abstract class BQueueTest {
 
   abstract <T> BQueue<T> createBQueue(int capacity);
 
-  @Test 
+  @Test
   public void test1() {
     BQueue<Integer> q = createBQueue(3);
     AtomicInteger a = new AtomicInteger();

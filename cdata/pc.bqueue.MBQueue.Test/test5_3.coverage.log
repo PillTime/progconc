@@ -1,6 +1,6 @@
 # YIELD POINT COVERAGE
 TOTAL	COVERED	%
-105	39	37.142857142857146
+101	35	34.65346534653465
 # YIELD POINTS
 COVERED	SOURCE FILE	LINE	SIGNATURE
 N	BQueueTest.java	37	org.cooperari.CSystem.forkAndJoin(Runnable[])
@@ -79,32 +79,28 @@ N	MBQueue.java	30	<monitorexit>
 N	MBQueue.java	30	field-get(pc.bqueue.MBQueue.array)
 Y	MBQueue.java	35	<monitorexit>
 Y	MBQueue.java	35	field-get(pc.bqueue.MBQueue.size)
-Y	MBQueue.java	41	<monitorenter>
-Y	MBQueue.java	42	field-get(pc.bqueue.MBQueue.array)
-Y	MBQueue.java	42	field-get(pc.bqueue.MBQueue.size)
-N	MBQueue.java	45	Object.wait()
-Y	MBQueue.java	51	field-get(pc.bqueue.MBQueue.array)
-Y	MBQueue.java	51	field-get(pc.bqueue.MBQueue.head)
-Y	MBQueue.java	51	field-get(pc.bqueue.MBQueue.size)
-Y	MBQueue.java	52	Object.notify()
+Y	MBQueue.java	40	<monitorenter>
+Y	MBQueue.java	41	field-get(pc.bqueue.MBQueue.array)
+Y	MBQueue.java	41	field-get(pc.bqueue.MBQueue.size)
+N	MBQueue.java	44	Object.wait()
+Y	MBQueue.java	50	field-get(pc.bqueue.MBQueue.array)
+Y	MBQueue.java	50	field-get(pc.bqueue.MBQueue.head)
+Y	MBQueue.java	50	field-get(pc.bqueue.MBQueue.size)
+Y	MBQueue.java	51	Object.notifyAll()
+Y	MBQueue.java	52	field-get(pc.bqueue.MBQueue.size)
+Y	MBQueue.java	52	field-set(pc.bqueue.MBQueue.size)
 Y	MBQueue.java	53	<monitorexit>
-Y	MBQueue.java	54	<monitorenter>
-Y	MBQueue.java	55	field-get(pc.bqueue.MBQueue.size)
-Y	MBQueue.java	55	field-set(pc.bqueue.MBQueue.size)
-Y	MBQueue.java	56	<monitorexit>
-Y	MBQueue.java	62	<monitorenter>
-Y	MBQueue.java	63	field-get(pc.bqueue.MBQueue.size)
-Y	MBQueue.java	66	Object.wait()
-Y	MBQueue.java	73	field-get(pc.bqueue.MBQueue.array)
-Y	MBQueue.java	73	field-get(pc.bqueue.MBQueue.head)
-Y	MBQueue.java	74	field-get(pc.bqueue.MBQueue.array)
-Y	MBQueue.java	74	field-get(pc.bqueue.MBQueue.head)
-Y	MBQueue.java	75	field-get(pc.bqueue.MBQueue.array)
-Y	MBQueue.java	75	field-get(pc.bqueue.MBQueue.head)
-Y	MBQueue.java	75	field-set(pc.bqueue.MBQueue.head)
-Y	MBQueue.java	77	<monitorexit>
-Y	MBQueue.java	78	<monitorenter>
-Y	MBQueue.java	79	Object.notify()
-Y	MBQueue.java	80	field-get(pc.bqueue.MBQueue.size)
-Y	MBQueue.java	80	field-set(pc.bqueue.MBQueue.size)
-Y	MBQueue.java	81	<monitorexit>
+Y	MBQueue.java	59	<monitorenter>
+Y	MBQueue.java	60	field-get(pc.bqueue.MBQueue.size)
+Y	MBQueue.java	63	Object.wait()
+Y	MBQueue.java	69	field-get(pc.bqueue.MBQueue.array)
+Y	MBQueue.java	69	field-get(pc.bqueue.MBQueue.head)
+Y	MBQueue.java	70	field-get(pc.bqueue.MBQueue.array)
+Y	MBQueue.java	70	field-get(pc.bqueue.MBQueue.head)
+Y	MBQueue.java	71	field-get(pc.bqueue.MBQueue.array)
+Y	MBQueue.java	71	field-get(pc.bqueue.MBQueue.head)
+Y	MBQueue.java	71	field-set(pc.bqueue.MBQueue.head)
+Y	MBQueue.java	72	Object.notifyAll()
+Y	MBQueue.java	73	field-get(pc.bqueue.MBQueue.size)
+Y	MBQueue.java	73	field-set(pc.bqueue.MBQueue.size)
+Y	MBQueue.java	74	<monitorexit>
