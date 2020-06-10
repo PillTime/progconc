@@ -1,153 +1,157 @@
 Invoking javac
-Execution will be preemptive, AspectJ LTW is not active.
-== Cooperari 0.3 - JUnit test execution - mode: preemptive ==
+Configuring load-time weaving ...
+JAR file for 'pc.bqueue.RunTests' saved to './cdata/pc.bqueue.RunTests-cooperari.jar'
+== Cooperari 0.3 - JUnit test execution - mode: cooperative ==
 pc.bqueue.MBQueue$Test
   test1                                                   [passed]
-    > trials: 30 time: 239 ms
+    > trials: 30 time: 2558 ms coverage: 40.0 % (42 / 105 yp)
   test2_1                                                 [passed]
-    > trials: 30 time: 181 ms
+    > trials: 30 time: 1417 ms coverage: 33.3 % (35 / 105 yp)
   test2_2                                                 [passed]
-    > trials: 30 time: 73 ms
+    > trials: 30 time: 1681 ms coverage: 32.4 % (34 / 105 yp)
   test3_1                                                 [passed]
-    > trials: 30 time: 107 ms
+    > trials: 30 time: 3211 ms coverage: 34.3 % (36 / 105 yp)
   test3_2                                                 [passed]
-    > trials: 30 time: 101 ms
+    > trials: 30 time: 2864 ms coverage: 34.3 % (36 / 105 yp)
   test3_3                                                 [passed]
-    > trials: 30 time: 100 ms
+    > trials: 30 time: 2506 ms coverage: 33.3 % (35 / 105 yp)
   test4_1                                                 [passed]
-    > trials: 30 time: 81 ms
+    > trials: 18 time: 1041 ms coverage: 35.2 % (37 / 105 yp)
   test4_2                                                 [passed]
-    > trials: 30 time: 88 ms
+    > trials: 18 time: 1278 ms coverage: 35.2 % (37 / 105 yp)
   test5_1                                                 [passed]
-    > trials: 30 time: 91 ms
+    > trials: 30 time: 2996 ms coverage: 34.3 % (36 / 105 yp)
   test5_2                                                 [passed]
-    > trials: 30 time: 90 ms
+    > trials: 30 time: 3331 ms coverage: 33.3 % (35 / 105 yp)
   test5_3                                                 [passed]
-    > trials: 30 time: 89 ms
+    > trials: 30 time: 2989 ms coverage: 33.3 % (35 / 105 yp)
   test6_1                                                 [passed]
-    > trials: 30 time: 93 ms
+    > trials: 30 time: 2834 ms coverage: 32.4 % (34 / 105 yp)
   test6_2                                                 [passed]
-    > trials: 30 time: 96 ms
+    > trials: 30 time: 2852 ms coverage: 32.4 % (34 / 105 yp)
   test6_3                                                 [passed]
-    > trials: 30 time: 90 ms
+    > trials: 30 time: 2556 ms coverage: 31.4 % (33 / 105 yp)
   test7_4                                                 [passed]
-    > trials: 30 time: 255 ms
+    > trials: 16 time: 2591 ms coverage: 48.6 % (51 / 105 yp)
   test7_8                                                 [passed]
-    > trials: 30 time: 250 ms
+    > trials: 16 time: 3126 ms coverage: 48.6 % (51 / 105 yp)
   test8                                                   [passed]
-    > trials: 30 time: 93 ms
+    > trials: 30 time: 3968 ms coverage: 35.2 % (37 / 105 yp)
   test9                                                   [passed]
-    > trials: 30 time: 137 ms
+    > trials: 30 time: 4331 ms coverage: 37.1 % (39 / 105 yp)
 pc.bqueue.MBQueueU$Test
   test1                                                   [passed]
-    > trials: 30 time: 224 ms
+    > trials: 30 time: 3107 ms coverage: 32.6 % (42 / 129 yp)
   test2_1                                                 [passed]
-    > trials: 30 time: 87 ms
+    > trials: 30 time: 2066 ms coverage: 29.1 % (39 / 134 yp)
   test2_2                                                 [passed]
-    > trials: 30 time: 87 ms
+    > trials: 30 time: 2400 ms coverage: 25.4 % (34 / 134 yp)
   test3_1                                                 [passed]
-    > trials: 30 time: 103 ms
+    > trials: 30 time: 3341 ms coverage: 29.9 % (40 / 134 yp)
   test3_2                                                 [passed]
-    > trials: 30 time: 97 ms
+    > trials: 30 time: 3509 ms coverage: 29.9 % (40 / 134 yp)
   test3_3                                                 [passed]
-    > trials: 30 time: 92 ms
+    > trials: 30 time: 3220 ms coverage: 26.1 % (35 / 134 yp)
   test4_1                                                 [passed]
-    > trials: 30 time: 75 ms
+    > trials: 13 time: 813 ms coverage: 29.1 % (39 / 134 yp)
   test4_2                                                 [passed]
-    > trials: 30 time: 65 ms
+    > trials: 13 time: 783 ms coverage: 29.1 % (39 / 134 yp)
   test5_1                                                 [passed]
-    > trials: 30 time: 72 ms
+    > trials: 30 time: 2833 ms coverage: 29.9 % (40 / 134 yp)
   test5_2                                                 [passed]
-    > trials: 30 time: 89 ms
+    > trials: 30 time: 3027 ms coverage: 26.1 % (35 / 134 yp)
   test5_3                                                 [passed]
-    > trials: 30 time: 90 ms
+    > trials: 30 time: 2911 ms coverage: 26.1 % (35 / 134 yp)
   test6_1                                                 [passed]
-    > trials: 30 time: 82 ms
+    > trials: 30 time: 2643 ms coverage: 28.4 % (38 / 134 yp)
   test6_2                                                 [passed]
-    > trials: 30 time: 86 ms
+    > trials: 30 time: 2688 ms coverage: 28.4 % (38 / 134 yp)
   test6_3                                                 [passed]
-    > trials: 30 time: 80 ms
+    > trials: 30 time: 2751 ms coverage: 24.6 % (33 / 134 yp)
   test7_4                                                 [passed]
-    > trials: 30 time: 255 ms
+    > trials: 16 time: 3491 ms coverage: 38.1 % (51 / 134 yp)
   test7_8                                                 [passed]
-    > trials: 30 time: 256 ms
+    > trials: 16 time: 3058 ms coverage: 38.1 % (51 / 134 yp)
   test8                                                   [passed]
-    > trials: 30 time: 105 ms
+    > trials: 30 time: 4007 ms coverage: 30.6 % (41 / 134 yp)
   test9                                                   [passed]
-    > trials: 30 time: 139 ms
+    > trials: 30 time: 4355 ms coverage: 29.1 % (39 / 134 yp)
 pc.bqueue.LFBQueue$Test
   test1                                                   [passed]
-    > trials: 30 time: 238 ms
+    > trials: 30 time: 15235 ms coverage: 48.2 % (66 / 137 yp)
   test2_1                                                 [passed]
-    > trials: 30 time: 126 ms
+    > trials: 30 time: 20659 ms coverage: 46.7 % (64 / 137 yp)
   test2_2                                                 [passed]
-    > trials: 30 time: 87 ms
+    > trials: 30 time: 17223 ms coverage: 43.8 % (60 / 137 yp)
   test3_1                                                 [passed]
-    > trials: 30 time: 106 ms
+    > trials: 30 time: 53535 ms coverage: 47.4 % (65 / 137 yp)
   test3_2                                                 [passed]
-    > trials: 30 time: 102 ms
+    > trials: 30 time: 33333 ms coverage: 47.4 % (65 / 137 yp)
   test3_3                                                 [passed]
-    > trials: 30 time: 95 ms
+    > trials: 30 time: 28031 ms coverage: 44.5 % (61 / 137 yp)
   test4_1                                                 [passed]
-    > trials: 30 time: 80 ms
+    > trials: 30 time: 15956 ms coverage: 47.4 % (65 / 137 yp)
   test4_2                                                 [passed]
-    > trials: 30 time: 66 ms
+    > trials: 30 time: 17364 ms coverage: 47.4 % (65 / 137 yp)
   test5_1                                                 [passed]
-    > trials: 30 time: 97 ms
+    > trials: 30 time: 54057 ms coverage: 47.4 % (65 / 137 yp)
   test5_2                                                 [passed]
-    > trials: 30 time: 90 ms
+    > trials: 30 time: 46687 ms coverage: 44.5 % (61 / 137 yp)
   test5_3                                                 [passed]
-    > trials: 30 time: 107 ms
+    > trials: 30 time: 46973 ms coverage: 44.5 % (61 / 137 yp)
   test6_1                                                 [passed]
-    > trials: 30 time: 87 ms
+    > trials: 30 time: 27556 ms coverage: 46.0 % (63 / 137 yp)
   test6_2                                                 [passed]
-    > trials: 30 time: 95 ms
+    > trials: 30 time: 17421 ms coverage: 46.0 % (63 / 137 yp)
   test6_3                                                 [passed]
-    > trials: 30 time: 95 ms
+    > trials: 30 time: 14423 ms coverage: 43.1 % (59 / 137 yp)
   test7_4                                                 [passed]
-    > trials: 30 time: 244 ms
+    > trials: 30 time: 36318 ms coverage: 56.2 % (77 / 137 yp)
   test7_8                                                 [passed]
-    > trials: 30 time: 257 ms
+    > trials: 30 time: 34811 ms coverage: 56.2 % (77 / 137 yp)
   test8                                                   [passed]
-    > trials: 30 time: 94 ms
+    > trials: 30 time: 67926 ms coverage: 48.2 % (66 / 137 yp)
   test9                                                   [passed]
-    > trials: 30 time: 134 ms
+    > trials: 30 time: 28691 ms coverage: 47.4 % (65 / 137 yp)
 pc.bqueue.LFBQueueU$Test
   test1                                                   [passed]
-    > trials: 30 time: 222 ms
+    > trials: 30 time: 19023 ms coverage: 44.4 % (68 / 153 yp)
   test2_1                                                 [passed]
-    > trials: 30 time: 99 ms
+    > trials: 30 time: 21071 ms coverage: 52.3 % (80 / 153 yp)
   test2_2                                                 [passed]
-    > trials: 30 time: 74 ms
+    > trials: 30 time: 14671 ms coverage: 41.2 % (63 / 153 yp)
   test3_1                                                 [passed]
-    > trials: 30 time: 65 ms
+    > trials: 30 time: 48748 ms coverage: 53.6 % (82 / 153 yp)
   test3_2                                                 [passed]
-    > trials: 30 time: 89 ms
+    > trials: 30 time: 35640 ms coverage: 53.6 % (82 / 153 yp)
   test3_3                                                 [passed]
-    > trials: 30 time: 69 ms
+    > trials: 30 time: 27149 ms coverage: 41.8 % (64 / 153 yp)
   test4_1                                                 [passed]
-    > trials: 30 time: 63 ms
+    > trials: 30 time: 14195 ms coverage: 52.3 % (80 / 153 yp)
   test4_2                                                 [passed]
-    > trials: 30 time: 73 ms
+    > trials: 30 time: 14507 ms coverage: 52.3 % (80 / 153 yp)
   test5_1                                                 [passed]
-    > trials: 30 time: 75 ms
+    > trials: 30 time: 48374 ms coverage: 52.9 % (81 / 153 yp)
   test5_2                                                 [passed]
-    > trials: 30 time: 91 ms
+    > trials: 30 time: 41133 ms coverage: 41.8 % (64 / 153 yp)
   test5_3                                                 [passed]
-    > trials: 30 time: 93 ms
+    > trials: 30 time: 42554 ms coverage: 41.8 % (64 / 153 yp)
   test6_1                                                 [passed]
-    > trials: 30 time: 97 ms
+    > trials: 30 time: 20757 ms coverage: 52.3 % (80 / 153 yp)
   test6_2                                                 [passed]
-    > trials: 30 time: 89 ms
+    > trials: 30 time: 17791 ms coverage: 52.3 % (80 / 153 yp)
   test6_3                                                 [passed]
-    > trials: 30 time: 87 ms
+    > trials: 30 time: 14223 ms coverage: 40.5 % (62 / 153 yp)
   test7_4                                                 [passed]
-    > trials: 30 time: 215 ms
+    > trials: 30 time: 36417 ms coverage: 52.3 % (80 / 153 yp)
   test7_8                                                 [passed]
-    > trials: 30 time: 257 ms
+    > trials: 30 time: 37489 ms coverage: 52.3 % (80 / 153 yp)
   test8                                                   [passed]
-    > trials: 30 time: 114 ms
+    > trials: 30 time: 69265 ms coverage: 54.2 % (83 / 153 yp)
   test9                                                   [passed]
-    > trials: 30 time: 157 ms
+    > trials: 30 time: 29661 ms coverage: 44.4 % (68 / 153 yp)
 == Summary ==
-Executed: 72; Skipped: 0;  Failed: 0; Execution time: 8759 ms
+Executed: 72; Skipped: 0;  Failed: 0; Execution time: 1228468 ms
+== Yield point coverage ==
+Coverage rate: 92.9 % (235 / 253 yp)
+Global coverage report: '/home/carlos/Documents/fcup/1920/progconc/part2/trab/progconc/cdata/all_yield_points.coverage.log'
