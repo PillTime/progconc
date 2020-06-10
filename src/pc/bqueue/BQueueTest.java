@@ -277,7 +277,7 @@ public abstract class BQueueTest {
     assertEquals(1111, a.get() + b.get() + c.get() + d.get()); 
   }
 
-  @Test @Ignore
+  @Test
   public void test9() {   
     BQueue<Integer> q = createBQueue(4);
     AtomicInteger a = new AtomicInteger();
@@ -291,21 +291,25 @@ public abstract class BQueueTest {
         );
     assertEquals(1, q.size());
 
-    // TODO uncomment and complete
-//    int [][] abPossibilities = {
-//        { 3, 0 } 
-//        // ...
-//    };
-//    boolean found = false;
-//    for (int[] p: abPossibilities) {
-//      if (a.get() == p[0] && b.get() == p[1]) {
-//        found = true;
-//        break; 
-//      }
-//    }
-//    if (!found) { 
-//      fail("Did you consider a = " + a.get() + " and  b=" + b.get() + " ?");
-//    }
+    int[][] abPossibilities = {
+            { 3, 0 },
+            { 0, 3 },
+            { 3, 1 },
+            { 1, 3 },
+            { 1, 0 },
+            { 0, 1 },
+    };
+
+    boolean abFound = false;
+    for (int[] poss : abPossibilities) {
+      if (a.get() == poss[0] && b.get() == poss[1]) {
+        abFound = true;
+        break;
+      }
+    }
+    if (!abFound) {
+      fail("Did you consider a being " + a.get() + ", and b being " + b.get() + "?");
+    }
 
     CSystem.forkAndJoin(
         () -> { c.set(q.remove());  },
@@ -314,8 +318,31 @@ public abstract class BQueueTest {
         );
    
     assertEquals(1, q.size());
-    
-    // TODO similar for c and d 
 
+    // Duplicados ja removidos
+    int[][] cdPossibilities = {
+            { 1, 3 },
+            { 1, 0 },
+            { 3, 1 },
+            { 0, 1 },
+            { 1, 1 },
+            { 2, 3 },
+            { 2, 1 },
+            { 3, 2 },
+            { 1, 2 },
+            { 3, 0 },
+            { 0, 3 },
+    };
+
+    boolean cdFound = false;
+    for (int[] poss : cdPossibilities) {
+      if (c.get() == poss[0] && d.get() == poss[1]) {
+        cdFound = true;
+        break;
+      }
+    }
+    if (!cdFound) {
+      fail("Did you consider c being " + c.get() + ", and d being " + d.get() + "?");
+    }
   }
 }
