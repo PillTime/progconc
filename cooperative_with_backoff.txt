@@ -1,0 +1,153 @@
+Invoking javac
+Execution will be preemptive, AspectJ LTW is not active.
+== Cooperari 0.3 - JUnit test execution - mode: preemptive ==
+pc.bqueue.MBQueue$Test
+  test1                                                   [passed]
+    > trials: 30 time: 234 ms
+  test2_1                                                 [passed]
+    > trials: 30 time: 64 ms
+  test2_2                                                 [passed]
+    > trials: 30 time: 52 ms
+  test3_1                                                 [passed]
+    > trials: 30 time: 99 ms
+  test3_2                                                 [passed]
+    > trials: 30 time: 109 ms
+  test3_3                                                 [passed]
+    > trials: 30 time: 97 ms
+  test4_1                                                 [passed]
+    > trials: 30 time: 85 ms
+  test4_2                                                 [passed]
+    > trials: 30 time: 76 ms
+  test5_1                                                 [passed]
+    > trials: 30 time: 97 ms
+  test5_2                                                 [passed]
+    > trials: 30 time: 91 ms
+  test5_3                                                 [passed]
+    > trials: 30 time: 90 ms
+  test6_1                                                 [passed]
+    > trials: 30 time: 95 ms
+  test6_2                                                 [passed]
+    > trials: 30 time: 87 ms
+  test6_3                                                 [passed]
+    > trials: 30 time: 89 ms
+  test7_4                                                 [passed]
+    > trials: 30 time: 258 ms
+  test7_8                                                 [passed]
+    > trials: 30 time: 249 ms
+  test8                                                   [passed]
+    > trials: 30 time: 102 ms
+  test9                                                   [passed]
+    > trials: 30 time: 138 ms
+pc.bqueue.MBQueueU$Test
+  test1                                                   [passed]
+    > trials: 30 time: 205 ms
+  test2_1                                                 [passed]
+    > trials: 30 time: 89 ms
+  test2_2                                                 [passed]
+    > trials: 30 time: 90 ms
+  test3_1                                                 [passed]
+    > trials: 30 time: 97 ms
+  test3_2                                                 [passed]
+    > trials: 30 time: 96 ms
+  test3_3                                                 [passed]
+    > trials: 30 time: 97 ms
+  test4_1                                                 [passed]
+    > trials: 30 time: 70 ms
+  test4_2                                                 [passed]
+    > trials: 30 time: 63 ms
+  test5_1                                                 [passed]
+    > trials: 30 time: 66 ms
+  test5_2                                                 [passed]
+    > trials: 30 time: 87 ms
+  test5_3                                                 [passed]
+    > trials: 30 time: 93 ms
+  test6_1                                                 [passed]
+    > trials: 30 time: 90 ms
+  test6_2                                                 [passed]
+    > trials: 30 time: 89 ms
+  test6_3                                                 [passed]
+    > trials: 30 time: 85 ms
+  test7_4                                                 [passed]
+    > trials: 30 time: 255 ms
+  test7_8                                                 [passed]
+    > trials: 30 time: 240 ms
+  test8                                                   [passed]
+    > trials: 30 time: 108 ms
+  test9                                                   [passed]
+    > trials: 30 time: 158 ms
+pc.bqueue.LFBQueue$Test
+  test1                                                   [passed]
+    > trials: 30 time: 225 ms
+  test2_1                                                 [passed]
+    > trials: 30 time: 129 ms
+  test2_2                                                 [passed]
+    > trials: 30 time: 94 ms
+  test3_1                                                 [passed]
+    > trials: 30 time: 170 ms
+  test3_2                                                 [passed]
+    > trials: 30 time: 137 ms
+  test3_3                                                 [passed]
+    > trials: 30 time: 100 ms
+  test4_1                                                 [passed]
+    > trials: 30 time: 133 ms
+  test4_2                                                 [passed]
+    > trials: 30 time: 165 ms
+  test5_1                                                 [passed]
+    > trials: 30 time: 166 ms
+  test5_2                                                 [passed]
+    > trials: 30 time: 134 ms
+  test5_3                                                 [passed]
+    > trials: 30 time: 100 ms
+  test6_1                                                 [passed]
+    > trials: 30 time: 129 ms
+  test6_2                                                 [passed]
+    > trials: 30 time: 96 ms
+  test6_3                                                 [passed]
+    > trials: 30 time: 102 ms
+  test7_4                                                 [passed]
+    > trials: 30 time: 262 ms
+  test7_8                                                 [passed]
+    > trials: 30 time: 254 ms
+  test8                                                   [passed]
+    > trials: 30 time: 128 ms
+  test9                                                   [passed]
+    > trials: 30 time: 142 ms
+pc.bqueue.LFBQueueU$Test
+  test1                                                   [passed]
+    > trials: 30 time: 217 ms
+  test2_1                                                 [passed]
+    > trials: 30 time: 77 ms
+  test2_2                                                 [passed]
+    > trials: 30 time: 95 ms
+  test3_1                                                 [passed]
+    > trials: 30 time: 102 ms
+  test3_2                                                 [passed]
+    > trials: 30 time: 113 ms
+  test3_3                                                 [passed]
+    > trials: 30 time: 96 ms
+  test4_1                                                 [passed]
+    > trials: 30 time: 127 ms
+  test4_2                                                 [passed]
+    > trials: 30 time: 119 ms
+  test5_1                                                 [passed]
+    > trials: 30 time: 89 ms
+  test5_2                                                 [passed]
+    > trials: 30 time: 88 ms
+  test5_3                                                 [passed]
+    > trials: 30 time: 91 ms
+  test6_1                                                 [passed]
+    > trials: 30 time: 96 ms
+  test6_2                                                 [passed]
+    > trials: 30 time: 96 ms
+  test6_3                                                 [passed]
+    > trials: 30 time: 96 ms
+  test7_4                                                 [passed]
+    > trials: 30 time: 252 ms
+  test7_8                                                 [passed]
+    > trials: 30 time: 255 ms
+  test8                                                   [passed]
+    > trials: 30 time: 109 ms
+  test9                                                   [passed]
+    > trials: 30 time: 149 ms
+== Summary ==
+Executed: 72; Skipped: 0;  Failed: 0; Execution time: 9323 ms

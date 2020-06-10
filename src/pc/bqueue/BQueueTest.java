@@ -321,17 +321,18 @@ public abstract class BQueueTest {
 
     // Duplicados ja removidos
     int[][] cdPossibilities = {
-            { 1, 3 },
-            { 1, 0 },
-            { 3, 1 },
             { 0, 1 },
-            { 1, 1 },
-            { 2, 3 },
-            { 2, 1 },
-            { 3, 2 },
-            { 1, 2 },
-            { 3, 0 },
             { 0, 3 },
+            { 1, 0 },
+            { 1, 1 },
+            { 1, 2 },
+            { 1, 3 },
+            { 2, 0 },
+            { 2, 1 },
+            { 2, 3 },
+            { 3, 0 },
+            { 3, 1 },
+            { 3, 2 },
     };
 
     boolean cdFound = false;

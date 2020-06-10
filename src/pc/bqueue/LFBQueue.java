@@ -94,7 +94,7 @@ public class LFBQueue<E> implements BQueue<E> {
   public static final class Test extends BQueueTest {
     @Override
     <T> BQueue<T> createBQueue(int capacity) {
-      return new LFBQueue<>(capacity, true);
+      return new LFBQueue<>(capacity, false);
     }
   }
 }
