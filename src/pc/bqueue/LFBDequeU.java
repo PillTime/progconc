@@ -34,8 +34,7 @@ public class LFBDequeU<E> implements BDeque<E> {
         while (true) {
             rooms.enter(1);
             int p = head.decrementAndGet();
-            if (tail.get() - p < array.length && !resizing.get()) {
-                System.out.println("addedFirst");
+            if (tail.get() - p <= array.length && !resizing.get()) {
                 array[((p % array.length) + array.length) % array.length] = elem;
                 break;
             }
@@ -61,7 +60,6 @@ public class LFBDequeU<E> implements BDeque<E> {
             }
         }
         rooms.leave(1);
-        System.out.println("exiting addFirst");
     }
 
     @Override
@@ -88,7 +86,6 @@ public class LFBDequeU<E> implements BDeque<E> {
         if (useBackoff) {
             Backoff.reset();
         }
-        System.out.println("exiting removeFirst");
         return elem;
     }
 
@@ -98,7 +95,6 @@ public class LFBDequeU<E> implements BDeque<E> {
             rooms.enter(3);
             int p = tail.getAndIncrement();
             if (p - head.get() < array.length && !resizing.get()) {
-                System.out.println("addedLast");
                 array[((p % array.length) + array.length) % array.length] = elem;
                 break;
             }
@@ -124,7 +120,6 @@ public class LFBDequeU<E> implements BDeque<E> {
             }
         }
         rooms.leave(3);
-        System.out.println("exiting addLast");
     }
 
     @Override
@@ -133,7 +128,7 @@ public class LFBDequeU<E> implements BDeque<E> {
         while(true) {
             rooms.enter(4);
             int p = tail.decrementAndGet();
-            if (p > head.get()) {
+            if (p >= head.get()) {
                 p = ((p % array.length) + array.length) % array.length;
                 elem = array[p];
                 array[p] = null;
@@ -151,7 +146,6 @@ public class LFBDequeU<E> implements BDeque<E> {
         if (useBackoff) {
             Backoff.reset();
         }
-        System.out.println("exiting removeLast");
         return elem;
     }
 
