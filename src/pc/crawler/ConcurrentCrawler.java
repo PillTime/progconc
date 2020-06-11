@@ -3,8 +3,7 @@ package pc.crawler;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveTask;
 
@@ -47,7 +46,7 @@ public class ConcurrentCrawler extends SequentialCrawler {
     long t = System.currentTimeMillis();
     int rid = 0;
     log("Starting at %s", root);
-    pool.invoke(new TransferTask(0, root));
+    pool.invoke(new TransferTask(0, root,new HashSet<>()));
     t = System.currentTimeMillis() - t;
     log("Done in %d ms", t);
   }
@@ -64,17 +63,17 @@ public class ConcurrentCrawler extends SequentialCrawler {
 
     final int rid;
     final String path;
+    HashSet<String> visited ; //pôr isto está a evitar loops infinitos
 
-    TransferTask(int rid, String path) {
+    TransferTask(int rid, String path, HashSet<String> visited) {
+      super();
       this.rid = rid;
       this.path = path;
+      this.visited = visited;// manter estado dos visitados
     }
 
     @Override
     protected Void compute() {
-
-      String tasksResult = "";
-      //TODO lógica inerente ao estado partilhado entre tarefas, eu não sei se já estou a fazer isso...
 
       try {
         List<String> links = performTransfer(rid, new URL(path));
@@ -84,17 +83,23 @@ public class ConcurrentCrawler extends SequentialCrawler {
 
         //forks
         for(String link : links){
-          TransferTask task = new TransferTask(rid,link);
+          //saltar já visitados
+          if(visited.contains(path))
+            continue;
+          String newURL = new URL(new URL(path), new URL(new URL(path),link).getPath()).toString();
+          visited.add(newURL);
+          TransferTask task = new TransferTask(rid,newURL,visited);
           forks.add(task);
           task.fork();
+
         }
 
         //joins
         for(RecursiveTask<Void> task : forks){
+         task.join();
           //eu não sei bem como juntar os resultados
-          tasksResult += task.join() + " ";
-          log(tasksResult);
         }
+
 
       } 
       catch (Exception e) {
