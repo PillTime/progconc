@@ -2,7 +2,6 @@ package pc.bqueue;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
-import java.util.concurrent.atomic.AtomicMarkableReference;
 
 /**
  * Lock-free implementation of queue - unbounded variant.
@@ -15,7 +14,6 @@ public class LFBQueueU<E>  implements BQueue<E> {
   private final AtomicInteger head;
   private final AtomicInteger tail;
   private final AtomicBoolean resizing;
-  private final AtomicBoolean addElementFlag;
   private final Rooms rooms;
   private final boolean useBackoff;
 
@@ -28,9 +26,8 @@ public class LFBQueueU<E>  implements BQueue<E> {
   @SuppressWarnings("unchecked")
   public LFBQueueU(int initialCapacity, boolean backoff) {
     head = new AtomicInteger(0);
-    tail = new AtomicInteger(0);new AtomicMarkableReference<>(0, false);
+    tail = new AtomicInteger(0);
     resizing = new AtomicBoolean(false);
-    addElementFlag = new AtomicBoolean();
     array = (E[]) new Object[initialCapacity];
     useBackoff = backoff;
     rooms = new Rooms(3, backoff);
