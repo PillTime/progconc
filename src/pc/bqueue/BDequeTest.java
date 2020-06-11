@@ -53,9 +53,9 @@ public abstract class BDequeTest {
                 () -> b.set(d.size()),
                 () -> c.set(d.size())
         );
-        assertEquals(a.get(), 6);
-        assertEquals(b.get(), 6);
-        assertEquals(c.get(), 6);
+        assertEquals(6, a.get());
+        assertEquals(6, b.get());
+        assertEquals(6, c.get());
         CSystem.forkAndJoin(
                 () -> i.set(d.removeLast()),
                 () -> j.set(d.removeLast()),
@@ -68,6 +68,34 @@ public abstract class BDequeTest {
                 () -> z.set(d.removeFirst())
         );
         assertEquals(0, d.size());
-        assertEquals(i.get() + j.get() + k.get() + x.get() + y.get() + z.get(), 111111);
+        assertEquals(111111, i.get() + j.get() + k.get() + x.get() + y.get() + z.get());
+    }
+
+    void test2(int capacity) {
+        BDeque<Integer> d = createBDeque(capacity);
+        AtomicInteger x = new AtomicInteger();
+        AtomicInteger y = new AtomicInteger();
+        AtomicInteger z = new AtomicInteger();
+        AtomicInteger w = new AtomicInteger();
+        CSystem.forkAndJoin(
+                () -> d.addFirst(1),
+                () -> d.addFirst(10),
+                () -> d.addLast(100),
+                () -> d.addLast(1000),
+                () -> x.set(d.removeFirst()),
+                () -> y.set(d.removeFirst()),
+                () -> z.set(d.removeLast()),
+                () -> w.set(d.removeLast())
+        );
+        assertEquals(0, d.size());
+        assertEquals(1111, x.get() + y.get() + z.get() + w.get());
+    }
+    @Test
+    public void test2_2() {
+        test2(2);
+    }
+    @Test
+    public void test2_4() {
+        test2(4);
     }
 }
