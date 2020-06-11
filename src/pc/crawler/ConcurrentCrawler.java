@@ -6,6 +6,7 @@ import java.net.URL;
 import java.util.*;
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveTask;
+import java.util.concurrent.atomic.AtomicInteger;
 
 import pc.util.UnexpectedException;
 
@@ -44,9 +45,8 @@ public class ConcurrentCrawler extends SequentialCrawler {
   @Override
   public void crawl(String root) {
     long t = System.currentTimeMillis();
-    int rid = 0;
     log("Starting at %s", root);
-    pool.invoke(new TransferTask(0, root,new HashSet<>()));
+    pool.invoke(new TransferTask(new AtomicInteger(0), root,new HashSet<>()));
     t = System.currentTimeMillis() - t;
     log("Done in %d ms", t);
   }
@@ -61,32 +61,34 @@ public class ConcurrentCrawler extends SequentialCrawler {
   @SuppressWarnings("serial")
   private class TransferTask extends RecursiveTask<Void> {
 
-    final int rid;
+    final AtomicInteger rid;
     final String path;
-    HashSet<String> visited ; //pôr isto está a evitar loops infinitos
+    HashSet<String> visited;
 
-    TransferTask(int rid, String path, HashSet<String> visited) {
+    TransferTask(AtomicInteger rid, String path, HashSet<String> visited) {
       super();
       this.rid = rid;
       this.path = path;
-      this.visited = visited;// manter estado dos visitados
+      this.visited = visited;// manter estado dos visitados e evitar loops infinitos
     }
 
     @Override
     protected Void compute() {
+      List<String> folders =  new LinkedList<>();
+      List<String> foldersAwx = new LinkedList<>();
 
       try {
-        List<String> links = performTransfer(rid, new URL(path));
+        List<String> links = performTransfer(rid.getAndIncrement(), new URL(path));
 
         //usar Fork Join Pool com recursividade
         List<RecursiveTask<Void>> forks = new LinkedList<>();
 
         //forks
         for(String link : links){
-          //saltar já visitados
-          if(visited.contains(path))
-            continue;
           String newURL = new URL(new URL(path), new URL(new URL(path),link).getPath()).toString();
+          //saltar já visitados
+          if(visited.contains(newURL))
+            continue;
           visited.add(newURL);
           TransferTask task = new TransferTask(rid,newURL,visited);
           forks.add(task);
@@ -97,7 +99,6 @@ public class ConcurrentCrawler extends SequentialCrawler {
         //joins
         for(RecursiveTask<Void> task : forks){
          task.join();
-          //eu não sei bem como juntar os resultados
         }
 
 
