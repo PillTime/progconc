@@ -53,6 +53,9 @@ public abstract class BDequeTest {
                 () -> b.set(d.size()),
                 () -> c.set(d.size())
         );
+        assertEquals(a.get(), 6);
+        assertEquals(b.get(), 6);
+        assertEquals(c.get(), 6);
         CSystem.forkAndJoin(
                 () -> i.set(d.removeLast()),
                 () -> j.set(d.removeLast()),

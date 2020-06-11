@@ -35,12 +35,10 @@ public class LFBDequeU<E> implements BDeque<E> {
             rooms.enter(1);
             int p = head.decrementAndGet();
             if (tail.get() - p < array.length && !resizing.get()) {
-                System.out.println((((p % array.length) + array.length) % array.length));
                 array[((p % array.length) + array.length) % array.length] = elem;
                 break;
             }
             else {
-                System.out.println("not here");
                 head.incrementAndGet();
                 while (resizing.getAndSet(true)) {
                     if (useBackoff) {
@@ -97,7 +95,6 @@ public class LFBDequeU<E> implements BDeque<E> {
             rooms.enter(3);
             int p = tail.getAndIncrement();
             if (p - head.get() < array.length && !resizing.get()) {
-                System.out.println((((p % array.length) + array.length) % array.length));
                 array[((p % array.length) + array.length) % array.length] = elem;
                 break;
             }
