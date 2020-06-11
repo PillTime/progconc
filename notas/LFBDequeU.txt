@@ -1,0 +1,7 @@
+para nao haver conflito entre as posiçoes
+entre addFirst e addLast, quando se recebe a posiçao,
+um tem que ser getAndIncrement, e o outro tem que ser decrementAndGet
+(ordem de operaçoes e direçoes ambas diferentes)
+
+ao contrario de Python, em Java % da o resto, nao o modulo, que e o que da mais jeito aqui
+para ter o modulo, faz-se (((i % size) + size) % size)

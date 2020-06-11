@@ -11,6 +11,7 @@ public class LFBDequeU<E> implements BDeque<E> {
     private final Rooms rooms;
     private final boolean useBackoff;
 
+    @SuppressWarnings("unchecked")
     public LFBDequeU(int initialCapacity, boolean backoff) {
         head = new AtomicInteger(0);
         tail = new AtomicInteger(0);
@@ -32,13 +33,15 @@ public class LFBDequeU<E> implements BDeque<E> {
     public void addFirst(E elem) {
         while (true) {
             rooms.enter(1);
-            int p = head.getAndDecrement();
+            int p = head.decrementAndGet();
             if (tail.get() - p < array.length && !resizing.get()) {
-                array[p % array.length] = elem;
+                System.out.println((((p % array.length) + array.length) % array.length));
+                array[((p % array.length) + array.length) % array.length] = elem;
                 break;
             }
             else {
-                head.getAndIncrement();
+                System.out.println("not here");
+                head.incrementAndGet();
                 while (resizing.getAndSet(true)) {
                     if (useBackoff) {
                         Backoff.delay();
@@ -50,7 +53,7 @@ public class LFBDequeU<E> implements BDeque<E> {
                 if (tail.get() - p >= array.length) {
                     E[] new_array = (E[]) new Object[array.length * 2];
                     for (int i = head.get(); i < tail.get(); i++) {
-                        new_array[i % new_array.length] = array[i % array.length];
+                        new_array[((i % new_array.length) + new_array.length) % new_array.length] = array[((i % array.length) + array.length) % array.length];
                     }
                     array = new_array;
                 }
@@ -68,7 +71,7 @@ public class LFBDequeU<E> implements BDeque<E> {
             rooms.enter(2);
             int p = head.getAndIncrement();
             if (p < tail.get()) {
-                p %= array.length;
+                p = ((p % array.length) + array.length) % array.length;
                 elem = array[p];
                 array[p] = null;
                 break;
@@ -94,7 +97,8 @@ public class LFBDequeU<E> implements BDeque<E> {
             rooms.enter(3);
             int p = tail.getAndIncrement();
             if (p - head.get() < array.length && !resizing.get()) {
-                array[p % array.length] = elem;
+                System.out.println((((p % array.length) + array.length) % array.length));
+                array[((p % array.length) + array.length) % array.length] = elem;
                 break;
             }
             else {
@@ -110,7 +114,7 @@ public class LFBDequeU<E> implements BDeque<E> {
                 if (p - head.get() >= array.length) {
                     E[] new_array = (E[]) new Object[array.length * 2];
                     for (int i = head.get(); i < tail.get(); i++) {
-                        new_array[i % new_array.length] = array[i % array.length];
+                        new_array[((i % new_array.length) + new_array.length) % new_array.length] = array[((i % array.length) + array.length) % array.length];
                     }
                     array = new_array;
                 }
@@ -126,15 +130,15 @@ public class LFBDequeU<E> implements BDeque<E> {
         E elem = null;
         while(true) {
             rooms.enter(4);
-            int p = tail.getAndDecrement();
+            int p = tail.decrementAndGet();
             if (p > head.get()) {
-                p %= array.length;
+                p = ((p % array.length) + array.length) % array.length;
                 elem = array[p];
                 array[p] = null;
                 break;
             }
             else {
-                tail.getAndIncrement();
+                tail.incrementAndGet();
                 rooms.leave(4);
                 if (useBackoff) {
                     Backoff.delay();
@@ -146,5 +150,12 @@ public class LFBDequeU<E> implements BDeque<E> {
             Backoff.reset();
         }
         return elem;
+    }
+
+    public static final class Test extends BDequeTest {
+        @Override
+        <T> BDeque<T> createBDeque(int capacity) {
+            return new LFBDequeU<>(capacity, false);
+        }
     }
 }
