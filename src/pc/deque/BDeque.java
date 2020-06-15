@@ -1,4 +1,4 @@
-package pc.bqueue;
+package pc.deque;
 
 /**
  * Interface for deques unbounded capacity.

@@ -3,6 +3,8 @@ package pc.bqueue;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
+import pc.deque.LFBDequeU;
+import pc.deque.STMBDequeU;
 
 
 // Uncomment lines as you find suitable.

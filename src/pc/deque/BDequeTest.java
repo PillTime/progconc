@@ -1,4 +1,4 @@
-package pc.bqueue;
+package pc.deque;
 
 import org.cooperari.CSystem;
 import org.cooperari.config.CMaxTrials;
