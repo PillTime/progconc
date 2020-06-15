@@ -1,0 +1,10 @@
+STM
+
+Bugs
+ -Em add(), a incrementação do size estava fora do bloco atomic por isso o tamanho não estaria a incrementar adequadamente e
+ tinhamos erros de NullPointerException. Por isso meteu-se a incrementação dentro do bloco atomic.
+ -Em remove() a condição do "retry" estava noutro bloco atomic separado do bloco atomic que removeria o elemento, havendo duas
+ sub-transações em vez de uma e a condição do "retry" não cumpre o objetivo de "retry" a remoção do elemento caso a fila
+ esteja vazia. Pegou-se nestas duas sub-transações e juntamo-las para que o retry faça retry de um só bloco que contém a ação 
+ de remover o elemento.
+  
