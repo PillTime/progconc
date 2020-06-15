@@ -1,0 +1,19 @@
+Crawler
+
+Manutenção do estado:
+-Cada TransferTask tem uma hashset para ver que ficheiros já foram visitados para que não entre em loops infinitos.
+-O rid é um AtomicInteger, isto permite-nos garantir que o rid de cada TransferTask é de facto único.
+
+Descrição da execução:
+Uma TransferTask (transferência de conteúdo HTML) de topo é lançada inicialmente o que leva a outras TransferTasks em função 
+dos “links” (para novos conteúdos) encontrados na página.
+Uma TransferTask é  lançada  assincronamente  na  “pool” usando fork()  e  o  resultado  da  mesma  pode  ser 
+obtida  numa altura posterior usando join().
+
+Desempenho:
+número de threads da “fork-join pool” do “crawler” | WORK_STEALING_POOL=false | Server com metade das threads        | WORK_STEALING_POOL=false
+1 -  2301 ms 1697 ms 1743 ms                           2523 ms                  (uma thread) 2427 ms 2068 ms 2063 ms            2412 ms
+4 -  1540 ms 1445 ms 1449 ms                           1715 ms                  1606 ms 1713 ms 1455 ms                         1707 ms
+8 -  1235 ms 1198 ms 1466 ms                           1667 ms                  1790 ms 1721 ms 1531 ms                         1867 ms
+12 - 1491 ms 1526 ms 1416 ms                           1306 ms                  1817 ms 1636 ms 1474 ms                         1801 ms
+16 - 1326 ms 1653 ms 1404 ms                           1454 ms                  1816 ms 1699 ms 1601 ms                         1766 ms
