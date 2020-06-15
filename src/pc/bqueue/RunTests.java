@@ -13,10 +13,12 @@ import org.junit.runners.Suite.SuiteClasses;
   MBQueueU.Test.class,
   LFBQueue.Test.class,
   LFBQueueU.Test.class,
+  LFBDequeU.Test.class,
   // Run STM-based tests only in preemptive mode using cjunitp.sh.
   // Cooperari cannot handle STM-based code with cooperative semantics.
-  //STMBQueue.Test.class,
-  //STMBQueueU.Test.class,
+  STMBQueue.Test.class,
+  STMBQueueU.Test.class,
+  STMBDequeU.Test.class,
 })
 public class RunTests {
 
