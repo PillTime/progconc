@@ -45,11 +45,12 @@ public class STMBDequeU<E> implements BDeque<E> {
 
             }else{
                 //avançar para a frente
-                for (int i = size.get(); i >= head.get(); i--) {
+                for (int i = size.get()-1; i >= head.get(); i--) {
                     arrayRef.get().update(i + 1, arrayRef.get().apply(i));
                 }
 
                 arrayRef.get().update(head.get(), elem);
+
             }
 
             STM.increment(size, 1);
@@ -80,7 +81,7 @@ public class STMBDequeU<E> implements BDeque<E> {
     public void addLast(E elem) {
         STM.atomic(() -> {
             if(size.get() == arrayRef.get().size()) {
-                TArray.View<E> new_array = STM.newTArray(size.get()*2);
+                TArray.View<E> new_array = STM.newTArray(size.get()+1);
 
                 for (int i = head.get(); i < size.get(); i++) {
                     new_array.update(i, arrayRef.get().apply(i));
@@ -88,7 +89,6 @@ public class STMBDequeU<E> implements BDeque<E> {
 
                 arrayRef.set(new_array);
             }
-
             arrayRef.get().update((head.get() + size.get()) % arrayRef.get().length(), elem);
 
             STM.increment(size, 1);
@@ -101,14 +101,15 @@ public class STMBDequeU<E> implements BDeque<E> {
             if (size.get() == 0) {
                 STM.retry();
             }
+            E elem = arrayRef.get().apply(head.get() + size.get() -1);
 
             TArray.View<E> new_array = STM.newTArray(size.get()-1);
 
-            E elem = arrayRef.get().apply((head.get() + size.get()) % arrayRef.get().length());
 
             for( int i = head.get(); i < size.get()-1 ; i++){
                 new_array.update(i, arrayRef.get().apply(i));
             }
+
 
             arrayRef.set(new_array);
 
@@ -123,8 +124,8 @@ public class STMBDequeU<E> implements BDeque<E> {
      */
     public static final class Test extends BDequeTest {
         @Override
-        <T> BDeque<T> createBDeque(int capacity) {
-            return new STMBDequeU<>(capacity);
+        <T> BDeque<T> createBDeque(int initialCapacity) {
+            return new STMBDequeU<>(initialCapacity);
         }
     }
 }
