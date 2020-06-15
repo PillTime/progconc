@@ -50,46 +50,46 @@ q começa com 1 elemento
 [thread2] q.add(a.get())[B]
 [thread3] n = q.size()[C] precede q.add(n)[D], que precede d.set(q.remove())[E]
 
-1a3 A B C D E { 1, a3 }
-1a0 A B C D E { 1, a0 }
-1a3 A C B D E { 1, a3 }
-1a0 A C B D E { 1, a0 }
-1a3 A C D B E { 1, 0 }
-1a0 A C D B E { 1, 0 }
-1a3 A C D E B { 1, 0 }
-1a0 A C D E B { 1, 0 }
-1a3 B A C D E { 1, a3 }
-1a0 B A C D E { 1, a0 }
-1a3 B C A D E { 1, a3 }
-1a0 B C A D E { 1, a0 }
-1a3 B C D A E { 1, a3 }
-1a0 B C D A E { 1, a0 }
-1a3 B C D E A { a3, 1 }
-1a0 B C D E A { a0, 1 }
-1a3 C A B D E { 1, a3 }
-1a0 C A B D E { 1, a0 }
-1a3 C A D B E { 1, 1 }
-1a0 C A D B E { 1, 1 }
-1a3 C A D E B { 1, 1 }
-1a0 C A D E B { 1, 1 }
-1a3 C B A D E { 1, a3 }
-1a0 C B A D E { 1, a0 }
-1a3 C B D A E { 1, a3 }
-1a0 C B D A E { 1, a0 }
-1a3 C B D E A { a3, 1 }
-1a0 C B D E A { a0, 1 }
-1a3 C D A B E { 1, 1 }
-1a0 C D A B E { 1, 1 }
-1a3 C D A E B { 1, 1 }
-1a0 C D A E B { 1, 1 }
-1a3 C D B A E { 1, 1 }
-1a0 C D B A E { 1, 1 }
-1a3 C D B E A { 1, 1 }
-1a0 C D B E A { 1, 1 }
-1a3 C D E A B { 1, 1 }
-1a0 C D E A B { 1, 1 }
-1a3 C D E B A { 1, 1 }
-1a0 C D E B A { 1, 1 }
+1a3 A B C D E { 1, a3 } { 1, a3 }
+1a0 A B C D E { 1, a0 } { 1, a0 }
+1a3 A C B D E { 1, a3 } { 1, a3 }
+1a0 A C B D E { 1, a0 } { 1, a0 }
+1a3 A C D B E { 1, 0n } { 1, 0n }
+1a0 A C D B E { 1, 0n } { 1, 0n }
+1a3 A C D E B { 1, 0n } { 1, 0n }
+1a0 A C D E B { 1, 0n } { 1, 0n }
+1a3 B A C D E { 1, a3 } { 1, a3 }
+1a0 B A C D E { 1, a0 } { 1, a0 }
+1a3 B C A D E { 1, a3 } { 1, a3 }
+1a0 B C A D E { 1, a0 } { 1, a0 }
+1a3 B C D A E { 1, a3 } { 1, a3 }
+1a0 B C D A E { 1, a0 } { 1, a0 }
+1a3 B C D E A { a3, 1 } { a3, 1 }
+1a0 B C D E A { a0, 1 } { a0, 1 }
+1a3 C A B D E { 1, a3 } { 1, a3 }
+1a0 C A B D E { 1, a0 } { 1, a0 }
+1a3 C A D B E { 1, 1 } { 1, 1n }
+1a0 C A D B E { 1, 1 } { 1, 1n }
+1a3 C A D E B { 1, 1 } { 1, 1n }
+1a0 C A D E B { 1, 1 } { 1, 1n }
+1a3 C B A D E { 1, a3 } { 1, a3 }
+1a0 C B A D E { 1, a0 } { 1, a0 }
+1a3 C B D A E { 1, a3 } { 1, a3 }
+1a0 C B D A E { 1, a0 } { 1, a0 }
+1a3 C B D E A { a3, 1 } { ,  }
+1a0 C B D E A { a0, 1 } { ,  }
+1a3 C D A B E { 1, 1 } { ,  }
+1a0 C D A B E { 1, 1 } { ,  }
+1a3 C D A E B { 1, 1 } { ,  }
+1a0 C D A E B { 1, 1 } { ,  }
+1a3 C D B A E { 1, 1 } { ,  }
+1a0 C D B A E { 1, 1 } { ,  }
+1a3 C D B E A { 1, 1 } { ,  }
+1a0 C D B E A { 1, 1 } { ,  }
+1a3 C D E A B { 1, 1 } { ,  }
+1a0 C D E A B { 1, 1 } { ,  }
+1a3 C D E B A { 1, 1 } { ,  }
+1a0 C D E B A { 1, 1 } { ,  }
 2a3 A B C D E { 2, a3 }
 2a1 A B C D E { 2, a1 }
 ...
@@ -114,3 +114,11 @@ possibilities: { 1, 3 } 1a3
                { 0, 3 } 3a0
                { 3, 1 } 3
                { 1, 3 } 3
+
+Deque
+d começa com 1 elemento
+[thread1] c.set(q.remove())[A]
+[thread2] q.add(a.get())[B]
+[thread3] n = q.size()[C] precede q.add(n)[D], que precede d.set(q.remove())[E]
+
+1a3

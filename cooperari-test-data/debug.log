@@ -1,0 +1,1435 @@
+000000043 | main | == PREPARING  test9 ==
+000000048 | main | initializating feature handler class org.cooperari.feature.hotspots.CHotspotFeature
+000000048 | main | == STARTED test9 (preemptively) ==
+000000101 | main | == TRIAL 0 of test9 ==
+000000187 | Thread-0 | Thread-0 starting!
+000000189 | Thread-1 | Thread-1 starting!
+000000193 | main | waiting for all threads to join
+000000193 | main | Thread-1 BLOCKED
+000000193 | main | Thread-2 RUNNABLE
+000000194 | main | Thread-0 BLOCKED
+000000194 | main | A 3 B 2 W 0 CTR 0
+000000195 | Thread-1 | Thread-1 passed sync. barrier!
+000000195 | Thread-2 | Thread-2 starting!
+000000195 | Thread-2 | Thread-2 passed sync. barrier!
+000000196 | main | Thread-1 RUNNABLE
+000000196 | main | Thread-2 RUNNABLE
+000000196 | main | Thread-0 BLOCKED
+000000196 | main | A 3 B 1 W 0 CTR 0
+000000197 | Thread-0 | Thread-0 passed sync. barrier!
+000000203 | Thread-0 | Thread-0 done!
+000000204 | main | Thread-1 RUNNABLE
+000000204 | main | Thread-2 RUNNABLE
+000000204 | main | Thread-0 TERMINATED
+000000204 | main | A 2 B 0 W 0 CTR 0
+000000206 | main | Thread-1 RUNNABLE
+000000207 | main | Thread-2 RUNNABLE
+000000207 | main | A 2 B 0 W 0 CTR 0
+000000207 | Thread-2 | Thread-2 done!
+000000208 | Thread-1 | Thread-1 done!
+000000208 | main | Thread-1 TERMINATED
+000000209 | main | Thread-2 TERMINATED
+000000209 | main | A 0 B 0 W 0 CTR 0
+000000211 | Thread-0 | Thread-0 starting!
+000000211 | Thread-1 | Thread-1 starting!
+000000212 | main | waiting for all threads to join
+000000212 | main | Thread-2 RUNNABLE
+000000212 | main | Thread-1 TIMED_WAITING
+000000212 | main | Thread-0 TIMED_WAITING
+000000212 | main | A 3 B 0 W 0 CTR 0
+000000213 | Thread-0 | Thread-0 passed sync. barrier!
+000000213 | Thread-0 | Thread-0 done!
+000000213 | Thread-1 | Thread-1 passed sync. barrier!
+000000214 | Thread-1 | Thread-1 done!
+000000214 | main | Thread-2 RUNNABLE
+000000214 | main | Thread-1 TERMINATED
+000000215 | main | Thread-0 TERMINATED
+000000215 | main | A 1 B 0 W 0 CTR 0
+000000215 | Thread-2 | Thread-2 starting!
+000000216 | Thread-2 | Thread-2 passed sync. barrier!
+000000216 | Thread-2 | Thread-2 done!
+000000216 | main | Thread-2 TERMINATED
+000000217 | main | A 0 B 0 W 0 CTR 0
+000000217 | main | == TRIAL 1 of test9 ==
+000000221 | Thread-1 | Thread-1 starting!
+000000224 | main | waiting for all threads to join
+000000224 | main | Thread-0 BLOCKED
+000000224 | main | Thread-1 BLOCKED
+000000225 | main | Thread-2 BLOCKED
+000000225 | main | A 3 B 3 W 0 CTR 0
+000000225 | main | POSSIBLE DEADLOCK
+000000227 | Thread-0 | Thread-0 starting!
+000000227 | Thread-0 | Thread-0 passed sync. barrier!
+000000234 | Thread-1 | Thread-1 passed sync. barrier!
+000000234 | Thread-2 | Thread-2 starting!
+000000234 | Thread-2 | Thread-2 passed sync. barrier!
+000000235 | main | Thread-0 RUNNABLE
+000000235 | main | Thread-1 RUNNABLE
+000000235 | main | Thread-2 RUNNABLE
+000000235 | main | A 3 B 0 W 0 CTR 1
+000000236 | main | Thread-0 RUNNABLE
+000000237 | main | Thread-1 RUNNABLE
+000000237 | main | Thread-2 RUNNABLE
+000000237 | main | A 3 B 0 W 0 CTR 0
+000000240 | main | Thread-0 RUNNABLE
+000000240 | main | Thread-1 RUNNABLE
+000000240 | main | Thread-2 RUNNABLE
+000000241 | main | A 3 B 0 W 0 CTR 0
+000000242 | main | Thread-0 RUNNABLE
+000000243 | main | Thread-1 RUNNABLE
+000000243 | main | Thread-2 RUNNABLE
+000000243 | main | A 3 B 0 W 0 CTR 0
+000000244 | main | Thread-0 RUNNABLE
+000000244 | main | Thread-1 RUNNABLE
+000000245 | main | Thread-2 RUNNABLE
+000000245 | main | A 3 B 0 W 0 CTR 0
+000000246 | main | Thread-0 RUNNABLE
+000000246 | main | Thread-1 RUNNABLE
+000000246 | main | Thread-2 RUNNABLE
+000000247 | main | A 3 B 0 W 0 CTR 0
+000000247 | Thread-0 | Thread-0 done!
+000000247 | Thread-2 | Thread-2 done!
+000000248 | main | Thread-0 TERMINATED
+000000248 | main | Thread-1 RUNNABLE
+000000248 | main | Thread-2 TERMINATED
+000000248 | main | A 1 B 0 W 0 CTR 0
+000000250 | main | Thread-1 RUNNABLE
+000000250 | main | A 1 B 0 W 0 CTR 0
+000000253 | main | Thread-1 RUNNABLE
+000000254 | main | A 1 B 0 W 0 CTR 0
+000000254 | Thread-1 | Thread-1 done!
+000000255 | main | Thread-1 TERMINATED
+000000255 | main | A 0 B 0 W 0 CTR 0
+000000258 | Thread-0 | Thread-0 starting!
+000000261 | Thread-1 | Thread-1 starting!
+000000264 | main | waiting for all threads to join
+000000264 | main | Thread-1 TIMED_WAITING
+000000264 | main | Thread-2 RUNNABLE
+000000264 | main | Thread-0 TIMED_WAITING
+000000265 | main | A 3 B 0 W 0 CTR 0
+000000265 | Thread-0 | Thread-0 passed sync. barrier!
+000000265 | Thread-0 | Thread-0 done!
+000000265 | Thread-1 | Thread-1 passed sync. barrier!
+000000265 | Thread-1 | Thread-1 done!
+000000265 | Thread-2 | Thread-2 starting!
+000000266 | Thread-2 | Thread-2 passed sync. barrier!
+000000266 | Thread-2 | Thread-2 done!
+000000266 | main | Thread-1 TERMINATED
+000000266 | main | Thread-2 RUNNABLE
+000000266 | main | Thread-0 TERMINATED
+000000266 | main | A 1 B 0 W 0 CTR 0
+000000268 | main | Thread-2 TERMINATED
+000000268 | main | A 0 B 0 W 0 CTR 0
+000000268 | main | == TRIAL 2 of test9 ==
+000000274 | Thread-0 | Thread-0 starting!
+000000276 | Thread-1 | Thread-1 starting!
+000000276 | main | waiting for all threads to join
+000000276 | main | Thread-2 RUNNABLE
+000000276 | main | Thread-1 TIMED_WAITING
+000000276 | main | Thread-0 TIMED_WAITING
+000000276 | main | A 3 B 0 W 0 CTR 0
+000000277 | Thread-0 | Thread-0 passed sync. barrier!
+000000277 | Thread-0 | Thread-0 done!
+000000278 | main | Thread-2 RUNNABLE
+000000279 | main | Thread-1 TIMED_WAITING
+000000279 | main | Thread-0 TERMINATED
+000000280 | main | A 2 B 0 W 0 CTR 0
+000000280 | Thread-1 | Thread-1 passed sync. barrier!
+000000281 | main | Thread-2 RUNNABLE
+000000281 | main | Thread-1 RUNNABLE
+000000287 | main | A 2 B 0 W 0 CTR 0
+000000291 | Thread-2 | Thread-2 starting!
+000000291 | Thread-2 | Thread-2 passed sync. barrier!
+000000292 | main | Thread-2 RUNNABLE
+000000292 | main | Thread-1 RUNNABLE
+000000293 | main | A 2 B 0 W 0 CTR 0
+000000293 | Thread-1 | Thread-1 done!
+000000293 | Thread-2 | Thread-2 done!
+000000294 | main | Thread-2 TERMINATED
+000000295 | main | Thread-1 TERMINATED
+000000295 | main | A 0 B 0 W 0 CTR 0
+000000297 | Thread-0 | Thread-0 starting!
+000000297 | Thread-1 | Thread-1 starting!
+000000298 | main | waiting for all threads to join
+000000298 | main | Thread-2 RUNNABLE
+000000298 | main | Thread-0 TIMED_WAITING
+000000298 | main | Thread-1 TIMED_WAITING
+000000298 | main | A 3 B 0 W 0 CTR 0
+000000299 | Thread-0 | Thread-0 passed sync. barrier!
+000000299 | Thread-0 | Thread-0 done!
+000000300 | main | Thread-2 RUNNABLE
+000000300 | main | Thread-0 TERMINATED
+000000300 | main | Thread-1 TIMED_WAITING
+000000300 | main | A 2 B 0 W 0 CTR 0
+000000303 | main | Thread-2 RUNNABLE
+000000303 | main | Thread-1 TIMED_WAITING
+000000303 | main | A 2 B 0 W 0 CTR 0
+000000304 | Thread-1 | Thread-1 passed sync. barrier!
+000000304 | Thread-1 | Thread-1 done!
+000000305 | main | Thread-2 RUNNABLE
+000000305 | main | Thread-1 TERMINATED
+000000305 | main | A 1 B 0 W 0 CTR 0
+000000307 | main | Thread-2 RUNNABLE
+000000307 | main | A 1 B 0 W 0 CTR 0
+000000308 | Thread-2 | Thread-2 starting!
+000000308 | Thread-2 | Thread-2 passed sync. barrier!
+000000310 | main | Thread-2 RUNNABLE
+000000310 | main | A 1 B 0 W 0 CTR 0
+000000310 | Thread-2 | Thread-2 done!
+000000314 | main | Thread-2 RUNNABLE
+000000314 | main | A 0 B 0 W 0 CTR 0
+000000314 | main | == TRIAL 3 of test9 ==
+000000325 | Thread-0 | Thread-0 starting!
+000000327 | Thread-1 | Thread-1 starting!
+000000328 | main | waiting for all threads to join
+000000328 | Thread-0 | Thread-0 passed sync. barrier!
+000000328 | Thread-0 | Thread-0 done!
+000000328 | Thread-2 | Thread-2 starting!
+000000328 | main | Thread-1 TIMED_WAITING
+000000328 | Thread-2 | Thread-2 passed sync. barrier!
+000000328 | main | Thread-0 TERMINATED
+000000329 | Thread-2 | Thread-2 done!
+000000329 | Thread-1 | Thread-1 passed sync. barrier!
+000000329 | Thread-1 | Thread-1 done!
+000000329 | main | Thread-2 BLOCKED
+000000329 | main | A 2 B 0 W 0 CTR 0
+000000330 | main | Thread-1 TERMINATED
+000000330 | main | Thread-2 TERMINATED
+000000331 | main | A 0 B 0 W 0 CTR 0
+000000335 | Thread-0 | Thread-0 starting!
+000000335 | Thread-1 | Thread-1 starting!
+000000335 | main | waiting for all threads to join
+000000336 | main | Thread-1 TIMED_WAITING
+000000336 | main | Thread-0 TIMED_WAITING
+000000336 | main | Thread-2 RUNNABLE
+000000336 | main | A 3 B 0 W 0 CTR 0
+000000337 | main | Thread-1 TIMED_WAITING
+000000337 | main | Thread-0 TIMED_WAITING
+000000337 | main | Thread-2 RUNNABLE
+000000337 | main | A 3 B 0 W 0 CTR 0
+000000339 | Thread-0 | Thread-0 passed sync. barrier!
+000000339 | main | Thread-1 TIMED_WAITING
+000000339 | main | Thread-0 BLOCKED
+000000339 | main | Thread-2 RUNNABLE
+000000339 | main | A 3 B 1 W 0 CTR 0
+000000339 | Thread-0 | Thread-0 done!
+000000340 | Thread-1 | Thread-1 passed sync. barrier!
+000000340 | Thread-1 | Thread-1 done!
+000000340 | main | Thread-1 TERMINATED
+000000340 | main | Thread-0 TERMINATED
+000000341 | main | Thread-2 BLOCKED
+000000341 | main | A 1 B 1 W 0 CTR 0
+000000341 | main | POSSIBLE DEADLOCK
+000000349 | Thread-2 | Thread-2 starting!
+000000349 | Thread-2 | Thread-2 passed sync. barrier!
+000000349 | Thread-2 | Thread-2 done!
+000000351 | main | Thread-2 BLOCKED
+000000351 | main | A 0 B 0 W 0 CTR 1
+000000351 | main | == TRIAL 4 of test9 ==
+000000352 | Thread-0 | Thread-0 starting!
+000000357 | Thread-1 | Thread-1 starting!
+000000361 | main | waiting for all threads to join
+000000361 | Thread-2 | Thread-2 starting!
+000000361 | Thread-2 | Thread-2 passed sync. barrier!
+000000361 | Thread-2 | Thread-2 done!
+000000361 | Thread-1 | Thread-1 passed sync. barrier!
+000000361 | Thread-1 | Thread-1 done!
+000000361 | Thread-0 | Thread-0 passed sync. barrier!
+000000361 | Thread-0 | Thread-0 done!
+000000362 | main | Thread-2 RUNNABLE
+000000362 | main | Thread-1 TERMINATED
+000000362 | main | Thread-0 TERMINATED
+000000362 | main | A 0 B 0 W 0 CTR 0
+000000364 | Thread-0 | Thread-0 starting!
+000000371 | Thread-1 | Thread-1 starting!
+000000374 | main | waiting for all threads to join
+000000374 | main | Thread-0 TIMED_WAITING
+000000374 | main | Thread-2 BLOCKED
+000000374 | main | Thread-1 TIMED_WAITING
+000000374 | main | A 3 B 1 W 0 CTR 0
+000000374 | Thread-1 | Thread-1 passed sync. barrier!
+000000375 | Thread-1 | Thread-1 done!
+000000375 | Thread-2 | Thread-2 starting!
+000000375 | Thread-2 | Thread-2 passed sync. barrier!
+000000375 | Thread-2 | Thread-2 done!
+000000375 | Thread-0 | Thread-0 passed sync. barrier!
+000000375 | Thread-0 | Thread-0 done!
+000000376 | main | Thread-0 TERMINATED
+000000376 | main | Thread-2 TERMINATED
+000000376 | main | Thread-1 TERMINATED
+000000376 | main | A 0 B 0 W 0 CTR 0
+000000376 | main | == TRIAL 5 of test9 ==
+000000385 | Thread-0 | Thread-0 starting!
+000000391 | main | waiting for all threads to join
+000000391 | main | Thread-2 RUNNABLE
+000000391 | main | Thread-1 RUNNABLE
+000000391 | main | Thread-0 TIMED_WAITING
+000000391 | main | A 3 B 0 W 0 CTR 0
+000000391 | Thread-0 | Thread-0 passed sync. barrier!
+000000391 | Thread-0 | Thread-0 done!
+000000391 | Thread-2 | Thread-2 starting!
+000000391 | Thread-2 | Thread-2 passed sync. barrier!
+000000391 | Thread-2 | Thread-2 done!
+000000392 | main | Thread-2 TERMINATED
+000000392 | main | Thread-1 RUNNABLE
+000000392 | main | Thread-0 TERMINATED
+000000392 | main | A 1 B 0 W 0 CTR 0
+000000394 | main | Thread-1 RUNNABLE
+000000394 | main | A 1 B 0 W 0 CTR 0
+000000395 | Thread-1 | Thread-1 starting!
+000000395 | Thread-1 | Thread-1 passed sync. barrier!
+000000396 | main | Thread-1 RUNNABLE
+000000396 | main | A 1 B 0 W 0 CTR 0
+000000397 | Thread-1 | Thread-1 done!
+000000398 | main | Thread-1 TERMINATED
+000000398 | main | A 0 B 0 W 0 CTR 0
+000000398 | Thread-0 | Thread-0 starting!
+000000403 | main | waiting for all threads to join
+000000403 | main | Thread-0 TIMED_WAITING
+000000403 | main | Thread-1 RUNNABLE
+000000403 | main | Thread-2 RUNNABLE
+000000403 | main | A 3 B 0 W 0 CTR 0
+000000404 | Thread-1 | Thread-1 starting!
+000000404 | Thread-2 | Thread-2 starting!
+000000404 | Thread-2 | Thread-2 passed sync. barrier!
+000000404 | Thread-2 | Thread-2 done!
+000000404 | Thread-0 | Thread-0 passed sync. barrier!
+000000404 | Thread-0 | Thread-0 done!
+000000404 | main | Thread-0 TERMINATED
+000000404 | main | Thread-1 RUNNABLE
+000000404 | main | Thread-2 TERMINATED
+000000404 | main | A 1 B 0 W 0 CTR 0
+000000405 | Thread-1 | Thread-1 passed sync. barrier!
+000000405 | Thread-1 | Thread-1 done!
+000000406 | main | Thread-1 TERMINATED
+000000406 | main | A 0 B 0 W 0 CTR 0
+000000406 | main | == TRIAL 6 of test9 ==
+000000411 | Thread-0 | Thread-0 starting!
+000000416 | Thread-1 | Thread-1 starting!
+000000417 | Thread-1 | Thread-1 passed sync. barrier!
+000000417 | Thread-2 | Thread-2 starting!
+000000417 | main | waiting for all threads to join
+000000417 | main | Thread-1 RUNNABLE
+000000417 | main | Thread-2 RUNNABLE
+000000417 | main | Thread-0 TIMED_WAITING
+000000417 | main | A 3 B 0 W 0 CTR 0
+000000417 | Thread-0 | Thread-0 passed sync. barrier!
+000000417 | Thread-2 | Thread-2 passed sync. barrier!
+000000418 | main | Thread-1 RUNNABLE
+000000418 | main | Thread-2 RUNNABLE
+000000418 | main | Thread-0 RUNNABLE
+000000418 | main | A 3 B 0 W 0 CTR 0
+000000420 | main | Thread-1 RUNNABLE
+000000420 | main | Thread-2 RUNNABLE
+000000420 | main | Thread-0 RUNNABLE
+000000420 | main | A 3 B 0 W 0 CTR 0
+000000421 | main | Thread-1 RUNNABLE
+000000421 | main | Thread-2 RUNNABLE
+000000421 | main | Thread-0 RUNNABLE
+000000421 | main | A 3 B 0 W 0 CTR 0
+000000422 | main | Thread-1 RUNNABLE
+000000423 | main | Thread-2 RUNNABLE
+000000423 | main | Thread-0 RUNNABLE
+000000423 | main | A 3 B 0 W 0 CTR 0
+000000423 | Thread-2 | Thread-2 done!
+000000423 | Thread-0 | Thread-0 done!
+000000424 | Thread-1 | Thread-1 done!
+000000424 | main | Thread-1 TERMINATED
+000000424 | main | Thread-2 TERMINATED
+000000424 | main | Thread-0 TERMINATED
+000000424 | main | A 0 B 0 W 0 CTR 0
+000000424 | Thread-0 | Thread-0 starting!
+000000431 | Thread-1 | Thread-1 starting!
+000000434 | main | waiting for all threads to join
+000000434 | main | Thread-2 BLOCKED
+000000434 | main | Thread-0 TIMED_WAITING
+000000434 | main | Thread-1 TIMED_WAITING
+000000434 | main | A 3 B 1 W 0 CTR 0
+000000434 | Thread-0 | Thread-0 passed sync. barrier!
+000000435 | Thread-0 | Thread-0 done!
+000000435 | Thread-1 | Thread-1 passed sync. barrier!
+000000435 | Thread-1 | Thread-1 done!
+000000436 | Thread-2 | Thread-2 starting!
+000000436 | main | Thread-2 BLOCKED
+000000436 | main | Thread-0 TERMINATED
+000000436 | Thread-2 | Thread-2 passed sync. barrier!
+000000436 | main | Thread-1 TERMINATED
+000000436 | main | A 1 B 1 W 0 CTR 0
+000000436 | main | POSSIBLE DEADLOCK
+000000436 | Thread-2 | Thread-2 done!
+000000437 | main | Thread-2 TERMINATED
+000000438 | main | A 0 B 0 W 0 CTR 1
+000000438 | main | == TRIAL 7 of test9 ==
+000000441 | Thread-0 | Thread-0 starting!
+000000444 | Thread-1 | Thread-1 starting!
+000000444 | main | waiting for all threads to join
+000000444 | main | Thread-2 RUNNABLE
+000000444 | main | Thread-1 BLOCKED
+000000444 | main | Thread-0 RUNNABLE
+000000444 | Thread-0 | Thread-0 passed sync. barrier!
+000000444 | Thread-0 | Thread-0 done!
+000000445 | Thread-1 | Thread-1 passed sync. barrier!
+000000445 | Thread-2 | Thread-2 starting!
+000000446 | main | A 3 B 1 W 0 CTR 0
+000000446 | Thread-2 | Thread-2 passed sync. barrier!
+000000446 | Thread-2 | Thread-2 done!
+000000447 | Thread-1 | Thread-1 done!
+000000447 | main | Thread-2 TERMINATED
+000000448 | main | Thread-1 TERMINATED
+000000448 | main | Thread-0 TERMINATED
+000000448 | main | A 0 B 0 W 0 CTR 0
+000000454 | Thread-0 | Thread-0 starting!
+000000454 | Thread-1 | Thread-1 starting!
+000000455 | main | waiting for all threads to join
+000000455 | main | Thread-1 TIMED_WAITING
+000000455 | main | Thread-0 TIMED_WAITING
+000000455 | main | Thread-2 RUNNABLE
+000000455 | main | A 3 B 0 W 0 CTR 0
+000000455 | Thread-0 | Thread-0 passed sync. barrier!
+000000455 | Thread-0 | Thread-0 done!
+000000456 | Thread-1 | Thread-1 passed sync. barrier!
+000000456 | Thread-1 | Thread-1 done!
+000000456 | main | Thread-1 TERMINATED
+000000456 | main | Thread-0 TERMINATED
+000000456 | main | Thread-2 RUNNABLE
+000000456 | main | A 1 B 0 W 0 CTR 0
+000000457 | main | Thread-2 RUNNABLE
+000000457 | main | A 1 B 0 W 0 CTR 0
+000000459 | Thread-2 | Thread-2 starting!
+000000459 | Thread-2 | Thread-2 passed sync. barrier!
+000000459 | main | Thread-2 RUNNABLE
+000000459 | main | A 1 B 1 W 0 CTR 0
+000000459 | main | POSSIBLE DEADLOCK
+000000459 | Thread-2 | Thread-2 done!
+000000460 | main | Thread-2 TERMINATED
+000000461 | main | A 0 B 0 W 0 CTR 1
+000000461 | main | == TRIAL 8 of test9 ==
+000000461 | Thread-0 | Thread-0 starting!
+000000464 | Thread-1 | Thread-1 starting!
+000000472 | main | waiting for all threads to join
+000000472 | main | Thread-0 TIMED_WAITING
+000000472 | main | Thread-2 RUNNABLE
+000000472 | main | Thread-1 TIMED_WAITING
+000000472 | main | A 3 B 0 W 0 CTR 0
+000000474 | Thread-1 | Thread-1 passed sync. barrier!
+000000474 | Thread-0 | Thread-0 passed sync. barrier!
+000000475 | Thread-1 | Thread-1 done!
+000000480 | main | Thread-0 RUNNABLE
+000000480 | main | Thread-2 RUNNABLE
+000000480 | main | Thread-1 TERMINATED
+000000480 | main | A 2 B 0 W 0 CTR 0
+000000480 | Thread-2 | Thread-2 starting!
+000000480 | Thread-2 | Thread-2 passed sync. barrier!
+000000481 | Thread-2 | Thread-2 done!
+000000481 | main | Thread-0 RUNNABLE
+000000482 | main | Thread-2 TERMINATED
+000000482 | main | A 1 B 0 W 0 CTR 0
+000000483 | main | Thread-0 RUNNABLE
+000000483 | main | A 1 B 0 W 0 CTR 0
+000000487 | main | Thread-0 RUNNABLE
+000000488 | main | A 1 B 0 W 0 CTR 0
+000000490 | main | Thread-0 RUNNABLE
+000000490 | main | A 1 B 0 W 0 CTR 0
+000000491 | main | Thread-0 RUNNABLE
+000000491 | main | A 1 B 0 W 0 CTR 0
+000000492 | Thread-0 | Thread-0 done!
+000000493 | main | Thread-0 TERMINATED
+000000493 | main | A 0 B 0 W 0 CTR 0
+000000497 | Thread-0 | Thread-0 starting!
+000000501 | main | waiting for all threads to join
+000000501 | main | Thread-2 RUNNABLE
+000000501 | main | Thread-0 TIMED_WAITING
+000000501 | main | Thread-1 BLOCKED
+000000501 | main | A 3 B 1 W 0 CTR 0
+000000501 | Thread-1 | Thread-1 starting!
+000000501 | Thread-2 | Thread-2 starting!
+000000501 | Thread-1 | Thread-1 passed sync. barrier!
+000000501 | Thread-2 | Thread-2 passed sync. barrier!
+000000502 | Thread-1 | Thread-1 done!
+000000502 | Thread-2 | Thread-2 done!
+000000502 | Thread-0 | Thread-0 passed sync. barrier!
+000000502 | Thread-0 | Thread-0 done!
+000000502 | main | Thread-2 TERMINATED
+000000502 | main | Thread-0 TERMINATED
+000000502 | main | Thread-1 TERMINATED
+000000503 | main | A 0 B 0 W 0 CTR 0
+000000503 | main | == TRIAL 9 of test9 ==
+000000504 | Thread-0 | Thread-0 starting!
+000000507 | main | waiting for all threads to join
+000000507 | main | Thread-0 TIMED_WAITING
+000000507 | main | Thread-1 RUNNABLE
+000000507 | main | Thread-2 BLOCKED
+000000507 | main | A 3 B 1 W 0 CTR 0
+000000508 | Thread-2 | Thread-2 starting!
+000000508 | Thread-0 | Thread-0 passed sync. barrier!
+000000508 | Thread-2 | Thread-2 passed sync. barrier!
+000000508 | Thread-2 | Thread-2 done!
+000000508 | Thread-0 | Thread-0 done!
+000000509 | main | Thread-0 TERMINATED
+000000509 | main | Thread-1 RUNNABLE
+000000509 | main | Thread-2 TERMINATED
+000000509 | main | A 1 B 0 W 0 CTR 0
+000000510 | main | Thread-1 RUNNABLE
+000000510 | main | A 1 B 0 W 0 CTR 0
+000000511 | Thread-1 | Thread-1 starting!
+000000511 | Thread-1 | Thread-1 passed sync. barrier!
+000000511 | Thread-1 | Thread-1 done!
+000000511 | main | Thread-1 TERMINATED
+000000511 | main | A 0 B 0 W 0 CTR 0
+000000512 | Thread-0 | Thread-0 starting!
+000000517 | Thread-1 | Thread-1 starting!
+000000522 | main | waiting for all threads to join
+000000522 | Thread-2 | Thread-2 starting!
+000000522 | main | Thread-0 TIMED_WAITING
+000000522 | Thread-2 | Thread-2 passed sync. barrier!
+000000522 | main | Thread-1 TIMED_WAITING
+000000522 | main | Thread-2 BLOCKED
+000000522 | main | A 3 B 1 W 0 CTR 0
+000000522 | Thread-1 | Thread-1 passed sync. barrier!
+000000522 | Thread-1 | Thread-1 done!
+000000523 | Thread-2 | Thread-2 done!
+000000523 | Thread-0 | Thread-0 passed sync. barrier!
+000000523 | Thread-0 | Thread-0 done!
+000000523 | main | Thread-0 TERMINATED
+000000524 | main | Thread-1 TERMINATED
+000000524 | main | Thread-2 TERMINATED
+000000524 | main | A 0 B 0 W 0 CTR 0
+000000524 | main | == TRIAL 10 of test9 ==
+000000527 | Thread-0 | Thread-0 starting!
+000000534 | Thread-1 | Thread-1 starting!
+000000535 | main | waiting for all threads to join
+000000535 | main | Thread-0 TIMED_WAITING
+000000535 | main | Thread-1 TIMED_WAITING
+000000535 | main | Thread-2 RUNNABLE
+000000535 | main | A 3 B 0 W 0 CTR 0
+000000536 | Thread-2 | Thread-2 starting!
+000000536 | Thread-2 | Thread-2 passed sync. barrier!
+000000536 | Thread-2 | Thread-2 done!
+000000547 | main | Thread-0 BLOCKED
+000000547 | main | Thread-1 BLOCKED
+000000547 | main | Thread-2 RUNNABLE
+000000547 | main | A 3 B 2 W 0 CTR 0
+000000547 | Thread-0 | Thread-0 passed sync. barrier!
+000000548 | Thread-0 | Thread-0 done!
+000000548 | Thread-1 | Thread-1 passed sync. barrier!
+000000548 | Thread-1 | Thread-1 done!
+000000548 | main | Thread-0 TERMINATED
+000000548 | main | Thread-1 TERMINATED
+000000549 | main | Thread-2 TERMINATED
+000000549 | main | A 0 B 0 W 0 CTR 0
+000000549 | Thread-0 | Thread-0 starting!
+000000551 | Thread-1 | Thread-1 starting!
+000000551 | Thread-1 | Thread-1 passed sync. barrier!
+000000551 | Thread-1 | Thread-1 done!
+000000552 | Thread-0 | Thread-0 passed sync. barrier!
+000000552 | Thread-0 | Thread-0 done!
+000000553 | main | waiting for all threads to join
+000000553 | main | Thread-0 TERMINATED
+000000553 | main | Thread-2 RUNNABLE
+000000553 | main | Thread-1 TERMINATED
+000000553 | main | A 1 B 0 W 0 CTR 0
+000000553 | Thread-2 | Thread-2 starting!
+000000554 | Thread-2 | Thread-2 passed sync. barrier!
+000000554 | Thread-2 | Thread-2 done!
+000000554 | main | Thread-2 TERMINATED
+000000555 | main | A 0 B 0 W 0 CTR 0
+000000555 | main | == TRIAL 11 of test9 ==
+000000555 | Thread-0 | Thread-0 starting!
+000000555 | Thread-1 | Thread-1 starting!
+000000557 | main | waiting for all threads to join
+000000557 | main | Thread-1 TIMED_WAITING
+000000557 | main | Thread-2 BLOCKED
+000000557 | main | Thread-0 TIMED_WAITING
+000000558 | main | A 3 B 1 W 0 CTR 0
+000000558 | Thread-2 | Thread-2 starting!
+000000558 | Thread-2 | Thread-2 passed sync. barrier!
+000000558 | Thread-2 | Thread-2 done!
+000000558 | Thread-1 | Thread-1 passed sync. barrier!
+000000558 | Thread-1 | Thread-1 done!
+000000558 | Thread-0 | Thread-0 passed sync. barrier!
+000000558 | Thread-0 | Thread-0 done!
+000000559 | main | Thread-1 TERMINATED
+000000559 | main | Thread-2 TERMINATED
+000000559 | main | Thread-0 TERMINATED
+000000559 | main | A 0 B 0 W 0 CTR 0
+000000559 | Thread-0 | Thread-0 starting!
+000000559 | Thread-1 | Thread-1 starting!
+000000564 | main | waiting for all threads to join
+000000565 | main | Thread-0 TIMED_WAITING
+000000565 | main | Thread-1 TIMED_WAITING
+000000565 | main | Thread-2 RUNNABLE
+000000565 | main | A 3 B 0 W 0 CTR 0
+000000565 | Thread-1 | Thread-1 passed sync. barrier!
+000000567 | Thread-1 | Thread-1 done!
+000000567 | Thread-0 | Thread-0 passed sync. barrier!
+000000567 | main | Thread-0 TIMED_WAITING
+000000567 | Thread-0 | Thread-0 done!
+000000569 | Thread-2 | Thread-2 starting!
+000000570 | main | Thread-1 TERMINATED
+000000570 | main | Thread-2 BLOCKED
+000000570 | main | A 2 B 2 W 0 CTR 0
+000000570 | main | POSSIBLE DEADLOCK
+000000570 | Thread-2 | Thread-2 passed sync. barrier!
+000000570 | Thread-2 | Thread-2 done!
+000000571 | main | Thread-0 TERMINATED
+000000571 | main | Thread-2 TERMINATED
+000000571 | main | A 0 B 0 W 0 CTR 1
+000000571 | main | == TRIAL 12 of test9 ==
+000000572 | Thread-0 | Thread-0 starting!
+000000572 | Thread-1 | Thread-1 starting!
+000000576 | main | waiting for all threads to join
+000000577 | main | Thread-0 TIMED_WAITING
+000000577 | Thread-0 | Thread-0 passed sync. barrier!
+000000577 | Thread-0 | Thread-0 done!
+000000577 | Thread-2 | Thread-2 starting!
+000000577 | Thread-2 | Thread-2 passed sync. barrier!
+000000577 | Thread-2 | Thread-2 done!
+000000577 | Thread-1 | Thread-1 passed sync. barrier!
+000000578 | main | Thread-2 BLOCKED
+000000578 | main | Thread-1 BLOCKED
+000000578 | Thread-1 | Thread-1 done!
+000000578 | main | A 2 B 1 W 0 CTR 0
+000000579 | main | Thread-0 TERMINATED
+000000579 | main | Thread-1 TERMINATED
+000000579 | main | A 0 B 0 W 0 CTR 0
+000000579 | main | waiting for all threads to join
+000000579 | main | Thread-2 RUNNABLE
+000000579 | main | Thread-1 RUNNABLE
+000000580 | main | Thread-0 RUNNABLE
+000000580 | main | A 3 B 0 W 0 CTR 0
+000000580 | Thread-0 | Thread-0 starting!
+000000580 | Thread-2 | Thread-2 starting!
+000000580 | Thread-1 | Thread-1 starting!
+000000580 | Thread-1 | Thread-1 passed sync. barrier!
+000000580 | Thread-1 | Thread-1 done!
+000000581 | main | Thread-2 BLOCKED
+000000581 | main | Thread-1 RUNNABLE
+000000581 | main | Thread-0 BLOCKED
+000000581 | main | A 3 B 2 W 0 CTR 0
+000000582 | Thread-2 | Thread-2 passed sync. barrier!
+000000582 | Thread-2 | Thread-2 done!
+000000582 | Thread-0 | Thread-0 passed sync. barrier!
+000000582 | Thread-0 | Thread-0 done!
+000000582 | main | Thread-2 TERMINATED
+000000582 | main | Thread-1 TERMINATED
+000000582 | main | Thread-0 TERMINATED
+000000582 | main | A 0 B 0 W 0 CTR 0
+000000582 | main | == TRIAL 13 of test9 ==
+000000583 | Thread-0 | Thread-0 starting!
+000000591 | Thread-1 | Thread-1 starting!
+000000597 | main | waiting for all threads to join
+000000597 | main | Thread-0 TIMED_WAITING
+000000597 | main | Thread-1 TIMED_WAITING
+000000598 | main | Thread-2 BLOCKED
+000000598 | main | A 3 B 1 W 0 CTR 0
+000000598 | Thread-0 | Thread-0 passed sync. barrier!
+000000598 | Thread-0 | Thread-0 done!
+000000598 | Thread-1 | Thread-1 passed sync. barrier!
+000000599 | main | Thread-0 TERMINATED
+000000599 | main | Thread-1 RUNNABLE
+000000599 | main | Thread-2 BLOCKED
+000000599 | main | A 2 B 1 W 0 CTR 0
+000000600 | main | Thread-1 RUNNABLE
+000000600 | main | Thread-2 BLOCKED
+000000600 | main | A 2 B 1 W 0 CTR 0
+000000602 | main | Thread-1 RUNNABLE
+000000602 | main | Thread-2 BLOCKED
+000000602 | main | A 2 B 1 W 0 CTR 0
+000000604 | main | Thread-1 RUNNABLE
+000000604 | main | Thread-2 BLOCKED
+000000604 | main | A 2 B 1 W 0 CTR 0
+000000605 | main | Thread-1 RUNNABLE
+000000606 | main | Thread-2 BLOCKED
+000000606 | main | A 2 B 1 W 0 CTR 0
+000000607 | main | Thread-1 RUNNABLE
+000000607 | main | Thread-2 BLOCKED
+000000607 | main | A 2 B 1 W 0 CTR 0
+000000608 | main | Thread-1 RUNNABLE
+000000608 | main | Thread-2 BLOCKED
+000000608 | main | A 2 B 1 W 0 CTR 0
+000000610 | main | Thread-1 RUNNABLE
+000000610 | main | Thread-2 BLOCKED
+000000610 | main | A 2 B 1 W 0 CTR 0
+000000611 | main | Thread-1 RUNNABLE
+000000611 | main | Thread-2 BLOCKED
+000000611 | main | A 2 B 1 W 0 CTR 0
+000000613 | main | Thread-1 RUNNABLE
+000000613 | main | Thread-2 BLOCKED
+000000613 | main | A 2 B 1 W 0 CTR 0
+000000615 | main | Thread-1 RUNNABLE
+000000615 | main | Thread-2 BLOCKED
+000000615 | main | A 2 B 1 W 0 CTR 0
+000000617 | main | Thread-1 RUNNABLE
+000000617 | main | Thread-2 BLOCKED
+000000617 | main | A 2 B 1 W 0 CTR 0
+000000618 | main | Thread-1 RUNNABLE
+000000618 | main | Thread-2 BLOCKED
+000000618 | main | A 2 B 1 W 0 CTR 0
+000000624 | main | Thread-1 RUNNABLE
+000000625 | main | Thread-2 BLOCKED
+000000625 | main | A 2 B 1 W 0 CTR 0
+000000626 | main | Thread-1 RUNNABLE
+000000626 | main | Thread-2 BLOCKED
+000000626 | main | A 2 B 1 W 0 CTR 0
+000000627 | main | Thread-1 RUNNABLE
+000000627 | main | Thread-2 BLOCKED
+000000627 | main | A 2 B 1 W 0 CTR 0
+000000629 | main | Thread-1 RUNNABLE
+000000629 | main | Thread-2 BLOCKED
+000000629 | main | A 2 B 1 W 0 CTR 0
+000000634 | main | Thread-1 RUNNABLE
+000000634 | main | Thread-2 BLOCKED
+000000634 | main | A 2 B 1 W 0 CTR 0
+000000635 | main | Thread-1 RUNNABLE
+000000635 | main | Thread-2 BLOCKED
+000000635 | main | A 2 B 1 W 0 CTR 0
+000000636 | main | Thread-1 RUNNABLE
+000000637 | main | Thread-2 BLOCKED
+000000637 | main | A 2 B 1 W 0 CTR 0
+000000638 | main | Thread-1 RUNNABLE
+000000638 | main | Thread-2 BLOCKED
+000000638 | main | A 2 B 1 W 0 CTR 0
+000000638 | Thread-2 | Thread-2 starting!
+000000638 | Thread-2 | Thread-2 passed sync. barrier!
+000000638 | Thread-2 | Thread-2 done!
+000000639 | Thread-1 | Thread-1 done!
+000000639 | main | Thread-1 TERMINATED
+000000639 | main | Thread-2 TERMINATED
+000000640 | main | A 0 B 0 W 0 CTR 0
+000000640 | Thread-0 | Thread-0 starting!
+000000640 | Thread-1 | Thread-1 starting!
+000000640 | Thread-2 | Thread-2 starting!
+000000640 | Thread-2 | Thread-2 passed sync. barrier!
+000000640 | Thread-2 | Thread-2 done!
+000000640 | main | waiting for all threads to join
+000000640 | main | Thread-0 TIMED_WAITING
+000000640 | main | Thread-2 TERMINATED
+000000640 | main | Thread-1 RUNNABLE
+000000640 | main | A 2 B 0 W 0 CTR 0
+000000640 | Thread-1 | Thread-1 passed sync. barrier!
+000000640 | Thread-1 | Thread-1 done!
+000000641 | Thread-0 | Thread-0 passed sync. barrier!
+000000641 | Thread-0 | Thread-0 done!
+000000641 | main | Thread-0 TERMINATED
+000000642 | main | Thread-1 TERMINATED
+000000642 | main | A 0 B 0 W 0 CTR 0
+000000642 | main | == TRIAL 14 of test9 ==
+000000642 | Thread-0 | Thread-0 starting!
+000000642 | Thread-1 | Thread-1 starting!
+000000642 | main | waiting for all threads to join
+000000642 | main | Thread-2 RUNNABLE
+000000642 | main | Thread-1 TIMED_WAITING
+000000642 | main | Thread-0 TIMED_WAITING
+000000642 | Thread-2 | Thread-2 starting!
+000000642 | main | A 3 B 1 W 0 CTR 0
+000000642 | Thread-2 | Thread-2 passed sync. barrier!
+000000643 | Thread-2 | Thread-2 done!
+000000643 | Thread-0 | Thread-0 passed sync. barrier!
+000000643 | Thread-0 | Thread-0 done!
+000000643 | Thread-1 | Thread-1 passed sync. barrier!
+000000643 | Thread-1 | Thread-1 done!
+000000644 | main | Thread-2 TERMINATED
+000000644 | main | Thread-1 TERMINATED
+000000644 | main | Thread-0 TERMINATED
+000000644 | main | A 0 B 0 W 0 CTR 0
+000000644 | Thread-0 | Thread-0 starting!
+000000644 | Thread-1 | Thread-1 starting!
+000000648 | main | waiting for all threads to join
+000000648 | Thread-2 | Thread-2 starting!
+000000648 | main | Thread-0 TIMED_WAITING
+000000648 | main | Thread-1 TIMED_WAITING
+000000648 | main | Thread-2 BLOCKED
+000000648 | main | A 3 B 1 W 0 CTR 0
+000000648 | Thread-2 | Thread-2 passed sync. barrier!
+000000648 | Thread-2 | Thread-2 done!
+000000649 | Thread-0 | Thread-0 passed sync. barrier!
+000000649 | Thread-0 | Thread-0 done!
+000000649 | Thread-1 | Thread-1 passed sync. barrier!
+000000649 | Thread-1 | Thread-1 done!
+000000649 | main | Thread-0 TERMINATED
+000000650 | main | Thread-1 TERMINATED
+000000650 | main | Thread-2 TERMINATED
+000000650 | main | A 0 B 0 W 0 CTR 0
+000000650 | main | == TRIAL 15 of test9 ==
+000000651 | main | waiting for all threads to join
+000000651 | main | Thread-0 RUNNABLE
+000000658 | Thread-2 | Thread-2 starting!
+000000659 | Thread-2 | Thread-2 passed sync. barrier!
+000000659 | Thread-2 | Thread-2 done!
+000000659 | Thread-0 | Thread-0 starting!
+000000659 | Thread-1 | Thread-1 starting!
+000000659 | Thread-1 | Thread-1 passed sync. barrier!
+000000659 | Thread-1 | Thread-1 done!
+000000659 | Thread-0 | Thread-0 passed sync. barrier!
+000000659 | main | Thread-1 BLOCKED
+000000659 | Thread-0 | Thread-0 done!
+000000659 | main | Thread-2 TERMINATED
+000000659 | main | A 1 B 1 W 0 CTR 0
+000000659 | main | POSSIBLE DEADLOCK
+000000661 | main | Thread-0 TERMINATED
+000000661 | main | A 0 B 0 W 0 CTR 1
+000000669 | main | waiting for all threads to join
+000000669 | main | Thread-2 RUNNABLE
+000000669 | main | Thread-0 RUNNABLE
+000000669 | main | Thread-1 RUNNABLE
+000000669 | main | A 3 B 0 W 0 CTR 0
+000000669 | Thread-0 | Thread-0 starting!
+000000669 | Thread-2 | Thread-2 starting!
+000000669 | Thread-2 | Thread-2 passed sync. barrier!
+000000669 | Thread-0 | Thread-0 passed sync. barrier!
+000000670 | Thread-2 | Thread-2 done!
+000000670 | Thread-1 | Thread-1 starting!
+000000670 | Thread-1 | Thread-1 passed sync. barrier!
+000000670 | Thread-1 | Thread-1 done!
+000000670 | Thread-0 | Thread-0 done!
+000000670 | main | Thread-2 TERMINATED
+000000670 | main | Thread-0 TERMINATED
+000000670 | main | Thread-1 TERMINATED
+000000670 | main | A 0 B 0 W 0 CTR 0
+000000671 | main | == TRIAL 16 of test9 ==
+000000671 | Thread-0 | Thread-0 starting!
+000000674 | Thread-1 | Thread-1 starting!
+000000677 | main | waiting for all threads to join
+000000677 | main | Thread-1 TIMED_WAITING
+000000677 | main | Thread-0 BLOCKED
+000000677 | main | Thread-2 BLOCKED
+000000677 | main | A 3 B 2 W 0 CTR 0
+000000678 | Thread-0 | Thread-0 passed sync. barrier!
+000000678 | Thread-0 | Thread-0 done!
+000000678 | Thread-2 | Thread-2 starting!
+000000678 | Thread-2 | Thread-2 passed sync. barrier!
+000000678 | Thread-2 | Thread-2 done!
+000000678 | Thread-1 | Thread-1 passed sync. barrier!
+000000678 | Thread-1 | Thread-1 done!
+000000679 | main | Thread-1 TERMINATED
+000000679 | main | Thread-0 TERMINATED
+000000679 | main | Thread-2 TERMINATED
+000000679 | main | A 0 B 0 W 0 CTR 0
+000000684 | Thread-0 | Thread-0 starting!
+000000691 | Thread-1 | Thread-1 starting!
+000000696 | main | waiting for all threads to join
+000000696 | main | Thread-0 TIMED_WAITING
+000000696 | main | Thread-1 BLOCKED
+000000696 | main | Thread-2 RUNNABLE
+000000696 | Thread-1 | Thread-1 passed sync. barrier!
+000000696 | main | A 3 B 1 W 0 CTR 0
+000000696 | Thread-1 | Thread-1 done!
+000000697 | Thread-0 | Thread-0 passed sync. barrier!
+000000697 | Thread-0 | Thread-0 done!
+000000698 | main | Thread-0 TERMINATED
+000000698 | main | Thread-1 TERMINATED
+000000698 | main | Thread-2 RUNNABLE
+000000698 | main | A 1 B 0 W 0 CTR 0
+000000699 | main | Thread-2 RUNNABLE
+000000699 | main | A 1 B 0 W 0 CTR 0
+000000700 | main | Thread-2 RUNNABLE
+000000700 | main | A 1 B 0 W 0 CTR 0
+000000701 | main | Thread-2 RUNNABLE
+000000701 | main | A 1 B 0 W 0 CTR 0
+000000703 | main | Thread-2 RUNNABLE
+000000703 | main | A 1 B 0 W 0 CTR 0
+000000703 | Thread-2 | Thread-2 starting!
+000000703 | Thread-2 | Thread-2 passed sync. barrier!
+000000703 | Thread-2 | Thread-2 done!
+000000704 | main | Thread-2 TERMINATED
+000000704 | main | A 0 B 0 W 0 CTR 0
+000000704 | main | == TRIAL 17 of test9 ==
+000000707 | Thread-0 | Thread-0 starting!
+000000707 | Thread-1 | Thread-1 starting!
+000000707 | main | waiting for all threads to join
+000000708 | Thread-1 | Thread-1 passed sync. barrier!
+000000709 | main | Thread-1 RUNNABLE
+000000709 | main | Thread-0 TIMED_WAITING
+000000709 | main | Thread-2 RUNNABLE
+000000709 | main | A 3 B 0 W 0 CTR 0
+000000709 | Thread-0 | Thread-0 passed sync. barrier!
+000000709 | Thread-1 | Thread-1 done!
+000000710 | main | Thread-1 TERMINATED
+000000710 | main | Thread-0 RUNNABLE
+000000710 | main | Thread-2 BLOCKED
+000000710 | main | A 2 B 1 W 0 CTR 0
+000000711 | main | Thread-0 RUNNABLE
+000000711 | main | Thread-2 BLOCKED
+000000711 | main | A 2 B 1 W 0 CTR 0
+000000713 | Thread-2 | Thread-2 starting!
+000000713 | Thread-2 | Thread-2 passed sync. barrier!
+000000713 | main | Thread-0 RUNNABLE
+000000713 | main | Thread-2 RUNNABLE
+000000713 | main | A 2 B 0 W 0 CTR 0
+000000714 | main | Thread-0 RUNNABLE
+000000714 | main | Thread-2 RUNNABLE
+000000714 | main | A 2 B 0 W 0 CTR 0
+000000715 | main | Thread-0 RUNNABLE
+000000716 | main | Thread-2 RUNNABLE
+000000716 | main | A 2 B 0 W 0 CTR 0
+000000717 | main | Thread-0 RUNNABLE
+000000717 | main | Thread-2 RUNNABLE
+000000717 | main | A 2 B 0 W 0 CTR 0
+000000718 | main | Thread-0 RUNNABLE
+000000718 | main | Thread-2 RUNNABLE
+000000718 | main | A 2 B 0 W 0 CTR 0
+000000719 | main | Thread-0 RUNNABLE
+000000720 | main | Thread-2 RUNNABLE
+000000720 | main | A 2 B 0 W 0 CTR 0
+000000721 | main | Thread-0 RUNNABLE
+000000721 | main | Thread-2 RUNNABLE
+000000721 | main | A 2 B 0 W 0 CTR 0
+000000723 | main | Thread-0 RUNNABLE
+000000723 | main | Thread-2 RUNNABLE
+000000723 | main | A 2 B 0 W 0 CTR 0
+000000725 | main | Thread-0 RUNNABLE
+000000725 | main | Thread-2 RUNNABLE
+000000725 | main | A 2 B 0 W 0 CTR 0
+000000726 | main | Thread-0 RUNNABLE
+000000726 | main | Thread-2 RUNNABLE
+000000726 | main | A 2 B 0 W 0 CTR 0
+000000727 | main | Thread-0 RUNNABLE
+000000727 | main | Thread-2 RUNNABLE
+000000727 | main | A 2 B 0 W 0 CTR 0
+000000728 | main | Thread-0 RUNNABLE
+000000728 | main | Thread-2 RUNNABLE
+000000728 | main | A 2 B 0 W 0 CTR 0
+000000729 | Thread-2 | Thread-2 done!
+000000729 | Thread-0 | Thread-0 done!
+000000730 | main | Thread-0 TERMINATED
+000000730 | main | Thread-2 TERMINATED
+000000730 | main | A 0 B 0 W 0 CTR 0
+000000731 | Thread-0 | Thread-0 starting!
+000000738 | Thread-1 | Thread-1 starting!
+000000740 | main | waiting for all threads to join
+000000740 | Thread-2 | Thread-2 starting!
+000000740 | main | Thread-0 TIMED_WAITING
+000000740 | main | Thread-1 TIMED_WAITING
+000000740 | main | Thread-2 BLOCKED
+000000740 | Thread-2 | Thread-2 passed sync. barrier!
+000000740 | main | A 3 B 1 W 0 CTR 0
+000000740 | Thread-0 | Thread-0 passed sync. barrier!
+000000740 | Thread-2 | Thread-2 done!
+000000741 | Thread-0 | Thread-0 done!
+000000741 | Thread-1 | Thread-1 passed sync. barrier!
+000000741 | Thread-1 | Thread-1 done!
+000000743 | main | Thread-0 TERMINATED
+000000743 | main | Thread-1 TERMINATED
+000000743 | main | Thread-2 TERMINATED
+000000743 | main | A 0 B 0 W 0 CTR 0
+000000743 | main | == TRIAL 18 of test9 ==
+000000744 | Thread-0 | Thread-0 starting!
+000000751 | main | waiting for all threads to join
+000000751 | Thread-2 | Thread-2 starting!
+000000751 | main | Thread-1 RUNNABLE
+000000751 | main | Thread-2 BLOCKED
+000000751 | main | Thread-0 TIMED_WAITING
+000000751 | Thread-2 | Thread-2 passed sync. barrier!
+000000751 | main | A 3 B 1 W 0 CTR 0
+000000751 | Thread-2 | Thread-2 done!
+000000752 | Thread-0 | Thread-0 passed sync. barrier!
+000000752 | Thread-0 | Thread-0 done!
+000000752 | main | Thread-1 RUNNABLE
+000000752 | main | Thread-2 TERMINATED
+000000752 | main | Thread-0 TERMINATED
+000000752 | main | A 1 B 0 W 0 CTR 0
+000000753 | main | Thread-1 RUNNABLE
+000000753 | main | A 1 B 0 W 0 CTR 0
+000000754 | main | Thread-1 RUNNABLE
+000000755 | main | A 1 B 0 W 0 CTR 0
+000000756 | Thread-1 | Thread-1 starting!
+000000756 | Thread-1 | Thread-1 passed sync. barrier!
+000000756 | Thread-1 | Thread-1 done!
+000000756 | main | Thread-1 TERMINATED
+000000757 | main | A 0 B 0 W 0 CTR 0
+000000757 | Thread-0 | Thread-0 starting!
+000000757 | main | waiting for all threads to join
+000000757 | main | Thread-2 RUNNABLE
+000000757 | main | Thread-1 RUNNABLE
+000000757 | main | Thread-0 TIMED_WAITING
+000000757 | main | A 3 B 0 W 0 CTR 0
+000000757 | Thread-1 | Thread-1 starting!
+000000757 | Thread-1 | Thread-1 passed sync. barrier!
+000000757 | Thread-1 | Thread-1 done!
+000000757 | Thread-2 | Thread-2 starting!
+000000757 | Thread-2 | Thread-2 passed sync. barrier!
+000000758 | Thread-2 | Thread-2 done!
+000000758 | Thread-0 | Thread-0 passed sync. barrier!
+000000758 | Thread-0 | Thread-0 done!
+000000758 | main | Thread-2 TERMINATED
+000000758 | main | Thread-1 TERMINATED
+000000758 | main | Thread-0 TERMINATED
+000000758 | main | A 0 B 0 W 0 CTR 0
+000000758 | main | == TRIAL 19 of test9 ==
+000000759 | Thread-0 | Thread-0 starting!
+000000759 | Thread-1 | Thread-1 starting!
+000000759 | main | waiting for all threads to join
+000000759 | Thread-2 | Thread-2 starting!
+000000759 | Thread-2 | Thread-2 passed sync. barrier!
+000000759 | Thread-2 | Thread-2 done!
+000000759 | main | Thread-2 RUNNABLE
+000000759 | main | Thread-0 TIMED_WAITING
+000000759 | main | Thread-1 TIMED_WAITING
+000000759 | main | A 2 B 0 W 0 CTR 0
+000000760 | Thread-0 | Thread-0 passed sync. barrier!
+000000760 | Thread-0 | Thread-0 done!
+000000760 | Thread-1 | Thread-1 passed sync. barrier!
+000000760 | Thread-1 | Thread-1 done!
+000000760 | main | Thread-0 TERMINATED
+000000760 | main | Thread-1 TERMINATED
+000000761 | main | A 0 B 0 W 0 CTR 0
+000000761 | Thread-0 | Thread-0 starting!
+000000761 | main | waiting for all threads to join
+000000761 | Thread-2 | Thread-2 starting!
+000000761 | main | Thread-0 TIMED_WAITING
+000000761 | main | Thread-2 BLOCKED
+000000761 | main | Thread-1 RUNNABLE
+000000761 | main | A 3 B 1 W 0 CTR 0
+000000761 | Thread-1 | Thread-1 starting!
+000000761 | Thread-1 | Thread-1 passed sync. barrier!
+000000761 | Thread-1 | Thread-1 done!
+000000761 | Thread-2 | Thread-2 passed sync. barrier!
+000000761 | Thread-2 | Thread-2 done!
+000000762 | Thread-0 | Thread-0 passed sync. barrier!
+000000762 | Thread-0 | Thread-0 done!
+000000762 | main | Thread-0 TERMINATED
+000000762 | main | Thread-2 TERMINATED
+000000762 | main | Thread-1 TERMINATED
+000000762 | main | A 0 B 0 W 0 CTR 0
+000000762 | main | == TRIAL 20 of test9 ==
+000000763 | Thread-0 | Thread-0 starting!
+000000763 | Thread-1 | Thread-1 starting!
+000000763 | Thread-1 | Thread-1 passed sync. barrier!
+000000763 | main | waiting for all threads to join
+000000763 | main | Thread-1 RUNNABLE
+000000763 | main | Thread-0 TIMED_WAITING
+000000763 | main | Thread-2 RUNNABLE
+000000763 | main | A 3 B 0 W 0 CTR 0
+000000765 | Thread-0 | Thread-0 passed sync. barrier!
+000000765 | Thread-2 | Thread-2 starting!
+000000765 | Thread-1 | Thread-1 done!
+000000765 | Thread-2 | Thread-2 passed sync. barrier!
+000000765 | Thread-2 | Thread-2 done!
+000000765 | Thread-0 | Thread-0 done!
+000000766 | main | Thread-1 TERMINATED
+000000766 | main | Thread-0 TERMINATED
+000000766 | main | Thread-2 TERMINATED
+000000766 | main | A 0 B 0 W 0 CTR 0
+000000767 | Thread-0 | Thread-0 starting!
+000000767 | main | waiting for all threads to join
+000000767 | main | Thread-0 BLOCKED
+000000767 | main | Thread-2 BLOCKED
+000000767 | main | Thread-1 BLOCKED
+000000767 | main | A 3 B 3 W 0 CTR 0
+000000767 | main | POSSIBLE DEADLOCK
+000000767 | Thread-1 | Thread-1 starting!
+000000767 | Thread-2 | Thread-2 starting!
+000000767 | Thread-2 | Thread-2 passed sync. barrier!
+000000767 | Thread-2 | Thread-2 done!
+000000767 | Thread-0 | Thread-0 passed sync. barrier!
+000000767 | Thread-1 | Thread-1 passed sync. barrier!
+000000768 | Thread-0 | Thread-0 done!
+000000768 | Thread-1 | Thread-1 done!
+000000768 | main | Thread-0 TERMINATED
+000000768 | main | Thread-2 TERMINATED
+000000768 | main | Thread-1 TERMINATED
+000000768 | main | A 0 B 0 W 0 CTR 1
+000000768 | main | == TRIAL 21 of test9 ==
+000000769 | Thread-0 | Thread-0 starting!
+000000769 | Thread-1 | Thread-1 starting!
+000000769 | Thread-1 | Thread-1 passed sync. barrier!
+000000769 | main | waiting for all threads to join
+000000769 | main | Thread-0 TIMED_WAITING
+000000769 | main | Thread-2 RUNNABLE
+000000769 | main | Thread-1 RUNNABLE
+000000770 | main | A 3 B 0 W 0 CTR 0
+000000770 | Thread-2 | Thread-2 starting!
+000000770 | Thread-2 | Thread-2 passed sync. barrier!
+000000770 | Thread-2 | Thread-2 done!
+000000770 | Thread-1 | Thread-1 done!
+000000770 | Thread-0 | Thread-0 passed sync. barrier!
+000000770 | Thread-0 | Thread-0 done!
+000000771 | main | Thread-0 TERMINATED
+000000771 | main | Thread-2 TERMINATED
+000000771 | main | Thread-1 TERMINATED
+000000771 | main | A 0 B 0 W 0 CTR 0
+000000771 | Thread-0 | Thread-0 starting!
+000000771 | Thread-1 | Thread-1 starting!
+000000771 | Thread-1 | Thread-1 passed sync. barrier!
+000000771 | Thread-1 | Thread-1 done!
+000000771 | main | waiting for all threads to join
+000000771 | main | Thread-0 TIMED_WAITING
+000000772 | main | Thread-2 RUNNABLE
+000000772 | main | Thread-1 TERMINATED
+000000772 | main | A 2 B 0 W 0 CTR 0
+000000772 | Thread-2 | Thread-2 starting!
+000000772 | Thread-2 | Thread-2 passed sync. barrier!
+000000772 | Thread-2 | Thread-2 done!
+000000772 | Thread-0 | Thread-0 passed sync. barrier!
+000000772 | Thread-0 | Thread-0 done!
+000000773 | main | Thread-0 TERMINATED
+000000773 | main | Thread-2 TERMINATED
+000000773 | main | A 0 B 0 W 0 CTR 0
+000000773 | main | == TRIAL 22 of test9 ==
+000000773 | Thread-0 | Thread-0 starting!
+000000773 | Thread-1 | Thread-1 starting!
+000000773 | main | waiting for all threads to join
+000000773 | Thread-2 | Thread-2 starting!
+000000773 | Thread-2 | Thread-2 passed sync. barrier!
+000000773 | main | Thread-2 RUNNABLE
+000000774 | main | Thread-0 TIMED_WAITING
+000000774 | main | Thread-1 TIMED_WAITING
+000000774 | main | A 3 B 1 W 0 CTR 0
+000000774 | Thread-2 | Thread-2 done!
+000000774 | Thread-0 | Thread-0 passed sync. barrier!
+000000774 | Thread-0 | Thread-0 done!
+000000775 | Thread-1 | Thread-1 passed sync. barrier!
+000000775 | Thread-1 | Thread-1 done!
+000000775 | main | Thread-2 TERMINATED
+000000775 | main | Thread-0 TERMINATED
+000000775 | main | Thread-1 TERMINATED
+000000775 | main | A 0 B 0 W 0 CTR 0
+000000775 | Thread-0 | Thread-0 starting!
+000000775 | Thread-1 | Thread-1 starting!
+000000781 | main | waiting for all threads to join
+000000781 | Thread-1 | Thread-1 passed sync. barrier!
+000000781 | Thread-2 | Thread-2 starting!
+000000781 | Thread-1 | Thread-1 done!
+000000781 | main | Thread-0 TIMED_WAITING
+000000781 | main | Thread-1 TERMINATED
+000000781 | main | Thread-2 BLOCKED
+000000781 | main | A 2 B 1 W 0 CTR 0
+000000781 | Thread-2 | Thread-2 passed sync. barrier!
+000000781 | Thread-2 | Thread-2 done!
+000000782 | Thread-0 | Thread-0 passed sync. barrier!
+000000782 | Thread-0 | Thread-0 done!
+000000782 | main | Thread-0 TERMINATED
+000000782 | main | Thread-2 TERMINATED
+000000782 | main | A 0 B 0 W 0 CTR 0
+000000782 | main | == TRIAL 23 of test9 ==
+000000782 | Thread-0 | Thread-0 starting!
+000000782 | Thread-1 | Thread-1 starting!
+000000783 | main | waiting for all threads to join
+000000783 | Thread-1 | Thread-1 passed sync. barrier!
+000000783 | Thread-2 | Thread-2 starting!
+000000783 | main | Thread-0 TIMED_WAITING
+000000783 | main | Thread-1 RUNNABLE
+000000783 | main | Thread-2 BLOCKED
+000000783 | main | A 3 B 1 W 0 CTR 0
+000000783 | Thread-2 | Thread-2 passed sync. barrier!
+000000783 | Thread-2 | Thread-2 done!
+000000783 | Thread-1 | Thread-1 done!
+000000784 | Thread-0 | Thread-0 passed sync. barrier!
+000000784 | Thread-0 | Thread-0 done!
+000000784 | main | Thread-0 TERMINATED
+000000784 | main | Thread-1 TERMINATED
+000000784 | main | Thread-2 TERMINATED
+000000784 | main | A 0 B 0 W 0 CTR 0
+000000784 | Thread-0 | Thread-0 starting!
+000000787 | Thread-1 | Thread-1 starting!
+000000787 | main | waiting for all threads to join
+000000787 | main | Thread-0 TIMED_WAITING
+000000788 | main | Thread-2 BLOCKED
+000000788 | main | Thread-1 RUNNABLE
+000000788 | main | A 3 B 1 W 0 CTR 0
+000000788 | Thread-0 | Thread-0 passed sync. barrier!
+000000788 | Thread-0 | Thread-0 done!
+000000788 | Thread-2 | Thread-2 starting!
+000000788 | Thread-2 | Thread-2 passed sync. barrier!
+000000788 | Thread-2 | Thread-2 done!
+000000788 | Thread-1 | Thread-1 passed sync. barrier!
+000000788 | Thread-1 | Thread-1 done!
+000000789 | main | Thread-0 TERMINATED
+000000789 | main | Thread-2 TERMINATED
+000000789 | main | Thread-1 TERMINATED
+000000789 | main | A 0 B 0 W 0 CTR 0
+000000789 | main | == TRIAL 24 of test9 ==
+000000806 | Thread-0 | Thread-0 starting!
+000000806 | main | waiting for all threads to join
+000000806 | Thread-2 | Thread-2 starting!
+000000806 | main | Thread-0 TIMED_WAITING
+000000806 | main | Thread-2 BLOCKED
+000000806 | main | Thread-1 RUNNABLE
+000000807 | main | A 3 B 1 W 0 CTR 0
+000000807 | Thread-2 | Thread-2 passed sync. barrier!
+000000807 | Thread-2 | Thread-2 done!
+000000821 | Thread-0 | Thread-0 passed sync. barrier!
+000000821 | Thread-0 | Thread-0 done!
+000000821 | Thread-1 | Thread-1 starting!
+000000821 | main | Thread-0 TIMED_WAITING
+000000821 | Thread-1 | Thread-1 passed sync. barrier!
+000000821 | Thread-1 | Thread-1 done!
+000000822 | main | Thread-2 TERMINATED
+000000823 | main | Thread-1 TERMINATED
+000000823 | main | A 0 B 0 W 0 CTR 0
+000000826 | Thread-1 | Thread-1 starting!
+000000827 | main | waiting for all threads to join
+000000827 | main | Thread-1 TIMED_WAITING
+000000828 | main | Thread-0 RUNNABLE
+000000828 | main | Thread-2 BLOCKED
+000000828 | main | A 3 B 1 W 0 CTR 0
+000000829 | main | Thread-1 BLOCKED
+000000829 | main | Thread-0 RUNNABLE
+000000829 | main | Thread-2 BLOCKED
+000000829 | main | A 3 B 2 W 0 CTR 0
+000000830 | main | Thread-1 BLOCKED
+000000830 | main | Thread-0 RUNNABLE
+000000830 | main | Thread-2 BLOCKED
+000000830 | main | A 3 B 2 W 0 CTR 0
+000000832 | main | Thread-1 BLOCKED
+000000832 | main | Thread-0 RUNNABLE
+000000832 | main | Thread-2 BLOCKED
+000000832 | main | A 3 B 2 W 0 CTR 0
+000000833 | main | Thread-1 BLOCKED
+000000833 | main | Thread-0 RUNNABLE
+000000833 | main | Thread-2 BLOCKED
+000000834 | main | A 3 B 2 W 0 CTR 0
+000000837 | Thread-2 | Thread-2 starting!
+000000837 | Thread-0 | Thread-0 starting!
+000000838 | Thread-0 | Thread-0 passed sync. barrier!
+000000838 | Thread-0 | Thread-0 done!
+000000838 | Thread-1 | Thread-1 passed sync. barrier!
+000000838 | Thread-1 | Thread-1 done!
+000000838 | Thread-2 | Thread-2 passed sync. barrier!
+000000838 | Thread-2 | Thread-2 done!
+000000839 | main | Thread-1 TERMINATED
+000000839 | main | Thread-0 TERMINATED
+000000839 | main | Thread-2 TERMINATED
+000000839 | main | A 0 B 0 W 0 CTR 0
+000000839 | main | == TRIAL 25 of test9 ==
+000000842 | main | waiting for all threads to join
+000000843 | main | Thread-0 RUNNABLE
+000000843 | main | Thread-2 RUNNABLE
+000000843 | main | Thread-1 RUNNABLE
+000000843 | main | A 3 B 0 W 0 CTR 0
+000000843 | Thread-0 | Thread-0 starting!
+000000843 | Thread-1 | Thread-1 starting!
+000000843 | Thread-2 | Thread-2 starting!
+000000843 | Thread-2 | Thread-2 passed sync. barrier!
+000000843 | Thread-2 | Thread-2 done!
+000000844 | main | Thread-0 BLOCKED
+000000844 | main | Thread-2 TERMINATED
+000000844 | main | Thread-1 BLOCKED
+000000844 | main | A 2 B 2 W 0 CTR 0
+000000844 | main | POSSIBLE DEADLOCK
+000000844 | Thread-1 | Thread-1 passed sync. barrier!
+000000844 | Thread-1 | Thread-1 done!
+000000845 | Thread-0 | Thread-0 passed sync. barrier!
+000000845 | Thread-0 | Thread-0 done!
+000000846 | main | Thread-0 TERMINATED
+000000846 | main | Thread-1 TERMINATED
+000000846 | main | A 0 B 0 W 0 CTR 1
+000000858 | Thread-1 | Thread-1 starting!
+000000858 | main | waiting for all threads to join
+000000858 | main | Thread-1 TIMED_WAITING
+000000858 | main | Thread-2 RUNNABLE
+000000858 | main | Thread-0 RUNNABLE
+000000858 | main | A 3 B 0 W 0 CTR 0
+000000858 | Thread-2 | Thread-2 starting!
+000000868 | Thread-1 | Thread-1 passed sync. barrier!
+000000868 | Thread-1 | Thread-1 done!
+000000868 | main | Thread-1 TIMED_WAITING
+000000868 | main | Thread-2 RUNNABLE
+000000868 | main | Thread-0 RUNNABLE
+000000868 | main | A 3 B 0 W 0 CTR 0
+000000868 | Thread-2 | Thread-2 passed sync. barrier!
+000000868 | Thread-2 | Thread-2 done!
+000000869 | main | Thread-1 TERMINATED
+000000869 | main | Thread-2 TERMINATED
+000000869 | main | Thread-0 RUNNABLE
+000000870 | main | A 1 B 0 W 0 CTR 0
+000000870 | Thread-0 | Thread-0 starting!
+000000870 | Thread-0 | Thread-0 passed sync. barrier!
+000000871 | Thread-0 | Thread-0 done!
+000000871 | main | Thread-0 TERMINATED
+000000871 | main | A 0 B 0 W 0 CTR 0
+000000871 | main | == TRIAL 26 of test9 ==
+000000874 | Thread-0 | Thread-0 starting!
+000000874 | Thread-1 | Thread-1 starting!
+000000880 | main | waiting for all threads to join
+000000880 | Thread-2 | Thread-2 starting!
+000000880 | Thread-1 | Thread-1 passed sync. barrier!
+000000881 | Thread-0 | Thread-0 passed sync. barrier!
+000000881 | main | Thread-0 TIMED_WAITING
+000000881 | main | Thread-1 RUNNABLE
+000000881 | main | Thread-2 BLOCKED
+000000881 | main | A 3 B 1 W 0 CTR 0
+000000881 | Thread-2 | Thread-2 passed sync. barrier!
+000000882 | main | Thread-0 RUNNABLE
+000000882 | main | Thread-1 RUNNABLE
+000000882 | main | Thread-2 RUNNABLE
+000000882 | main | A 3 B 0 W 0 CTR 0
+000000883 | main | Thread-0 RUNNABLE
+000000883 | main | Thread-1 RUNNABLE
+000000883 | main | Thread-2 RUNNABLE
+000000883 | main | A 3 B 0 W 0 CTR 0
+000000887 | Thread-1 | Thread-1 done!
+000000887 | Thread-2 | Thread-2 done!
+000000887 | Thread-0 | Thread-0 done!
+000000889 | main | Thread-0 TERMINATED
+000000889 | main | Thread-1 TERMINATED
+000000889 | main | Thread-2 TERMINATED
+000000889 | main | A 0 B 0 W 0 CTR 0
+000000897 | Thread-0 | Thread-0 starting!
+000000905 | Thread-1 | Thread-1 starting!
+000000909 | main | waiting for all threads to join
+000000909 | Thread-2 | Thread-2 starting!
+000000910 | Thread-2 | Thread-2 passed sync. barrier!
+000000910 | Thread-2 | Thread-2 done!
+000000910 | main | Thread-0 TIMED_WAITING
+000000910 | main | Thread-1 TIMED_WAITING
+000000910 | main | Thread-2 TERMINATED
+000000910 | main | A 2 B 0 W 0 CTR 0
+000000910 | Thread-1 | Thread-1 passed sync. barrier!
+000000910 | Thread-1 | Thread-1 done!
+000000911 | main | Thread-0 TIMED_WAITING
+000000911 | main | Thread-1 TERMINATED
+000000911 | main | A 1 B 0 W 0 CTR 0
+000000912 | Thread-0 | Thread-0 passed sync. barrier!
+000000912 | Thread-0 | Thread-0 done!
+000000912 | main | Thread-0 TERMINATED
+000000912 | main | A 0 B 0 W 0 CTR 0
+000000913 | main | == TRIAL 27 of test9 ==
+000000919 | Thread-0 | Thread-0 starting!
+000000925 | Thread-1 | Thread-1 starting!
+000000929 | main | waiting for all threads to join
+000000929 | main | Thread-0 TIMED_WAITING
+000000929 | main | Thread-1 TIMED_WAITING
+000000929 | main | Thread-2 RUNNABLE
+000000929 | main | A 3 B 0 W 0 CTR 0
+000000930 | Thread-0 | Thread-0 passed sync. barrier!
+000000930 | Thread-0 | Thread-0 done!
+000000930 | Thread-1 | Thread-1 passed sync. barrier!
+000000930 | main | Thread-0 TERMINATED
+000000931 | main | Thread-1 RUNNABLE
+000000931 | main | Thread-2 RUNNABLE
+000000931 | main | A 2 B 0 W 0 CTR 0
+000000936 | main | Thread-1 RUNNABLE
+000000936 | main | Thread-2 RUNNABLE
+000000936 | main | A 2 B 0 W 0 CTR 0
+000000936 | Thread-2 | Thread-2 starting!
+000000937 | Thread-2 | Thread-2 passed sync. barrier!
+000000938 | main | Thread-1 RUNNABLE
+000000938 | main | Thread-2 RUNNABLE
+000000938 | main | A 2 B 0 W 0 CTR 0
+000000939 | main | Thread-1 RUNNABLE
+000000939 | main | Thread-2 RUNNABLE
+000000940 | main | A 2 B 0 W 0 CTR 0
+000000940 | Thread-2 | Thread-2 done!
+000000940 | Thread-1 | Thread-1 done!
+000000941 | main | Thread-1 TERMINATED
+000000941 | main | Thread-2 TERMINATED
+000000941 | main | A 0 B 0 W 0 CTR 0
+000000948 | Thread-0 | Thread-0 starting!
+000000954 | Thread-1 | Thread-1 starting!
+000000956 | main | waiting for all threads to join
+000000956 | main | Thread-2 RUNNABLE
+000000956 | main | Thread-0 TIMED_WAITING
+000000956 | main | Thread-1 TIMED_WAITING
+000000956 | main | A 3 B 0 W 0 CTR 0
+000000956 | Thread-0 | Thread-0 passed sync. barrier!
+000000956 | Thread-1 | Thread-1 passed sync. barrier!
+000000956 | Thread-0 | Thread-0 done!
+000000957 | Thread-1 | Thread-1 done!
+000000960 | Thread-2 | Thread-2 starting!
+000000960 | main | Thread-2 RUNNABLE
+000000960 | main | Thread-0 TERMINATED
+000000960 | main | Thread-1 TERMINATED
+000000960 | main | A 1 B 1 W 0 CTR 0
+000000960 | main | POSSIBLE DEADLOCK
+000000960 | Thread-2 | Thread-2 passed sync. barrier!
+000000960 | Thread-2 | Thread-2 done!
+000000962 | main | Thread-2 TERMINATED
+000000962 | main | A 0 B 0 W 0 CTR 1
+000000962 | main | == TRIAL 28 of test9 ==
+000000964 | Thread-0 | Thread-0 starting!
+000000971 | Thread-1 | Thread-1 starting!
+000000979 | main | waiting for all threads to join
+000000979 | main | Thread-2 RUNNABLE
+000000979 | main | Thread-0 TIMED_WAITING
+000000979 | main | Thread-1 TIMED_WAITING
+000000979 | main | A 3 B 0 W 0 CTR 0
+000000979 | Thread-2 | Thread-2 starting!
+000000979 | Thread-2 | Thread-2 passed sync. barrier!
+000000979 | Thread-2 | Thread-2 done!
+000000980 | main | Thread-2 TERMINATED
+000000980 | main | Thread-0 TIMED_WAITING
+000000980 | main | Thread-1 TIMED_WAITING
+000000980 | main | A 2 B 0 W 0 CTR 0
+000000982 | main | Thread-0 TIMED_WAITING
+000000982 | main | Thread-1 BLOCKED
+000000982 | main | A 2 B 2 W 0 CTR 0
+000000982 | main | POSSIBLE DEADLOCK
+000000982 | Thread-1 | Thread-1 passed sync. barrier!
+000000982 | Thread-1 | Thread-1 done!
+000000982 | Thread-0 | Thread-0 passed sync. barrier!
+000000982 | Thread-0 | Thread-0 done!
+000000983 | main | Thread-0 TERMINATED
+000000983 | main | Thread-1 TERMINATED
+000000983 | main | A 0 B 0 W 0 CTR 1
+000000984 | Thread-0 | Thread-0 starting!
+000000984 | Thread-1 | Thread-1 starting!
+000000984 | main | waiting for all threads to join
+000000984 | main | Thread-2 RUNNABLE
+000000984 | main | Thread-0 TIMED_WAITING
+000000984 | main | Thread-1 TIMED_WAITING
+000000984 | main | A 3 B 0 W 0 CTR 0
+000000985 | Thread-2 | Thread-2 starting!
+000000985 | Thread-2 | Thread-2 passed sync. barrier!
+000000985 | Thread-2 | Thread-2 done!
+000000985 | Thread-0 | Thread-0 passed sync. barrier!
+000000985 | Thread-0 | Thread-0 done!
+000000985 | Thread-1 | Thread-1 passed sync. barrier!
+000000985 | Thread-1 | Thread-1 done!
+000000986 | main | Thread-2 TERMINATED
+000000986 | main | Thread-0 TERMINATED
+000000986 | main | Thread-1 TERMINATED
+000000986 | main | A 0 B 0 W 0 CTR 0
+000000986 | main | == TRIAL 29 of test9 ==
+000000986 | Thread-0 | Thread-0 starting!
+000000986 | Thread-1 | Thread-1 starting!
+000000998 | Thread-0 | Thread-0 passed sync. barrier!
+000000998 | Thread-0 | Thread-0 done!
+000000998 | Thread-1 | Thread-1 passed sync. barrier!
+000001000 | main | waiting for all threads to join
+000001000 | main | Thread-2 BLOCKED
+000001000 | main | Thread-1 RUNNABLE
+000001000 | main | Thread-0 TERMINATED
+000001000 | main | A 2 B 1 W 0 CTR 0
+000001002 | main | Thread-2 BLOCKED
+000001002 | main | Thread-1 RUNNABLE
+000001002 | main | A 2 B 1 W 0 CTR 0
+000001007 | main | Thread-2 BLOCKED
+000001007 | main | Thread-1 RUNNABLE
+000001007 | main | A 2 B 1 W 0 CTR 0
+000001009 | main | Thread-2 BLOCKED
+000001009 | main | Thread-1 RUNNABLE
+000001009 | main | A 2 B 1 W 0 CTR 0
+000001010 | main | Thread-2 BLOCKED
+000001010 | main | Thread-1 RUNNABLE
+000001010 | main | A 2 B 1 W 0 CTR 0
+000001011 | Thread-2 | Thread-2 starting!
+000001011 | Thread-2 | Thread-2 passed sync. barrier!
+000001011 | Thread-2 | Thread-2 done!
+000001011 | main | Thread-2 TERMINATED
+000001011 | main | Thread-1 RUNNABLE
+000001011 | main | A 1 B 0 W 0 CTR 0
+000001012 | main | Thread-1 RUNNABLE
+000001012 | main | A 1 B 0 W 0 CTR 0
+000001013 | Thread-1 | Thread-1 done!
+000001014 | main | Thread-1 TERMINATED
+000001014 | main | A 0 B 0 W 0 CTR 0
+000001022 | Thread-0 | Thread-0 starting!
+000001028 | Thread-1 | Thread-1 starting!
+000001034 | main | waiting for all threads to join
+000001034 | Thread-2 | Thread-2 starting!
+000001034 | main | Thread-1 TIMED_WAITING
+000001034 | Thread-2 | Thread-2 passed sync. barrier!
+000001034 | main | Thread-2 BLOCKED
+000001034 | main | Thread-0 TIMED_WAITING
+000001034 | main | A 3 B 1 W 0 CTR 0
+000001034 | Thread-2 | Thread-2 done!
+000001035 | Thread-0 | Thread-0 passed sync. barrier!
+000001035 | Thread-0 | Thread-0 done!
+000001035 | Thread-1 | Thread-1 passed sync. barrier!
+000001035 | Thread-1 | Thread-1 done!
+000001036 | main | Thread-1 TERMINATED
+000001036 | main | Thread-2 TERMINATED
+000001036 | main | Thread-0 TERMINATED
+000001036 | main | A 0 B 0 W 0 CTR 0
+000001036 | main | == TERMINATED test9 ==

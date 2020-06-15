@@ -288,7 +288,7 @@ public abstract class BQueueTest {
         () -> { q.add(3); a.set(q.remove()); },
         () -> { b.set(q.remove()); }, 
         () -> { int n = q.size(); q.add(n); q.add(n+1); }
-        );
+    );
     assertEquals(1, q.size());
 
     int[][] abPossibilities = {
@@ -299,7 +299,6 @@ public abstract class BQueueTest {
             { 1, 0 },
             { 0, 1 },
     };
-
     boolean abFound = false;
     for (int[] poss : abPossibilities) {
       if (a.get() == poss[0] && b.get() == poss[1]) {
@@ -315,8 +314,7 @@ public abstract class BQueueTest {
         () -> { c.set(q.remove());  },
         () -> { q.add(a.get()); }, 
         () -> { int n = q.size(); q.add(n); d.set(q.remove()); }
-        );
-   
+    );
     assertEquals(1, q.size());
 
     // Duplicados ja removidos
@@ -334,7 +332,6 @@ public abstract class BQueueTest {
             { 3, 0 },
             { 0, 3 },
     };
-
     boolean cdFound = false;
     for (int[] poss : cdPossibilities) {
       if (c.get() == poss[0] && d.get() == poss[1]) {

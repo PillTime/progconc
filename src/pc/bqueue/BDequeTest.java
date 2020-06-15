@@ -387,8 +387,82 @@ public abstract class BDequeTest {
         assertEquals(11111111, i.get() + j.get() + k.get() + l.get() + x.get() + y.get() + z.get() + w.get());
     }
 
-    @Test @Ignore
+    @Test
     public void test9() {
+        BDeque<Integer> d = createBDeque(4);
+        AtomicInteger i = new AtomicInteger();
+        AtomicInteger j = new AtomicInteger();
+        AtomicInteger x = new AtomicInteger();
+        AtomicInteger y = new AtomicInteger();
+        CSystem.forkAndJoin(
+                () -> {
+                    d.addLast(3);
+                    i.set(d.removeFirst());
+                },
+                () -> {
+                    j.set(d.removeFirst());
+                },
+                () -> {
+                    int n = d.size(); d.addLast(n); d.addLast(n+1);
+                }
+        );
+        assertEquals(1, d.size());
 
+        int[][] ijPossibilities = {
+                { 3, 0 },
+                { 0, 3 },
+                { 3, 1 },
+                { 1, 3 },
+                { 1, 0 },
+                { 0, 1 },
+        };
+        boolean ijFound = false;
+        for (int[] poss : ijPossibilities) {
+            if (i.get() == poss[0] && j.get() == poss[1]) {
+                ijFound = true;
+                break;
+            }
+        }
+        if (!ijFound) {
+            fail("Did you consider i being " + i.get() + ", and j being " + j.get() + "?");
+        }
+
+        CSystem.forkAndJoin(
+                () -> {
+                    x.set(d.removeLast());
+                },
+                () -> {
+                    d.addFirst(i.get());
+                },
+                () -> {
+                    int n = d.size(); d.addFirst(n); y.set(d.removeLast());
+                }
+        );
+        assertEquals(1, d.size());
+
+        int[][] xyPossibilities = {
+                { 1, 3 },
+                { 1, 0 },
+                { 3, 1 },
+                { 0, 1 },
+                { 1, 1 },
+                { 2, 3 },
+                { 2, 1 },
+                { 2, 0 },
+                { 3, 2 },
+                { 1, 2 },
+                { 3, 0 },
+                { 0, 3 },
+        };
+        boolean xyFound = false;
+        for (int[] poss : xyPossibilities) {
+            if (x.get() == poss[0] && y.get() == poss[1]) {
+                xyFound = true;
+                break;
+            }
+        }
+        if (!xyFound) {
+            fail("Did you consider x being " + x.get() + ", and y being " + y.get() + "?");
+        }
     }
 }
