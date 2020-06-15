@@ -15,8 +15,7 @@ import org.junit.runners.MethodSorters;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 @SuppressWarnings("javadoc")
 @RunWith(CJUnitRunner.class)
@@ -243,72 +242,114 @@ public abstract class BDequeTest {
         AtomicInteger j = new AtomicInteger();
         AtomicInteger k = new AtomicInteger();
         AtomicInteger l = new AtomicInteger();
-        AtomicInteger x = new AtomicInteger();
-        AtomicInteger y = new AtomicInteger();
-        AtomicInteger z = new AtomicInteger();
-        AtomicInteger w = new AtomicInteger();
         CSystem.forkAndJoin(
                 () -> {
-                    d.addFirst(1);
-                    d.addFirst(2);
-                    d.addFirst(3);
-                    d.addFirst(4);
+                    d.addLast(1);
+                    d.addLast(2);
+                    d.addLast(3);
+                    d.addLast(4);
                     i.set(d.size());
-                    d.addLast(5);
-                    d.addLast(6);
-                    d.addLast(7);
-                    d.addLast(8);
-                    x.set(d.size());
                 },
                 () -> {
                     j.set(d.removeFirst());
                     k.set(d.removeFirst());
                     l.set(d.size());
-                    y.set(d.removeLast());
-                    z.set(d.removeLast());
-                    w.set(d.size());
                 }
         );
-        assertEquals(4, d.size());
+        assertEquals(2, d.size());
         assertTrue(i.get() >= 2 && i.get() <= 4);
         assertEquals(1, j.get());
         assertEquals(2, k.get());
         assertTrue(l.get() >= 0 && l.get() <= 2);
-        assertTrue(x.get() >= 4 && x.get() <= 8);
-        assertEquals(8, y.get());
-        assertEquals(7, z.get());
-        assertTrue(w.get() >= 0 && w.get() <= 4);
         CSystem.forkAndJoin(
                 () -> {
-                    d.addFirst(9);
+                    d.addFirst(5);
+                    d.addFirst(6);
+                    d.addFirst(7);
+                    d.addFirst(8);
                     i.set(d.size());
-                    d.addLast(10);
-                    x.set(d.size());
+                },
+                () -> {
+                    j.set(d.removeLast());
+                    k.set(d.removeLast());
+                    l.set(d.size());
+                }
+        );
+        assertEquals(4, d.size());
+        assertTrue(i.get() >= 4 && i.get() <= 6);
+        assertEquals(4, j.get());
+        assertEquals(3, k.get());
+        assertTrue(l.get() >= 0 && l.get() <= 4);
+        CSystem.forkAndJoin(
+                () -> {
+                    d.addLast(9);
+                    i.set(d.size());
                 },
                 () -> {
                     j.set(d.removeFirst());
                     k.set(d.removeFirst());
                     l.set(d.size());
-                    y.set(d.removeLast());
-                    z.set(d.removeLast());
-                    w.set(d.size());
+                }
+        );
+        assertEquals(3, d.size());
+        assertTrue(i.get() >= 3 && i.get() <= 5);
+        assertEquals(8, j.get());
+        assertEquals(7, k.get());
+        assertTrue(l.get() >= 2 && l.get() <= 3);
+        CSystem.forkAndJoin(
+                () -> {
+                    d.addFirst(10);
+                    i.set(d.size());
+                },
+                () -> {
+                    j.set(d.removeLast());
+                    k.set(d.removeLast());
+                    l.set(d.size());
+                }
+        );
+        assertEquals(2, d.size());
+        assertTrue(i.get() >= 2 && i.get() <= 4);
+        assertEquals(9, j.get());
+        assertEquals(5, k.get());
+        assertTrue(l.get() >= 1 && l.get() <= 2);
+        CSystem.forkAndJoin(
+                () -> {
+                    i.set(d.size());
+                },
+                () -> {
+                    j.set(d.removeFirst());
+                    d.addLast(11);
+                    k.set(d.removeFirst());
+                    l.set(d.size());
                 }
         );
         assertEquals(1, d.size());
-        assertTrue(i.get() >= 2 && i.get() <= 6);
-//        assertEquals();
-//        assertEquals();
-//        assertTrue();
-//        assertTrue();
-//        assertEquals();
-//        assertEquals();
-//        assertTrue();
+        assertTrue(i.get() >= 1 && i.get() <= 2);
+        assertEquals(10, j.get());
+        assertEquals(6, k.get());
+        assertEquals(1, l.get());
+        CSystem.forkAndJoin(
+                () -> {
+                    i.set(d.size());
+                },
+                () -> {
+                    j.set(d.removeLast());
+                    d.addFirst(12);
+                    k.set(d.removeLast());
+                    l.set(d.size());
+                }
+        );
+        assertEquals(0, d.size());
+        assertTrue(i.get() >= 0 && i.get() <= 1);
+        assertEquals(11, j.get());
+        assertEquals(12, k.get());
+        assertEquals(0, l.get());
     }
-    @Test @Ignore
+    @Test
     public void test7_8() {
         test7(8);
     }
-    @Test @Ignore
+    @Test
     public void test7_16() {
         test7(16);
     }
