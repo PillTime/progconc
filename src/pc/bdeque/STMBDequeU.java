@@ -1,4 +1,4 @@
-package pc.deque;
+package pc.bdeque;
 
 import scala.concurrent.stm.Ref;
 import scala.concurrent.stm.TArray;
