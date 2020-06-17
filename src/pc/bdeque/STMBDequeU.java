@@ -32,7 +32,7 @@ public class STMBDequeU<E> implements BDeque<E> {
     public void addFirst(E elem) {
         STM.atomic(() -> {
             if(size.get() == arrayRef.get().size()) {
-                TArray.View<E> new_array = STM.newTArray(size.get() + 1);
+                TArray.View<E> new_array = STM.newTArray(size.get() * 2);
 
                 //avançar para a frente
                 for (int i = head.get(); i < size.get(); i++) {
@@ -81,7 +81,7 @@ public class STMBDequeU<E> implements BDeque<E> {
     public void addLast(E elem) {
         STM.atomic(() -> {
             if(size.get() == arrayRef.get().size()) {
-                TArray.View<E> new_array = STM.newTArray(size.get()+1);
+                TArray.View<E> new_array = STM.newTArray(size.get() * 2);
 
                 for (int i = head.get(); i < size.get(); i++) {
                     new_array.update(i, arrayRef.get().apply(i));
@@ -102,16 +102,6 @@ public class STMBDequeU<E> implements BDeque<E> {
                 STM.retry();
             }
             E elem = arrayRef.get().apply(head.get() + size.get() -1);
-
-            TArray.View<E> new_array = STM.newTArray(size.get()-1);
-
-
-            for( int i = head.get(); i < size.get()-1 ; i++){
-                new_array.update(i, arrayRef.get().apply(i));
-            }
-
-
-            arrayRef.set(new_array);
 
             STM.increment(size, -1);
 
