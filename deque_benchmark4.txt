@@ -1,0 +1,15 @@
+ 2, Lock-free backoff=y,  LFBDequeU ->    1891.11 thousand ops/s per thread
+ 2, Lock-free backoff=n,  LFBDequeU ->    1021.11 thousand ops/s per thread
+ 2,                 STM, STMBDequeU ->     436.24 thousand ops/s per thread
+ 4, Lock-free backoff=y,  LFBDequeU ->    3035.84 thousand ops/s per thread
+ 4, Lock-free backoff=n,  LFBDequeU ->     478.88 thousand ops/s per thread
+ 4,                 STM, STMBDequeU ->      70.96 thousand ops/s per thread
+ 8, Lock-free backoff=y,  LFBDequeU ->     463.79 thousand ops/s per thread
+ 8, Lock-free backoff=n,  LFBDequeU ->     115.06 thousand ops/s per thread
+ 8,                 STM, STMBDequeU ->      76.90 thousand ops/s per thread
+16, Lock-free backoff=y,  LFBDequeU ->     330.41 thousand ops/s per thread
+16, Lock-free backoff=n,  LFBDequeU ->      56.72 thousand ops/s per thread
+16,                 STM, STMBDequeU ->       1.49 thousand ops/s per thread
+32, Lock-free backoff=y,  LFBDequeU ->     743.90 thousand ops/s per thread
+32, Lock-free backoff=n,  LFBDequeU ->       8.14 thousand ops/s per thread
+32,                 STM, STMBDequeU ->       2.03 thousand ops/s per thread
