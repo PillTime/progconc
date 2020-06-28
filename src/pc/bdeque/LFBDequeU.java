@@ -14,6 +14,19 @@ public class LFBDequeU<E> implements BDeque<E> {
     private final Rooms rooms;
     private final boolean useBackoff;
 
+    // nas funções addFirst e addLast, a ordem das operações é diferente a receber a posição.
+    // addFirst: head.decrementAndGet()
+    // addLast:  tail.getAndIncrement()
+    // isto foi preciso para não haver conflito entre posições a adicionar elementos em certos casos.
+    // nas funções removeFirst e removeLast faz-se o mesmo pela mesma razão.
+    
+    // determinar o indice do elemento a remover/inserir parece um bocado esquisito.
+    // ((i % len) + len) % len
+    // isto é porque em Java, % dá um resto de uma divisão,
+    // mas o que dá mais jeito aqui é receber o modulo.
+    // fazer (a % b), sendo b negativo dá um resultado diferente em python por exemplo,
+    // porque em python, % retorna o modulo.
+    
     @SuppressWarnings("unchecked")
     public LFBDequeU(int initialCapacity, boolean backoff) {
         head = new AtomicInteger(0);
