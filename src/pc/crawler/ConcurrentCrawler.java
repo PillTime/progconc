@@ -46,7 +46,7 @@ public class ConcurrentCrawler extends SequentialCrawler {
   public void crawl(String root) {
     long t = System.currentTimeMillis();
     log("Starting at %s", root);
-    pool.invoke(new TransferTask(new AtomicInteger(0), root,new HashSet<>()));
+    pool.invoke(new TransferTask(new AtomicInteger(0), root));
     t = System.currentTimeMillis() - t;
     log("Done in %d ms", t);
   }
@@ -57,25 +57,23 @@ public class ConcurrentCrawler extends SequentialCrawler {
   public void stop() {
     pool.shutdown();
   }
+
+  Set<String> visited = Collections.synchronizedSet(new HashSet<String>());
   
   @SuppressWarnings("serial")
   private class TransferTask extends RecursiveTask<Void> {
 
     final AtomicInteger rid;
     final String path;
-    HashSet<String> visited;
 
-    TransferTask(AtomicInteger rid, String path, HashSet<String> visited) {
+    TransferTask(AtomicInteger rid, String path) {
       super();
       this.rid = rid;
       this.path = path;
-      this.visited = visited;// manter estado dos visitados e evitar loops infinitos
     }
 
     @Override
     protected Void compute() {
-      List<String> folders =  new LinkedList<>();
-      List<String> foldersAwx = new LinkedList<>();
 
       try {
         List<String> links = performTransfer(rid.getAndIncrement(), new URL(path));
@@ -84,23 +82,21 @@ public class ConcurrentCrawler extends SequentialCrawler {
         List<RecursiveTask<Void>> forks = new LinkedList<>();
 
         //forks
-        for(String link : links){
-          String newURL = new URL(new URL(path), new URL(new URL(path),link).getPath()).toString();
+        for (String link : links) {
+          String newURL = new URL(new URL(path), new URL(new URL(path), link).getPath()).toString();
           //saltar já visitados
-          if(visited.contains(newURL))
+          if (!visited.add(newURL))
             continue;
-          visited.add(newURL);
-          TransferTask task = new TransferTask(rid,newURL,visited);
+          TransferTask task = new TransferTask(rid, newURL);
           forks.add(task);
           task.fork();
 
         }
 
         //joins
-        for(RecursiveTask<Void> task : forks){
-         task.join();
+        for (RecursiveTask<Void> task : forks) {
+          task.join();
         }
-
 
       } 
       catch (Exception e) {
